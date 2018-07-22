@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="sci-tech,notes,coding,LaTeX," />
+  <meta name="keywords" content="entertainment,gameofthrones," />
 
 
 
@@ -83,20 +83,20 @@
 
 
 
-<meta name="description" content="内容来自《一份不太简短的\(\LaTeX2\varepsilon\)介绍》，据说是99分钟学会。 倒计时开始。">
-<meta name="keywords" content="sci-tech,notes,coding,LaTeX">
+<meta name="description" content="（这篇文章2016-8始发于知乎，现在搬运过来）  转译一篇前几天在 Reddit上看到的写囧的文章，找不到合适的题目，就试一下这个写文章的功能。（由于本人英语水平有限，所以建议英文水平过关、有耐心的知友还是看英文原文。）（简单在知乎和Google上搜了一下发现没有人写过这个，如果有的话请联系我删除）">
+<meta name="keywords" content="entertainment,gameofthrones">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LaTeX笔记">
-<meta property="og:url" content="https://imvictorcheng.github.io/2016/11/10/LaTeX笔记/index.html">
+<meta property="og:title" content="【翻译自Reddit】琼恩在《私生子之战》中的故事，并不是人们想的那样">
+<meta property="og:url" content="https://imvictorcheng.github.io/undefinedcjjwj65ss0018fc0gjtstjyta">
 <meta property="og:site_name" content="RootSays">
-<meta property="og:description" content="内容来自《一份不太简短的\(\LaTeX2\varepsilon\)介绍》，据说是99分钟学会。 倒计时开始。">
+<meta property="og:description" content="（这篇文章2016-8始发于知乎，现在搬运过来）  转译一篇前几天在 Reddit上看到的写囧的文章，找不到合适的题目，就试一下这个写文章的功能。（由于本人英语水平有限，所以建议英文水平过关、有耐心的知友还是看英文原文。）（简单在知乎和Google上搜了一下发现没有人写过这个，如果有的话请联系我删除）">
 <meta property="og:locale" content="Chinese/English/Physics/Math/Python">
-<meta property="og:image" content="https://imvictorcheng.github.io/2016/11/10/LaTeX笔记/例子1.JPG">
-<meta property="og:updated_time" content="2016-11-13T04:05:24.000Z">
+<meta property="og:image" content="https://imvictorcheng.github.io/2016/11/05/【翻译自Reddit】琼恩在《私生子之战》中的故事，并不是人们想的那样/titleimage.jpg">
+<meta property="og:updated_time" content="2016-11-07T00:45:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LaTeX笔记">
-<meta name="twitter:description" content="内容来自《一份不太简短的\(\LaTeX2\varepsilon\)介绍》，据说是99分钟学会。 倒计时开始。">
-<meta name="twitter:image" content="https://imvictorcheng.github.io/2016/11/10/LaTeX笔记/例子1.JPG">
+<meta name="twitter:title" content="【翻译自Reddit】琼恩在《私生子之战》中的故事，并不是人们想的那样">
+<meta name="twitter:description" content="（这篇文章2016-8始发于知乎，现在搬运过来）  转译一篇前几天在 Reddit上看到的写囧的文章，找不到合适的题目，就试一下这个写文章的功能。（由于本人英语水平有限，所以建议英文水平过关、有耐心的知友还是看英文原文。）（简单在知乎和Google上搜了一下发现没有人写过这个，如果有的话请联系我删除）">
+<meta name="twitter:image" content="https://imvictorcheng.github.io/2016/11/05/【翻译自Reddit】琼恩在《私生子之战》中的故事，并不是人们想的那样/titleimage.jpg">
 
 
 
@@ -126,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="https://imvictorcheng.github.io/2016/11/10/LaTeX笔记/"/>
+  <link rel="canonical" href="https://imvictorcheng.github.io/undefinedcjjwj65ss0018fc0gjtstjyta"/>
 
 
 
 
 
-  <title>LaTeX笔记 | RootSays</title>
+  <title>【翻译自Reddit】琼恩在《私生子之战》中的故事，并不是人们想的那样 | RootSays</title>
   
 
 
@@ -302,7 +302,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://imvictorcheng.github.io/2016/11/10/LaTeX笔记/">
+    <link itemprop="mainEntityOfPage" href="https://imvictorcheng.github.io/undefinedcjjwj65ss0018fc0gjtstjyta">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Victor Cheng">
@@ -319,7 +319,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">LaTeX笔记</h1>
+          <h1 class="post-title" itemprop="name headline">【翻译自Reddit】琼恩在《私生子之战》中的故事，并不是人们想的那样</h1>
         
 
         <div class="post-meta">
@@ -331,8 +331,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-10T12:00:31+08:00">
-                2016-11-10
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-05T22:27:36+08:00">
+                2016-11-05
               </time>
             
 
@@ -350,8 +350,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/11/10/LaTeX笔记/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2016/11/10/LaTeX笔记/" itemprop="commentCount"></span>
+                <a href="/undefinedcjjwj65ss0018fc0gjtstjyta#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/undefinedcjjwj65ss0018fc0gjtstjyta" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -359,7 +359,7 @@
 
           
           
-             <span id="/2016/11/10/LaTeX笔记/" class="leancloud_visitors" data-flag-title="LaTeX笔记">
+             <span id="/undefinedcjjwj65ss0018fc0gjtstjyta" class="leancloud_visitors" data-flag-title="【翻译自Reddit】琼恩在《私生子之战》中的故事，并不是人们想的那样">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -390,167 +390,37 @@
       
 
       
-        <!-- turl = \2016\11\10\LaTeX笔记 -->
-<p>内容来自<a href="\2016\11\10\LaTeX笔记\lshort-zh-cn.pdf">《一份不太简短的<span class="math inline">\(\LaTeX2\varepsilon\)</span>介绍》</a>，据说是99分钟学会。 倒计时开始。 <a id="more"></a> ## <span class="math inline">\(\LaTeX\)</span>须知</p>
-<h3 id="概述">概述</h3>
-<ul>
-<li><span class="math inline">\(\LaTeX\)</span>的发音是“Lay-tech”或“Lah-tech”，即“雷泰克”。</li>
-<li><span class="math inline">\(\TeX\)</span>是<span class="math inline">\(\LaTeX\)</span>这个软件的引擎。</li>
-<li><span class="math inline">\(\LaTeX2\varepsilon\)</span>是<span class="math inline">\(\LaTeX\)</span>的最新版本。</li>
-</ul>
-<h3 id="latex命令和代码结构"><span class="math inline">\(\LaTeX\)</span>命令和代码结构</h3>
-<h4 id="latex命令和环境"><span class="math inline">\(\LaTeX\)</span>命令和环境</h4>
-<p><span class="math inline">\(\LaTeX\)</span>命令**以反斜线*，为以下两种形式之一：</p>
-<ul>
-<li>反斜线和后面的一串字母，如。它们以任意非字母符号（空格、数字、标点等）作为分隔符。</li>
-<li>反斜线和后面的一个非字母符号，如\$。他们无需分隔符。</li>
-</ul>
-<p><span class="math inline">\(\LaTeX\)</span>命令<strong>对大小写敏感</strong>。</p>
-<p>字母形式的命令<strong>忽略后面所有空格</strong>，所以如果要引入空格，要在命令后面加一对括号阻止其忽略空格，或者紧跟反斜线加空格命令。<em>在MathJax中不用考虑这个问题，因为空格前面本来就要加反斜线。</em></p>
-<p>大多数的<span class="math inline">\(\LaTeX\)</span>命令是带一个或多个参数，每个参数用<strong>花括号</strong>{ 和 } 包裹。有些命令带一个或多个可选参数，以<strong>方括号</strong>[ 和 ] 包裹。还有些命令在命令名称后可以带一个<strong>星号</strong>*，带星号和不带星号的命令效果有一定差异。</p>
-<p><span class="math inline">\(\LaTeX\)</span>的花括号本身也起到<strong>分组</strong>的作用，可以将字体、格式等的更改限制在大括号范围之内。</p>
-<p><span class="math inline">\(\LaTeX\)</span>还引入了<strong>环境</strong>的用法，用以令一些效果在局部生效，或是生成特定的文档元素。<span class="math inline">\(\LaTeX\)</span>环境的用法为一对命令 \begin 和 \end：</p>
-<pre><code>\begin{&lt;environment name&gt;}{&lt;arguments&gt;}
-...
-\end{&lt;environment name&gt;}</code></pre>
-<p>其中<code>&lt;environment name&gt;</code>为环境名，<code>\begin</code>和<code>\end</code>中填写的环境名应当一致。<code>\begin</code>在<code>&lt;environment name&gt;</code>后可以带一个或多个参数，甚至可选参数。环境允许嵌套使用。</p>
-<h4 id="latex源代码结构"><span class="math inline">\(\LaTeX\)</span>源代码结构</h4>
-<p><span class="math inline">\(\LaTeX\)</span>源代码以一个<code>\documentclass</code>命令作为开头，它规定了文档使用的<strong>文档类</strong>：</p>
-<pre><code>\documentclass{...}</code></pre>
-<p>紧接着我们可以用<code>\usepackage</code>命令调用<strong>宏包</strong>：</p>
-<pre><code>\usepackage{...}</code></pre>
-<p>再接着，我们需要用以下一对命令来标记正文内容的开始位置和结束位置，而将<strong>正文内容</strong>写入其中：</p>
-<pre><code>\begin{document}
-...
-\end{document}</code></pre>
-<p>在<code>\documentclass</code>和<code>\begin{document}</code>之间的位置称为<strong>导言区</strong>，除了使用<code>\usepackage</code>调用宏包之外，一些对文档的全局设置命令也在这里使用。也可以什么都不写。</p>
-<h3 id="用命令行操作latex">用命令行操作<span class="math inline">\(\LaTeX\)</span></h3>
-<h3 id="宏包和文档类">宏包和文档类</h3>
-<h4 id="文档类">文档类</h4>
-<p>文档类规定了<span class="math inline">\(\LaTeX\)</span>源代码索要生成的文档的<strong>性质</strong>。用<code>\documentclass</code>指定文档类：</p>
-<pre><code>\documentclass[&lt;options&gt;]{&lt;class-name&gt;}</code></pre>
-<p><code>&lt;class-name&gt;</code>为文档类的名称，<span class="math inline">\(\LaTeX\)</span>提供的基础文档类：</p>
-<ul>
-<li>article，文章格式</li>
-<li>report，长篇报告</li>
-<li>book，书籍，包含章节结构、前言、正文、后记等</li>
-<li>proc，基于article的简单的学术文档模板</li>
-<li>slides，幻灯格式，使用无衬线字体</li>
-<li>minial，极其精简，用于测试</li>
-</ul>
-<p><code>&lt;options&gt;</code>为文档类指定<strong>选项</strong></p>
-<ul>
-<li>10pt、11pt、12pt，字号，缺省为10pt</li>
-<li>a4paper，letterpaper，… 纸张大小</li>
-<li>更多见pdf第6页。</li>
-</ul>
-<h4 id="宏包">宏包</h4>
-<p><strong>扩展应用</strong>，如插入复杂表格，图片，颜色，超链接等。</p>
-<pre><code>\usepackage[&lt;options&gt;]{&lt;package-name&gt;}</code></pre>
-<h3 id="latex用到的文件一览"><span class="math inline">\(\LaTeX\)</span>用到的文件一览</h3>
-<h3 id="文件的组织方式">文件的组织方式</h3>
-<p><span class="math inline">\(\LaTeX\)</span>提供<code>\include</code>命令来在源代码里插入文件：</p>
-<pre><code>\include{&lt;filename&gt;}</code></pre>
-<p>如果和要编译的主文件不在一个目录，则要加上相对或绝对路径。</p>
-<p><code>&lt;filename&gt;</code>不带<strong>扩展名</strong>时默认为.tex。</p>
-<p><code>\include</code>在读入文件之前会另起一页。使用<code>\input</code>命令是纯粹的插入：</p>
-<pre><code>\input{&lt;filename&gt;}</code></pre>
-<h2 id="用latex排版文字">用<span class="math inline">\(\LaTeX\)</span>排版文字</h2>
-<h3 id="排版中文">排版中文</h3>
-<p>直接用UTF8选项使CTEX支持utf-8编码，利用CTEX丰富的字体和中文设置可以更好地编辑Latex中文文本，其语法格式为：</p>
-<pre><code>\documentclass[UTF8]{article}
-\usepackage{CTEX}
-\begin{document}
-...
-\end{document}</code></pre>
-<p>例子：</p>
-<pre><code>% ctex_test.tex
-\documentclass[UTF8]{article}
-\usepackage{CTEX}
-\begin{document}
-这是一个CTEX的utf-8编码例子，{\kaishu 这里是楷体显示}，{\songti 这里是宋体显示}，{\heiti 这里是黑体显示}，{\fangsong 这里是仿宋显示}，{\lishu 这里是隶书显示}，{\youyuan 这里是幼圆显示}。
-\end{document}</code></pre>
-<figure>
-<img src="\2016\11\10\LaTeX笔记\例子1.JPG" alt="例子"><figcaption>例子</figcaption>
-</figure>
-<h3 id="latex中的字符"><span class="math inline">\(\LaTeX\)</span>中的字符</h3>
-<h4 id="空格和分段">空格和分段</h4>
-<p><span class="math inline">\(\LaTeX\)</span>源代码中，空格键和 Tab 键输入的空白字符视为“空格”。若干个空白字符视为<strong>一个空格</strong>。<strong>一行开头的空格忽略不计</strong>。</p>
-<p>行末的回车视为<strong>一个空格</strong>；连续两个回车，也就是空行，会将文字<strong>分段</strong>。多个空行视为<strong>一个空行</strong>。也可以用<code>\par</code>分段。</p>
-<p>在MathJax中，用<code>\</code>反斜线加空格来打出空格，只能用<code>\\\\</code>强制换行。</p>
-<h4 id="注释">注释</h4>
-<p>用%作为注释。%后所有字符，包括回车引入的空格，都被忽略。</p>
-<h4 id="特殊字符">特殊字符</h4>
-<p>保留字符有# $ % { } _ ^ ~ 。</p>
-<p>反斜线加保留字符可以得到这些字符。这些反斜线的形式是<span class="math inline">\(\LaTeX\)</span>命令，^和~要带空参数，即<code>\~{}</code>和<code>\^{}</code>才能打出这两个字符。</p>
-<p>两个反斜线\\被用作手动换行，所以输入反斜杠要用<code>\textbackslash</code>。</p>
-<h4 id="破除连字">破除连字</h4>
-<p>西文排版中经常会出现连字，常见的有ff/fi/fl/ffi/ffl。用一对大括号破除。</p>
-<pre><code>It’s difficult to find \ldots .\\
-It’s dif{}f{}icult to f{}ind \ldots .</code></pre>
-<p><span class="math display">\[It’s\ difficult\ to\ find \ldots .\\\\It’s\ dif{}f{}icult\ to\ f{}ind\ \ldots .\]</span> (MathJax里好像没有这个必要) #### 标点符号</p>
-<ul>
-<li>引号 左单引号：`，是键盘上1左边的那个键；右单引号：’是键盘上分号右边那个键。 左双引号：两个左单引号。右双引号相似。</li>
-<li>不同长度的横线 1到3个短横-代表三个不同长度的横线。</li>
-<li>省略号 用<code>\ldots</code>或<code>\dots</code>而不是直接输入三个点来得到省略号。</li>
-<li>波浪号 <code>\~{}</code>得到的波浪号在上面，如果要中间的、大的波浪号，用数学公式里的<code>$\sim$</code>代替。也可以用中文的全角波浪号。</li>
-</ul>
-<h4 id="latex标志"><span class="math inline">\(\LaTeX\)</span>标志</h4>
-<p>在<span class="math inline">\(\LaTeX\)</span>里可以用<code>\LaTeXe</code>来打出<span class="math inline">\(\LaTeX2\varepsilon\)</span>，但是MathJax不支持。</p>
-<h3 id="文字强调">文字强调</h3>
-<ul>
-<li>下划线 用ulem宏包里的：<code>\uline{underlined words.}</code></li>
-<li>斜体强调 。，内部用正常字体。</li>
-</ul>
-<h3 id="断行和断页">断行和断页</h3>
-<h2 id="文档元素">文档元素</h2>
-<h2 id="排版数学公式">排版数学公式</h2>
-<h3 id="公式排版基础">公式排版基础</h3>
-<p>数学公式有两种排版方式：其一是与文字混排，称为<strong>行内公式</strong>；其二是单独列为一行排版，称为<strong>行间公式</strong>。</p>
-<p>行内公式用一对\<span class="math inline">\(符号包裹。行间公式在\)</span>$里由equation环境包裹。equation环境为公式<strong>自动生成一个编号</strong>，这个编号可以用<code>\label</code>和<code>\ref</code>生成交叉引用，amsmath的<code>\eqref</code>命令甚至为引用自动加上圆括号；还可以用<code>\tag</code>命令手动修改公式的编号，或者用<code>\notag</code>命令取消为公式编号（与之基本等效的命令是）。</p>
-<p>如果想要取消公式的编号，还有三种方法： - 使用displaymath环境，即公式用<code>\begin{displaymath}</code>和<code>\end{displaymath}</code>包裹 - 使用equation*环境，即公式用<code>\begin{equation*}</code>和<code>\end{equation*}</code>包裹 - 使用<code>\[</code>和<code>\]</code>命令生成不带编号的行间公式</p>
-<h4 id="数学模式和文本">数学模式和文本</h4>
-<p>当开始输入公式时，进入<strong>数学模式</strong>。数学模式相比文本模式有如下特点： 1. 数学模式中输入的<strong>空格全部被忽略</strong>。数学符号的间隙默认完全由符号的性质（关系符号、运算符等）决定。需要人为引入空隙时，使用<code>\quad</code>和<code>\qquad</code>等命令。 2. <strong>不允许有空行（分段）。</strong>每个公式（每组多行公式）自成一个段落。 3. 所有的字母被当作数学公式中的变量处理，字母间距与文本模式不一致，也无法生成单词之间的空格。如果想在数学公式中输入正体的文本，可用<code>\mathrm</code>命令。amsmath提供了更加方便的<code>\text</code>命令。</p>
-<h3 id="数学符号"><a href="\2016\11\10\LaTeX笔记\数学符号.pdf">数学符号</a></h3>
-<h3 id="多行公式">多行公式</h3>
-<h4 id="长公式折行">长公式折行</h4>
-<p>通常来讲应当避免写出需要折行的长公式。如果一定要折行的话，优先在<strong>等号</strong>之前折行，其次在<strong>加号、减号</strong>之前，再次在<strong>乘号、除号</strong>之前。其它位置应当避免折行。</p>
-<p>书写折行长公式可以用amsmath宏包的multline环境。允许用\\折行，将公式编号放在最后一行。多行公式的首行左对齐，末行右对齐，其余行居中。最后一行不要写\\。</p>
-<h4 id="多行公式-1">多行公式</h4>
-<p>罗列一系列公式，并令其按照等号对齐，用align环境。（需使用amsmath宏包。）将公式用&amp;分隔为两部分并对齐。分隔符放等号左边。align环境会给每行公式加分号。如果同时要在某一行公式折行，可以将&amp;放在等号右边，在等号后面添加一对大括号。align 还能够对齐多组公式，除等号前的&amp;之外，公式之间也用&amp;分隔。</p>
-<p>如果不需要对齐等号，可以用gather环境。</p>
-<h4 id="公用编号的多行公式">公用编号的多行公式</h4>
-<p>将多个公式组在一起共用一个编号，编号位于公式的居中位置：用amsmath宏包里的aligned、gathered环境，与equation环境套用。</p>
-<h3 id="数组和矩阵">数组和矩阵</h3>
-<p>使用array环境，需要定义列格式。用\换行。也可以用带各种定界符的matrix环境。</p>
-<h3 id="公式中的间距">公式中的间距</h3>
-<p>可以用<code>\quad</code>、<code>\qquad</code>、<code>\</code>、<code>\,</code>、<code>\:</code>、<code>\;</code>生成不同大小的间距。可以用<code>\!</code>生成负间距。</p>
-<h3 id="数学符号的字体控制">数学符号的字体控制</h3>
-<p>见pdf p.45~p.46</p>
-<h3 id="定理环境">定理环境</h3>
-<p>要先自定义定理环境，用<code>\newtheorem</code>定义：</p>
-<pre><code>\newtheorem{&lt;type&gt;}{&lt;title&gt;}[&lt;section-name&gt;]
-\newtheorem{&lt;type&gt;}[&lt;counter&gt;]{&lt;title&gt;}</code></pre>
-<p><code>&lt;type&gt;</code>是定理类型的名称，或者说是“这种类型定理的代号”。<code>&lt;title&gt;</code>是定理类型的标签，放在定理序号的前面。</p>
-<p>定理序号由两个可选参数之一决定，他们<strong>不能同时使用</strong>： - <code>&lt;section-name&gt;</code>为章节名称，使定理序号成为章节的下一级序号； - <code>counter</code> 为用<code>\newcounter</code>自定义的计数器名称，定理序号由这个计数器管理。</p>
-<p>如果两个可选参数都不用的话，则使用一个默认的计数器。定理带一个可选参数，用于注明定理的名称，如“法拉第定律”等。在环境内还可以用<code>\label</code>声明引用。</p>
-<p>例子：</p>
-<pre><code>\newtheorem{mythm}{My Theorem}[section]
-\begin{mythm}\label{thm:light}
-The light speed in vaccum
-is $299,792,458\,\mathrm{m/s}$.
-\end{mythm}
-\begin{mythm}[Energy]
-The relationship of energy,
-momentum and mass is
-\[E^2 = m_0^2 c^4 + p^2 c^2\]
-where $c$ is the light speed
-described in theorem \ref{thm:light}.
-\end{mythm}</code></pre>
-<p>amsthm宏包可以修改定理格式。</p>
-<h4 id="证明环境和证毕符号">证明环境和证毕符号</h4>
-<p>amsthm 还提供了一个proof环境用于排版定理的证明过程。proof环境末尾自动加上一个证毕符号<span class="math inline">\(\Box\)</span>。如果行末是一个不带编号的公式，<span class="math inline">\(\Box\)</span>符号会另起一行，这时可使用<code>\qedhere</code>命令将<span class="math inline">\(\Box\)</span>符号放在公式末尾。</p>
-<h3 id="符号表"><a href="\2016\11\10\LaTeX笔记\符号表.pdf">符号表</a></h3>
+        <p>（这篇文章2016-8始发于<a href="https://zhuanlan.zhihu.com/p/21636029" target="_blank" rel="noopener">知乎</a>，现在搬运过来）</p>
+<span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="\2016\11\05\【翻译自Reddit】琼恩在《私生子之战》中的故事，并不是人们想的那样\titleimage.jpg" class="full-image" alt="JohnSnow"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
+<p>转译一篇前几天在 Reddit上看到的写囧的文章，找不到合适的题目，就试一下这个写文章的功能。（由于本人英语水平有限，所以建议英文水平过关、有耐心的知友还是看英文原文。）（简单在知乎和Google上搜了一下发现没有人写过这个，如果有的话请联系我删除） <a id="more"></a> ···························································································································</p>
+<p>来源：Reddit 作者：<a href="https://www.reddit.com/user/i_miss_arrow" target="_blank" rel="noopener">i_miss_arrow</a> 原文链接：<a href="https://link.zhihu.com/?target=https%3A//www.reddit.com/r/gameofthrones/comments/4pndkb/everything_jons_story_in_battle_of_the_bastards/" target="_blank" rel="noopener">原文</a></p>
+<p>在这一季，琼恩的故事线是在讲他的死。这里说的“死”，不是指他身体的死——他在第二集就复活了，在剧中只死了一天——这一季是在讲他精神的死，而这比他肉体之死要有意义得多。这个精神之死，是的他自我被一点一点切碎，剥离，直到他的心里不再有希望，而只剩下恐惧和绝望。在瑞肯死在他面前时，这种绝望达到了巅峰。这也正是为什么他一个人冲向了波顿大军的前线。他不是被骗了，也不是被引过去的，他是想做一个了断。</p>
+<p>《私生子之战》不是一个为重拾家园、头衔而战的故事。<strong>《私生子之战》讲的是琼恩的重生。</strong>很多人说，第二集被复活的琼恩没有什么明显的变化。我们没有注意到琼恩的真正的变化，<em>这只是因为，我们期待复活的琼恩会有好的变化。</em>琼恩这一季做的所有事情，都具有<strong>恐惧</strong>这一的特征。这个恐惧当然包括对死亡的恐惧，但更多的，是对无法操纵自己命运的恐惧。琼恩五年来的人生本来就很不顺，然后他又被自己人所杀。这样的经历会让任何人对未来感到害怕，害怕它会变得更操蛋更悲催。正如他对珊莎所说：</p>
+<blockquote>
+<p>琼恩：我已经打累了。我离开临冬城后就一直在战斗……我战斗了，我输了。</p>
+</blockquote>
+<p>每当有什么事情提醒琼恩他无法掌控自己命运时，他都会展露出这种恐惧。当有人提到他的死时，他就好像一条被揍了的狗一样。当珊莎说她想要夺回临冬城的时候，他丝毫不想掺和进来，最后只是在珊莎拿瑞肯和拉姆斯的事给他施压的时候，他才同意。即便他同意之后，他看起来也很害怕，就好像他宁愿跑到世界上的任何一个角落，也不想呆在这里；好像他宁愿做世界上的任何一个人，也不愿做他<em>自己</em>。</p>
+<p>然后就是大战前夜的谈话。在和珊莎说话的时候，很明显琼恩并不相信自己能赢，但他别无选择，只能沿着现在这条路走下去。</p>
+<blockquote>
+<p>珊莎：这还不够！ 琼恩：是不够，我们就只有这些！ 接下来是全剧中最令人悲伤的一段对白： 珊莎：我不会活着回到那种情况的。你明白我的意思吗？ 琼恩：我绝不会再让他碰你一下。我会保护你的，我向你承诺。 珊莎：没人能保护我。没人能保护任何人。</p>
+</blockquote>
+<p>先不管这里表现了珊莎怎样的精神状态，这段对话对于琼恩来说是<em>极其悲伤</em>的。<strong>“保护珊莎”是琼恩自从死后，唯一一个自愿接受的任务。</strong>纯粹是为了珊莎和瑞肯，琼恩现在才在临冬城里，然而这时珊莎却清楚地告诉他，他完全没有能力做这唯一一件他想要做的事：保护自己的家人。</p>
+<p>在珊莎作出这个关于琼恩无能为力的“声明”之后，是他和梅丽桑卓的对话，他要求梅丽不要再在他死后复活他。这是琼恩在试图掌控最后一个主动权：能让一切了断，不用再回到这个操蛋、悲催的世界的权利。梅丽连这都不肯给他，因为她不得不再尝试，由光之神来决定要不要让他复活。</p>
+<blockquote>
+<p>梅丽：也许他复活你就是让你再死一次。 琼恩：什么神明会做出这种事？ 梅丽：就是我们这个神。</p>
+</blockquote>
+<p>在这时：琼恩对一切都无法掌控了。他无法保护自己的家庭，他马上要打一场他从来没想打的战役，他没有足够的兵马来真正控制胜负，他甚至不能相信死亡能让一切结束。他对未来的希望悬于一线。</p>
+<p>再后来就是拉姆斯让瑞肯跑过战场。不用管那些“琼恩是个史塔克，他忠于自己家人”的说法，这事其实非常简单：现在琼恩活着的唯一的意义就是保护这两个他能保护的家人。其中一个刚刚说了他保护不了她，另一个正在跑步穿过战场，身边还有箭矢飞过。当瑞肯开始跑步穿过战场时，琼恩只剩下一件事要做了：保护他的小兄弟。他没有什么能力，只有一线能做到的希望。</p>
+<p>瑞肯死了，屏幕变暗，镜头从琼恩的角度看着他的尸体。当琼恩看向拉姆斯的时候，眼里不是愤怒，而是绝望。<strong>众神又向琼恩头上扣了一盆子狗屎，一口浓痰啐在他仅剩的一点点希望之上。</strong></p>
+<p>这才是他向前冲锋的原因。没错，他要躲过前面射来的箭雨，但这些箭雨是齐射的，他本可以试着转头，在齐射之间的空当逃离。但他并不是想要躲开箭雨，或是带领部队夺取胜利，或是杀掉拉姆斯。他这样冲锋，是在向众神挑战，要么保他活着，要么让他安息。当他的马翻倒之后，他觉得他有了答案：众神把他复活到这里，不是让他魔法般地取胜，他们把他复活到这里真的就是让他再死一次。但是在最后一刻，他自己的部队追了上来，他不得不战斗。</p>
+<p>战斗进行中时，琼恩被埋在了尸体之下，“众神向他脑袋上倾倒痛苦”的比喻突然变成了现实。他本可以就此停下，放弃，然后在重负之下窒息而死。这正让他“重生”的那一幕更加有感染力：他爬着回来，<em>然后宣告：他还想活下去。</em>就连基特·哈灵顿也是这样描述这一幕的：</p>
+<blockquote>
+<p>“当那种压迫开始的时候，他的动作慢了下来，他内心有过这样的宁静，他想：‘我可以就这样待在这里，让一切都结束吧。’然后，某种力量驱动着他奋力向上，而在他上来又重新呼吸的时候，他重生了……”</p>
+</blockquote>
+<p>在一季的希望逃离、一季的恐惧和担忧、一季的毫无掌控能力之后，琼恩在所有的这些的面前宣告，他还想活下去。在这之后，几乎马上就是失败变成胜利，众神用谷地救兵的方式，给琼恩送来了拯救。当琼恩爬上尸体堆，盯着拉姆斯的时候，他眼中出现了他在一整季、甚至是整部剧里都没有出现过的目光：一种绝对的决心的目光，一个人知道了他想要什么，并且马上就要去取。</p>
+<p>这一季都是在讲琼恩的死。首先是他的肉体。然后是他的信仰，然后是他的意志。最后是他的希望。</p>
+<p>直到《私生子之战》的最后几分钟，琼恩终于活了回来。现在我们终于能够看到我们在他肉体复活时，希望看到的那种变化。</p>
+<p>琼恩一直都拥有冰。现在他有了火。</p>
 
       
     </div>
@@ -568,13 +438,9 @@ described in theorem \ref{thm:light}.
       
         <div class="post-tags">
           
-            <a href="/tags/sci-tech/" rel="tag"># sci-tech</a>
+            <a href="/tags/entertainment/" rel="tag"># entertainment</a>
           
-            <a href="/tags/notes/" rel="tag"># notes</a>
-          
-            <a href="/tags/coding/" rel="tag"># coding</a>
-          
-            <a href="/tags/LaTeX/" rel="tag"># LaTeX</a>
+            <a href="/tags/gameofthrones/" rel="tag"># gameofthrones</a>
           
         </div>
       
@@ -587,8 +453,8 @@ described in theorem \ref{thm:light}.
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/05/【翻译自Reddit】琼恩在《私生子之战》中的故事，并不是人们想的那样/" rel="next" title="【翻译自Reddit】琼恩在《私生子之战》中的故事，并不是人们想的那样">
-                <i class="fa fa-chevron-left"></i> 【翻译自Reddit】琼恩在《私生子之战》中的故事，并不是人们想的那样
+              <a href="/undefinedcjjwj65sw001ffc0gep2xi8ob" rel="next" title="创建这个博客">
+                <i class="fa fa-chevron-left"></i> 创建这个博客
               </a>
             
           </div>
@@ -597,8 +463,8 @@ described in theorem \ref{thm:light}.
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/11/13/win10增强工具/" rel="prev" title="win10增强工具">
-                win10增强工具 <i class="fa fa-chevron-right"></i>
+              <a href="/undefinedcjjwj65sm000yfc0gdhfyakd6" rel="prev" title="LaTeX笔记">
+                LaTeX笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -660,17 +526,8 @@ described in theorem \ref{thm:light}.
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -760,22 +617,6 @@ described in theorem \ref{thm:light}.
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#latex命令和代码结构"><span class="nav-number">2.</span> <span class="nav-text">\(\LaTeX\)命令和代码结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#latex命令和环境"><span class="nav-number">2.1.</span> <span class="nav-text">\(\LaTeX\)命令和环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#latex源代码结构"><span class="nav-number">2.2.</span> <span class="nav-text">\(\LaTeX\)源代码结构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用命令行操作latex"><span class="nav-number">3.</span> <span class="nav-text">用命令行操作\(\LaTeX\)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宏包和文档类"><span class="nav-number">4.</span> <span class="nav-text">宏包和文档类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#文档类"><span class="nav-number">4.1.</span> <span class="nav-text">文档类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#宏包"><span class="nav-number">4.2.</span> <span class="nav-text">宏包</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#latex用到的文件一览"><span class="nav-number">5.</span> <span class="nav-text">\(\LaTeX\)用到的文件一览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件的组织方式"><span class="nav-number">6.</span> <span class="nav-text">文件的组织方式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用latex排版文字"><span class="nav-number"></span> <span class="nav-text">用\(\LaTeX\)排版文字</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#排版中文"><span class="nav-number">1.</span> <span class="nav-text">排版中文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#latex中的字符"><span class="nav-number">2.</span> <span class="nav-text">\(\LaTeX\)中的字符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#空格和分段"><span class="nav-number">2.1.</span> <span class="nav-text">空格和分段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注释"><span class="nav-number">2.2.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#特殊字符"><span class="nav-number">2.3.</span> <span class="nav-text">特殊字符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#破除连字"><span class="nav-number">2.4.</span> <span class="nav-text">破除连字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#latex标志"><span class="nav-number">2.5.</span> <span class="nav-text">\(\LaTeX\)标志</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字强调"><span class="nav-number">3.</span> <span class="nav-text">文字强调</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#断行和断页"><span class="nav-number">4.</span> <span class="nav-text">断行和断页</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文档元素"><span class="nav-number"></span> <span class="nav-text">文档元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#排版数学公式"><span class="nav-number"></span> <span class="nav-text">排版数学公式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#公式排版基础"><span class="nav-number">1.</span> <span class="nav-text">公式排版基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数学模式和文本"><span class="nav-number">1.1.</span> <span class="nav-text">数学模式和文本</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数学符号"><span class="nav-number">2.</span> <span class="nav-text">数学符号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多行公式"><span class="nav-number">3.</span> <span class="nav-text">多行公式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#长公式折行"><span class="nav-number">3.1.</span> <span class="nav-text">长公式折行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多行公式-1"><span class="nav-number">3.2.</span> <span class="nav-text">多行公式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#公用编号的多行公式"><span class="nav-number">3.3.</span> <span class="nav-text">公用编号的多行公式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组和矩阵"><span class="nav-number">4.</span> <span class="nav-text">数组和矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#公式中的间距"><span class="nav-number">5.</span> <span class="nav-text">公式中的间距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数学符号的字体控制"><span class="nav-number">6.</span> <span class="nav-text">数学符号的字体控制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定理环境"><span class="nav-number">7.</span> <span class="nav-text">定理环境</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#证明环境和证毕符号"><span class="nav-number">7.1.</span> <span class="nav-text">证明环境和证毕符号</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#符号表"><span class="nav-number">8.</span> <span class="nav-text">符号表</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -1418,6 +1259,21 @@ described in theorem \ref{thm:light}.
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
   

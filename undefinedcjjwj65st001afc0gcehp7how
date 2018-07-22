@@ -87,7 +87,7 @@
 <meta name="keywords" content="sci-tech,LPT">
 <meta property="og:type" content="article">
 <meta property="og:title" content="win10增强工具">
-<meta property="og:url" content="https://imvictorcheng.github.io/2016/11/13/win10增强工具/index.html">
+<meta property="og:url" content="https://imvictorcheng.github.io/undefinedcjjwj65st001afc0gcehp7how">
 <meta property="og:site_name" content="RootSays">
 <meta property="og:description" content="本文持续更新 介绍几个我自己搜集到的小工具，或者隐藏的使用方法。">
 <meta property="og:locale" content="Chinese/English/Physics/Math/Python">
@@ -126,7 +126,7 @@
 
 
 
-  <link rel="canonical" href="https://imvictorcheng.github.io/2016/11/13/win10增强工具/"/>
+  <link rel="canonical" href="https://imvictorcheng.github.io/undefinedcjjwj65st001afc0gcehp7how"/>
 
 
 
@@ -302,7 +302,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://imvictorcheng.github.io/2016/11/13/win10增强工具/">
+    <link itemprop="mainEntityOfPage" href="https://imvictorcheng.github.io/undefinedcjjwj65st001afc0gcehp7how">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Victor Cheng">
@@ -350,8 +350,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/11/13/win10增强工具/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2016/11/13/win10增强工具/" itemprop="commentCount"></span>
+                <a href="/undefinedcjjwj65st001afc0gcehp7how#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/undefinedcjjwj65st001afc0gcehp7how" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -359,7 +359,7 @@
 
           
           
-             <span id="/2016/11/13/win10增强工具/" class="leancloud_visitors" data-flag-title="win10增强工具">
+             <span id="/undefinedcjjwj65st001afc0gcehp7how" class="leancloud_visitors" data-flag-title="win10增强工具">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -445,7 +445,7 @@ return</code></pre>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/10/LaTeX笔记/" rel="next" title="LaTeX笔记">
+              <a href="/undefinedcjjwj65sm000yfc0gdhfyakd6" rel="next" title="LaTeX笔记">
                 <i class="fa fa-chevron-left"></i> LaTeX笔记
               </a>
             
@@ -455,7 +455,7 @@ return</code></pre>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/12/04/google-earth-32年卫星图/" rel="prev" title="google earth 32年卫星图">
+              <a href="/undefinedcjjwj65sp0013fc0gpvxpct5i" rel="prev" title="google earth 32年卫星图">
                 google earth 32年卫星图 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -1276,6 +1276,21 @@ return</code></pre>
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
   

@@ -87,7 +87,7 @@
 <meta name="keywords" content="sci-tech,coding">
 <meta property="og:type" content="article">
 <meta property="og:title" content="创建这个博客">
-<meta property="og:url" content="https://imvictorcheng.github.io/2016/11/05/创建这个博客/index.html">
+<meta property="og:url" content="https://imvictorcheng.github.io/undefinedcjjwj65sw001ffc0gep2xi8ob">
 <meta property="og:site_name" content="RootSays">
 <meta property="og:description" content="本文内容持续更新 记一下创建博客的过程，以方便以后重复，并且可以拿给别人装逼.. 主要内容参考自 5分钟搭建免费个人博客。">
 <meta property="og:locale" content="Chinese/English/Physics/Math/Python">
@@ -124,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="https://imvictorcheng.github.io/2016/11/05/创建这个博客/"/>
+  <link rel="canonical" href="https://imvictorcheng.github.io/undefinedcjjwj65sw001ffc0gep2xi8ob"/>
 
 
 
@@ -300,7 +300,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://imvictorcheng.github.io/2016/11/05/创建这个博客/">
+    <link itemprop="mainEntityOfPage" href="https://imvictorcheng.github.io/undefinedcjjwj65sw001ffc0gep2xi8ob">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Victor Cheng">
@@ -348,8 +348,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/11/05/创建这个博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2016/11/05/创建这个博客/" itemprop="commentCount"></span>
+                <a href="/undefinedcjjwj65sw001ffc0gep2xi8ob#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/undefinedcjjwj65sw001ffc0gep2xi8ob" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -357,7 +357,7 @@
 
           
           
-             <span id="/2016/11/05/创建这个博客/" class="leancloud_visitors" data-flag-title="创建这个博客">
+             <span id="/undefinedcjjwj65sw001ffc0gep2xi8ob" class="leancloud_visitors" data-flag-title="创建这个博客">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -509,7 +509,7 @@ Enter same passphrase again: [Type passphrase again]</code></pre>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/11/05/【翻译自Reddit】琼恩在《私生子之战》中的故事，并不是人们想的那样/" rel="prev" title="【翻译自Reddit】琼恩在《私生子之战》中的故事，并不是人们想的那样">
+              <a href="/undefinedcjjwj65ss0018fc0gjtstjyta" rel="prev" title="【翻译自Reddit】琼恩在《私生子之战》中的故事，并不是人们想的那样">
                 【翻译自Reddit】琼恩在《私生子之战》中的故事，并不是人们想的那样 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -1330,6 +1330,21 @@ Enter same passphrase again: [Type passphrase again]</code></pre>
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
   
