@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="sci-tech,phy," />
+  <meta name="keywords" content="sci-tech,LPT," />
 
 
 
@@ -83,20 +83,20 @@
 
 
 
-<meta name="description" content="下午的时候高中同学问我的。这个问题看上去很Trivial，但实际上……好吧其实也不算复杂，不过花了我一下午的时间才搞清楚，所以还是记一下。">
-<meta name="keywords" content="sci-tech,phy">
+<meta name="description" content="本文持续更新 介绍几个我自己搜集到的小工具，或者隐藏的使用方法。">
+<meta name="keywords" content="sci-tech,LPT">
 <meta property="og:type" content="article">
-<meta property="og:title" content="驻波法测声速">
-<meta property="og:url" content="https://imvictorcheng.github.io/undefinedcjjwj65sx001ifc0gpvnvmied">
+<meta property="og:title" content="win10增强工具">
+<meta property="og:url" content="https://imvictorcheng.github.io/win10增强工具-cjjwj65st001afc0gcehp7how">
 <meta property="og:site_name" content="RootSays">
-<meta property="og:description" content="下午的时候高中同学问我的。这个问题看上去很Trivial，但实际上……好吧其实也不算复杂，不过花了我一下午的时间才搞清楚，所以还是记一下。">
+<meta property="og:description" content="本文持续更新 介绍几个我自己搜集到的小工具，或者隐藏的使用方法。">
 <meta property="og:locale" content="Chinese/English/Physics/Math/Python">
-<meta property="og:image" content="https://imvictorcheng.github.io/2016/12/17/%E9%A9%BB%E6%B3%A2%E6%B3%95%E6%B5%8B%E5%A3%B0%E9%80%9F/%E5%8E%9F%E7%90%86%E5%9B%BE.png">
-<meta property="og:updated_time" content="2016-12-18T02:28:05.000Z">
+<meta property="og:image" content="https://imvictorcheng.github.io/2016/11/13/win10增强工具/例1.png">
+<meta property="og:updated_time" content="2016-11-14T04:45:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="驻波法测声速">
-<meta name="twitter:description" content="下午的时候高中同学问我的。这个问题看上去很Trivial，但实际上……好吧其实也不算复杂，不过花了我一下午的时间才搞清楚，所以还是记一下。">
-<meta name="twitter:image" content="https://imvictorcheng.github.io/2016/12/17/%E9%A9%BB%E6%B3%A2%E6%B3%95%E6%B5%8B%E5%A3%B0%E9%80%9F/%E5%8E%9F%E7%90%86%E5%9B%BE.png">
+<meta name="twitter:title" content="win10增强工具">
+<meta name="twitter:description" content="本文持续更新 介绍几个我自己搜集到的小工具，或者隐藏的使用方法。">
+<meta name="twitter:image" content="https://imvictorcheng.github.io/2016/11/13/win10增强工具/例1.png">
 
 
 
@@ -126,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="https://imvictorcheng.github.io/undefinedcjjwj65sx001ifc0gpvnvmied"/>
+  <link rel="canonical" href="https://imvictorcheng.github.io/win10增强工具-cjjwj65st001afc0gcehp7how"/>
 
 
 
 
 
-  <title>驻波法测声速 | RootSays</title>
+  <title>win10增强工具 | RootSays</title>
   
 
 
@@ -302,7 +302,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://imvictorcheng.github.io/undefinedcjjwj65sx001ifc0gpvnvmied">
+    <link itemprop="mainEntityOfPage" href="https://imvictorcheng.github.io/win10增强工具-cjjwj65st001afc0gcehp7how">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Victor Cheng">
@@ -319,7 +319,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">驻波法测声速</h1>
+          <h1 class="post-title" itemprop="name headline">win10增强工具</h1>
         
 
         <div class="post-meta">
@@ -331,8 +331,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-17T21:33:48+08:00">
-                2016-12-17
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-13T12:24:29+08:00">
+                2016-11-13
               </time>
             
 
@@ -350,8 +350,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/undefinedcjjwj65sx001ifc0gpvnvmied#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/undefinedcjjwj65sx001ifc0gpvnvmied" itemprop="commentCount"></span>
+                <a href="/win10增强工具-cjjwj65st001afc0gcehp7how#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/win10增强工具-cjjwj65st001afc0gcehp7how" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -359,7 +359,7 @@
 
           
           
-             <span id="/undefinedcjjwj65sx001ifc0gpvnvmied" class="leancloud_visitors" data-flag-title="驻波法测声速">
+             <span id="/win10增强工具-cjjwj65st001afc0gcehp7how" class="leancloud_visitors" data-flag-title="win10增强工具">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -390,26 +390,29 @@
       
 
       
-        <p>下午的时候高中同学问我的。这个问题看上去很Trivial，但实际上……好吧其实也不算复杂，不过花了我一下午的时间才搞清楚，所以还是记一下。</p>
-<a id="more"></a>
-<p>实验装置如图所示：</p>
-<figure>
-<img src="https://imvictorcheng.github.io/2016/12/17/%E9%A9%BB%E6%B3%A2%E6%B3%95%E6%B5%8B%E5%A3%B0%E9%80%9F/%E5%8E%9F%E7%90%86%E5%9B%BE.png" alt="原理图"><figcaption>原理图</figcaption>
-</figure>
-<p>一般的大物实验报告上给出的实验原理：</p>
-<p>S1发出确定频率的信号，S2处发生反射，入射波与反射波干涉形成驻波，相邻波腹之间的距离为<span class="math inline">\(\frac{\lambda}{2}\)</span>，所以将S2处的信号接入示波器，并移动S2，当接收到的信号幅度每发生一次周期变化，表明S2移动了<span class="math inline">\(\frac{\lambda}{2}\)</span>。</p>
-<p>但是这其实是想当然的分析结果，真实计算出来并非如此：</p>
-<p>设S1和S2之间的距离为<span class="math inline">\(l\)</span>，则入射波为： <span class="math display">\[y=A\cos(\omega t-kx)\]</span> 反射波为： <span class="math display">\[y=A\cos(\omega t-kl-k(l-x))=A\cos(\omega t+kx-2kl)\]</span> 合成后的驻波的波函数： <span class="math display">\[y=2A\cos(kx-kl)\cos(\omega t-kl)\]</span> 在<span class="math inline">\(x=l\)</span>处的振幅为<span class="math inline">\(2A\)</span>，即S2处始终为波腹。其实这个结果很好理解，S2移动时<span class="math inline">\(l\)</span>的值变化，驻波本身也发生了变化。</p>
-<p>那么是哪地方错了呢？实际上，S2处的反射波传播到S1处又会发生反射，再传播到S2处再反射……S2处应该是无穷多“级”的反射波的合成，经过简单的归纳，每一级反射波的波函数应为：（<span class="math inline">\(-\)</span>号上标表示右行波，<span class="math inline">\(+\)</span>号上标表示左行波） \begin{split} y_n<sup>-&amp;=A(t-kx-nkl)\ y_n</sup>+&amp;=A(t+kx-(n+1)kl) \end{split} 代入<span class="math inline">\(x=l\)</span>，得到S2处的合振动应为一个无穷级数： <span class="math display">\[y=\sum_{n=0}^\infty2A\cos(\omega t-(2n+1)kl)\]</span> 很遗憾这个级数不收敛。</p>
-<p>这个结果依然很好理解：毕竟被求和的数列都不趋近于0……</p>
-<p>我们马上想到了解决方案：考虑反射时的衰减，自然地假设每反射一次振幅衰减为原来的<span class="math inline">\(p\)</span>。（这种说法好奇怪，意会即可..）</p>
-修正后的合振动应为： <span class="math display">\[y=(1+p)A\sum_{n=0}^\infty p^{2n}\cos(\omega t-(2n+1)kl)\]</span> 用复变函数的方法求这个级数： \begin{split} &amp;<em>{n=0}<sup>{}p</sup>{2n}(t-(2n+1)kl)\ =&amp;</em>{n=0}<sup>{}(p</sup>{2n}e<sup>{i(t-(2n+1)kl)})\ =&amp;<em>{n=0}<sup>{}(p</sup>{2n}e<sup>{i(t-kl)}e</sup>{i(-2nkl)})\ =&amp;(e^{i(t-kl)}</em>{n=0}</sup>{}(p<sup>2e</sup>{-i2kl})<sup>n)\ =&amp;(e</sup>{i(t-kl)}) \ =&amp; \end{split} 即得
-<span class="math display">\[\begin{split}
-y&amp;=(1+p)A\frac{\cos(\omega t-kl)-p^2\cos(\omega t+kl)}{1-2p^2\cos(2kl)+p^4}\\
-&amp;=(1+p)A\frac{\sqrt{1+p^4-2p^2\cos(2kl)}}{1-2p^2\cos(2kl)+p^4}\cos(\omega t-\varphi)
-\end{split}\]</span>
-<p>振幅为 <span class="math display">\[(1+p)A\frac{\sqrt{1+p^4-2p^2\cos(2kl)}}{1-2p^2\cos(2kl)+p^4}\]</span> 振幅的周期为<span class="math inline">\(\frac{\lambda}{2}\)</span>。殊途同归。</p>
-<p>（本实验还有一个“李萨如图形”法，则是完全不考虑反射，或认为<span class="math inline">\(p\approx0\)</span>。）</p>
+        <!-- turl = \2016\11\13\win10增强工具 -->
+<p><strong>本文持续更新</strong></p>
+<p>介绍几个我自己搜集到的小工具，或者隐藏的使用方法。 <a id="more"></a></p>
+<h2 id="自定义快捷键">自定义快捷键</h2>
+<p>win10自带了不少快捷键，除了<kbd>Ctrl+C</kbd>这些最最最基础的操作系统快捷键以外，还有一些windows独有的，不太广为流传的快捷键，大多涉及到windows徽标键（win键），可以直接参考<a href="http://www.jb51.net/os/win10/226560.html" target="_blank" rel="noopener">这个网页</a>，这里简单列举一下我常用的： - <kbd>win+R</kbd>打开“运行”窗口 - <kbd>win+I</kbd>打开Windows设置（非控制面板） - <kbd>win+A</kbd>打开操作中心 - <kbd>win+S</kbd>打开小娜 - <kbd>win+D</kbd>显示桌面/恢复桌面 - <kbd>win+G</kbd>打开游戏录制工具栏 这应该是一个经常被忽略的工具。 这个工具栏本意是让你录制游戏视频或者截图，但其实可以在任何程序下运行，所以可以用来： + 窗口截屏，这同PrtSc键的区别是只截取当前窗口内的内容，而不包括任务栏等等，例： <img src="\2016\11\13\win10增强工具\例1.png" alt="例1"> + 录制操作，比方说你想远程教别人怎么安装mathematica，可以录制一下你的操作过程。（不过这个我没试过，只是听说可以实现。） + 视频截取，这个一目了然，不过注意全屏和隐藏鼠标指针。 图片或者视频自动保存在<code>此电脑-视频-捕获</code>这个文件夹里。如果你想更换默认文件夹，只需把Captures文件夹剪切到目标位置就好了。 - <kbd>win+L</kbd>锁定。如果你的电脑上没有专门的锁定按钮的话，这个很方便。 - <kbd>Alt+Tab</kbd>切换窗口。如果你还不知道，或者你只是见过别人做过这么酷的事情却不知道怎么做到的话（比方说以前的我）。按下这个快捷键后是可以用上下左右键或者鼠标来选择窗口的。 - <kbd>win+Tab</kbd>任务视图，同上一个的区别是松开键盘不会消失。可以用上下左右键和鼠标选择。在win10中还可以选择和创建虚拟桌面。 - <kbd>win+Ctrl+D</kbd>创建新的虚拟桌面。 - <kbd>win+Ctrl+方向键</kbd>切换虚拟桌面。 - <kbd>win+方向键</kbd>分屏和最大最小化。 - <kbd>Alt+F4</kbd>关闭窗口，所有窗口都关闭后会打开关机选项。（我所知的最快捷的关机方法） - <kbd>Ctrl+Alt+Del</kbd>广为流传的打开任务管理器的快捷键，但在win10还需要一步才能进入任务管理器，所以我一般用右键任务栏的方法找任务管理器。 - 在窗口内按<kbd>Alt</kbd>可以选择菜单栏，不太常用。 - <kbd>Alt+上</kbd>在任务管理器可以向上。</p>
+<p>注意到，win10中有一些快捷键是重复的，比方说<kbd>win+Q</kbd>和<kbd>win+S</kbd>；还有些键的组合没有定义，比方说<kbd>win+Y</kbd>；还有些快捷键几乎用不到，比方说<kbd>win+U</kbd>打开轻松访问中心。我们可以把这些组合键改成自定义的快捷键。使用<a href="http://ahkscript.org/" target="_blank" rel="noopener">AutoHotKey</a>这个软件，在官网正常下载安装。</p>
+<p>安装完成之后，直接在桌面新建一个AutoHotKey Script文件，右键选择Edit Script，正常会用记事本打开，然后就可以配置了。AutoHotKey的功能很强大，详细可以参考<a href="http://ahkcn.sourceforge.net/docs/AutoHotkey.htm" target="_blank" rel="noopener">在线的帮助文件</a>，目前我只用了运行程序的功能。</p>
+<pre><code>#f::
+    run, F:\Program Files\Everything\Everything.exe
+return</code></pre>
+<p>#代表<kbd>win</kbd>键，#f表示<kbd>win+F</kbd>，后面两个冒号表示这个是快捷键。（与AutoHotKey的缩写功能区分。）可以在一个脚本里写好几个快捷键，接着写就行了。</p>
+<p>把一些常用的软件直接设成快捷键，可以解放任务栏。</p>
+<p>写好脚本后，可以设置自启动，将将该脚本生成一个“快捷方式”，然后将此快捷方式放置到程序自启动文件夹之下即可。自启文件夹一般是</p>
+<pre><code>C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp</code></pre>
+<h2 id="本地搜索">本地搜索</h2>
+<p>windows自己的资源管理器的搜索功能实在是太太太差劲了……也不知道为什么。下面介绍一个软件叫<a href="https://www.voidtools.com/" target="_blank" rel="noopener">Everything</a>。</p>
+<p>1.4.1Beta版已经支持简体中文了，所以可以直接下载最新版。</p>
+<p>搜索框支持正则表达式。如果希望在某一特定文件夹下搜索，直接把路径粘贴在搜索框内，然后空格搜索即可。</p>
+<p>Everything不支持搜索文件内容。</p>
+<p>由于Everything每次启动都需要花一定时间建立索引，所以建议设置开机自启：直接打开任务管理器，选择“启动”选项卡，把Everything的状态改为启用。同时建议用上面的AutoHotKey设置一个搜索快捷键，就可以完美代替资源管理器的搜索功能了。</p>
+<h2 id="透明任务栏">透明任务栏</h2>
+<p><a href="http://startisback.com/" target="_blank" rel="noopener">StartIsBack</a>。这个软件的主要功能是恢复win8以前的开始菜单，不过我还是很喜欢win10带metro磁贴的开始菜单的，所以只用它的透明任务栏功能。</p>
+<p>在配置的“外观”选项卡，勾选使用自定义任务栏颜色，把右边的不透明度调到0。点击“切换”选项卡，把第一项改成“显示开始屏幕”，把第二项改成什么也不做，即可。</p>
 
       
     </div>
@@ -429,7 +432,7 @@ y&amp;=(1+p)A\frac{\cos(\omega t-kl)-p^2\cos(\omega t+kl)}{1-2p^2\cos(2kl)+p^4}\
           
             <a href="/tags/sci-tech/" rel="tag"># sci-tech</a>
           
-            <a href="/tags/phy/" rel="tag"># phy</a>
+            <a href="/tags/LPT/" rel="tag"># LPT</a>
           
         </div>
       
@@ -442,8 +445,8 @@ y&amp;=(1+p)A\frac{\cos(\omega t-kl)-p^2\cos(\omega t+kl)}{1-2p^2\cos(2kl)+p^4}\
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/undefinedcjjwj65sv001dfc0g48hwnau1" rel="next" title="使用shadowsocks科学上网">
-                <i class="fa fa-chevron-left"></i> 使用shadowsocks科学上网
+              <a href="/LaTeX笔记-cjjwj65sm000yfc0gdhfyakd6" rel="next" title="LaTeX笔记">
+                <i class="fa fa-chevron-left"></i> LaTeX笔记
               </a>
             
           </div>
@@ -452,8 +455,8 @@ y&amp;=(1+p)A\frac{\cos(\omega t-kl)-p^2\cos(\omega t+kl)}{1-2p^2\cos(2kl)+p^4}\
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/undefinedcjjwj65so0011fc0g1d91xn7n" rel="prev" title="2016年有哪些值得一看的英剧和美剧？">
-                2016年有哪些值得一看的英剧和美剧？ <i class="fa fa-chevron-right"></i>
+              <a href="/google-earth-32年卫星图-cjjwj65sp0013fc0gpvxpct5i" rel="prev" title="google earth 32年卫星图">
+                google earth 32年卫星图 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -515,8 +518,17 @@ y&amp;=(1+p)A\frac{\cos(\omega t-kl)-p^2\cos(\omega t+kl)}{1-2p^2\cos(2kl)+p^4}\
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -606,6 +618,22 @@ y&amp;=(1+p)A\frac{\cos(\omega t-kl)-p^2\cos(\omega t+kl)}{1-2p^2\cos(2kl)+p^4}\
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义快捷键"><span class="nav-number">1.</span> <span class="nav-text">自定义快捷键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地搜索"><span class="nav-number">2.</span> <span class="nav-text">本地搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#透明任务栏"><span class="nav-number">3.</span> <span class="nav-text">透明任务栏</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
