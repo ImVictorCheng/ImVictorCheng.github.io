@@ -83,18 +83,18 @@
 
 
 
-<meta name="description" content="本文内容持续更新记一下创建博客的过程，以方便以后重复，并且可以拿给别人装逼..主要内容参考自 5分钟搭建免费个人博客。">
+<meta name="description" content="本文内容持续更新 记一下创建博客的过程，以方便以后重复，并且可以拿给别人装逼.. 主要内容参考自 5分钟搭建免费个人博客。">
 <meta name="keywords" content="sci-tech,coding">
 <meta property="og:type" content="article">
 <meta property="og:title" content="创建这个博客">
 <meta property="og:url" content="https://imvictorcheng.github.io/创建这个博客/index.html">
 <meta property="og:site_name" content="RootSays">
-<meta property="og:description" content="本文内容持续更新记一下创建博客的过程，以方便以后重复，并且可以拿给别人装逼..主要内容参考自 5分钟搭建免费个人博客。">
+<meta property="og:description" content="本文内容持续更新 记一下创建博客的过程，以方便以后重复，并且可以拿给别人装逼.. 主要内容参考自 5分钟搭建免费个人博客。">
 <meta property="og:locale" content="Chinese/English/Physics/Math/Python">
 <meta property="og:updated_time" content="2018-07-22T06:00:17.146Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="创建这个博客">
-<meta name="twitter:description" content="本文内容持续更新记一下创建博客的过程，以方便以后重复，并且可以拿给别人装逼..主要内容参考自 5分钟搭建免费个人博客。">
+<meta name="twitter:description" content="本文内容持续更新 记一下创建博客的过程，以方便以后重复，并且可以拿给别人装逼.. 主要内容参考自 5分钟搭建免费个人博客。">
 
 
 
@@ -388,88 +388,86 @@
       
 
       
-        <p><strong>本文内容持续更新</strong><br>记一下创建博客的过程，以方便以后重复，并且可以拿给别人装逼..<br>主要内容参考自 <a href="http://www.jianshu.com/p/4eaddcbe4d12" target="_blank" rel="noopener">5分钟搭建免费个人博客</a>。<br><a id="more"></a></p>
-<h2 id="创建GitHub仓库"><a href="#创建GitHub仓库" class="headerlink" title="创建GitHub仓库"></a>创建GitHub仓库</h2><p>注册GitHub账号，创建一个仓库，要求Respository name的username与Owner一致。</p>
-<h2 id="安装必要的工具"><a href="#安装必要的工具" class="headerlink" title="安装必要的工具"></a>安装必要的工具</h2><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>可以直接到<a href="https://desktop.github.com/" target="_blank" rel="noopener">https://desktop.github.com/</a>下载安装GitHub，但是要添加环境变量：默认路径是</p>
-<pre><code>C:\Users\cheng\AppData\Local\GitHub\PortableGit_xxx\mingw32\bin    
-</code></pre><p>和</p>
-<pre><code>C:\Users\cheng\AppData\Local\GitHub\PortableGit_xxx\mingw32\libexec\git-core
-</code></pre><p>添加环境变量的方法：此电脑-属性-高级系统设置-环境变量-编辑PATH-新建，然后将路径粘贴即可。<br>还需要安装Git。<br>下载Git：<a href="http://msysgit.github.com/" target="_blank" rel="noopener">http://msysgit.github.com/</a><br>需要将</p>
-<pre><code>F:\Program Files\Git\bin
-</code></pre><p>和</p>
-<pre><code>F:\Program Files\Git\mingw64\libexec\git-core
-</code></pre><p>添加至环境变量。</p>
-<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">官网</a>正常下载安装即可。</p>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>以上所有都安装完成之后再安装Hexo。直接在命令行里输入</p>
-<pre><code>$ npm install hexo-cli -g
-</code></pre><h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><p>建站的工作可以直接参考hexo的<a href="https://hexo.io/zh-cn/docs/setup.html" target="_blank" rel="noopener">官方教程</a>。建站后进入建立的文件夹。</p>
-<h3 id="添加主题"><a href="#添加主题" class="headerlink" title="添加主题"></a>添加主题</h3><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">官网</a>有丰富的主题选择。挑选喜欢的主题后，点击进入主题的<strong>GitHub主页</strong>（这里以next主题为例，一般主题的GitHub主页会有安装和使用说明），复制主页地址<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a>，在命令行里输入</p>
-<pre><code>$ git clone https://github.com/iissnan/hexo-theme-next themes/next
-</code></pre><p>然后打开<em>站点配置文件</em>，即主文件夹下的_config.yml，找到theme字段，将其改成next。</p>
-<h3 id="写作和更新"><a href="#写作和更新" class="headerlink" title="写作和更新"></a>写作和更新</h3><p>创建文章：</p>
-<pre><code>$ hexo new [layout] &lt;title&gt;
-</code></pre><p>生成、部署：</p>
-<pre><code>$ hexo clean &amp;&amp; hexo generate -d
-</code></pre><p>clean是清除缓存的命令，generate是生成，-d表示同时部署（deploy）。<br>可以直接将命令行保存为cmd文件，直接使用。<br><strong>注意在powershell里不能使用&amp;&amp;，需要将命令分成两步：</strong></p>
+        <p><strong>本文内容持续更新</strong> 记一下创建博客的过程，以方便以后重复，并且可以拿给别人装逼.. 主要内容参考自 <a href="http://www.jianshu.com/p/4eaddcbe4d12" target="_blank" rel="noopener">5分钟搭建免费个人博客</a>。 <a id="more"></a></p>
+<h2 id="创建github仓库">创建GitHub仓库</h2>
+<p>注册GitHub账号，创建一个仓库，要求Respository name的username与Owner一致。</p>
+<h2 id="安装必要的工具">安装必要的工具</h2>
+<h3 id="安装git">安装Git</h3>
+<p>可以直接到<a href="https://desktop.github.com/" class="uri" target="_blank" rel="noopener">https://desktop.github.com/</a>下载安装GitHub，但是要添加环境变量：默认路径是</p>
+<pre><code>C:\Users\cheng\AppData\Local\GitHub\PortableGit_xxx\mingw32\bin    </code></pre>
+<p>和</p>
+<pre><code>C:\Users\cheng\AppData\Local\GitHub\PortableGit_xxx\mingw32\libexec\git-core</code></pre>
+<p>添加环境变量的方法：此电脑-属性-高级系统设置-环境变量-编辑PATH-新建，然后将路径粘贴即可。 还需要安装Git。 下载Git：<a href="http://msysgit.github.com/" class="uri" target="_blank" rel="noopener">http://msysgit.github.com/</a> 需要将</p>
+<pre><code>F:\Program Files\Git\bin</code></pre>
+<p>和</p>
+<pre><code>F:\Program Files\Git\mingw64\libexec\git-core</code></pre>
+<p>添加至环境变量。</p>
+<h3 id="安装node.js">安装Node.js</h3>
+<p><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">官网</a>正常下载安装即可。</p>
+<h3 id="安装hexo">安装Hexo</h3>
+<p>以上所有都安装完成之后再安装Hexo。直接在命令行里输入</p>
+<pre><code>$ npm install hexo-cli -g</code></pre>
+<h2 id="建站">建站</h2>
+<p>建站的工作可以直接参考hexo的<a href="https://hexo.io/zh-cn/docs/setup.html" target="_blank" rel="noopener">官方教程</a>。建站后进入建立的文件夹。</p>
+<h3 id="添加主题">添加主题</h3>
+<p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">官网</a>有丰富的主题选择。挑选喜欢的主题后，点击进入主题的<strong>GitHub主页</strong>（这里以next主题为例，一般主题的GitHub主页会有安装和使用说明），复制主页地址<a href="https://github.com/iissnan/hexo-theme-next" class="uri" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a>，在命令行里输入</p>
+<pre><code>$ git clone https://github.com/iissnan/hexo-theme-next themes/next</code></pre>
+<p>然后打开_站点配置文件_，即主文件夹下的_config.yml，找到theme字段，将其改成next。</p>
+<h3 id="写作和更新">写作和更新</h3>
+<p>创建文章：</p>
+<pre><code>$ hexo new [layout] &lt;title&gt;</code></pre>
+<p>生成、部署：</p>
+<pre><code>$ hexo clean &amp;&amp; hexo generate -d</code></pre>
+<p>clean是清除缓存的命令，generate是生成，-d表示同时部署（deploy）。 可以直接将命令行保存为cmd文件，直接使用。 <strong>注意在powershell里不能使用&amp;&amp;，需要将命令分成两步：</strong></p>
 <pre><code>$ hexo clean
-$ hexo generate -d
-</code></pre><p>同样具体工作可以看官方教程。</p>
-<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><ul>
+$ hexo generate -d</code></pre>
+<p>同样具体工作可以看官方教程。</p>
+<h3 id="tips">Tips</h3>
+<ul>
 <li><p>进行进行一定的更新之后，可以先使用命令在本地测试：</p>
-<pre><code>$ hexo server
-</code></pre><p>输入命令后打开<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>测试站点。</p>
-</li>
-<li><p>自动保存用户名和密码：（参考自<a href="http://blog.chengjianhua.cn/2016/05/14/hexo-deploy-without-pw-by-ssh/" target="_blank" rel="noopener">走啊走</a>）</p>
-<ol>
+<pre><code>$ hexo server</code></pre>
+输入命令后打开<a href="http://localhost:4000" class="uri" target="_blank" rel="noopener">http://localhost:4000</a>测试站点。</li>
+<li>自动保存用户名和密码：（参考自<a href="http://blog.chengjianhua.cn/2016/05/14/hexo-deploy-without-pw-by-ssh/" target="_blank" rel="noopener">走啊走</a>）
+<ol type="1">
 <li><p>直接右键鼠标任意位置打开 Git Bash Here，然后输入以下命令：</p>
-<pre><code>$ ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
-</code></pre><p>使用默认的文件名直接enter，接下来显示如下：</p>
+<pre><code>$ ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</code></pre>
+<p>使用默认的文件名直接enter，接下来显示如下：</p>
 <pre><code>Enter passphrase (empty for no passphrase): [Type a passphrase]
-Enter same passphrase again: [Type passphrase again]
-</code></pre><p>按提示输入密码即可，不添加密码可以直接enter。</p>
-</li>
-<li><p>设置GitHub项目的Deploy keys：<br> 到GitHub页面，在首页点击Settings-Deploy keys-Add deploy key，Title随便起，然后将生成的id_rsa.pub中的内容全选复制到key中，勾选最下面的Allow write access，点击Add key。<br> 接下来测试配置是否成功：</p>
-<pre><code>$ ssh -T git@github.com
-</code></pre><p> 如果出现以下内容即表示配置完成并且成功：</p>
-<pre><code>Hi username! You&apos;ve successfully authenticated, but GitHub does not provide shell access.
-</code></pre></li>
-<li><p>设置博客的提交地址：<br> 回到站点配置文件，在最下面的deploy属性如此修改：</p>
-<pre><code>deploy:
-    type: git
-    repo: git@github.com:username/username.github.io.git
-    branch: master
-</code></pre><p> 即可。</p>
-</li>
-</ol>
-</li>
+Enter same passphrase again: [Type passphrase again]</code></pre>
+按提示输入密码即可，不添加密码可以直接enter。</li>
+<li><p>设置GitHub项目的Deploy keys： 到GitHub页面，在首页点击Settings-Deploy keys-Add deploy key，Title随便起，然后将生成的id_rsa.pub中的内容全选复制到key中，勾选最下面的Allow write access，点击Add key。 接下来测试配置是否成功：</p>
+<pre><code> $ ssh -T git@github.com</code></pre>
+<p>如果出现以下内容即表示配置完成并且成功：</p>
+<pre><code> Hi username! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code></pre></li>
+<li><p>设置博客的提交地址： 回到站点配置文件，在最下面的deploy属性如此修改：</p>
+<pre><code> deploy:
+     type: git
+     repo: git@github.com:username/username.github.io.git
+     branch: master</code></pre>
+即可。</li>
+</ol></li>
 <li><p>使用MathJax：hexo自带的markdown渲染器不能渲染MathJax。可以改用pandox-markdown。首先在电脑上安装pandox，然后进入站点根目录，执行命令：</p>
-<pre><code>npm uninstall hexo-renderer-marked --save
-npm install hexo-renderer-pandoc --save
-</code></pre><p>  先卸载旧的，再安装新的。</p>
-</li>
-<li><p>各种元素前后要加空行。</p>
-</li>
+<pre><code>  npm uninstall hexo-renderer-marked --save
+  npm install hexo-renderer-pandoc --save</code></pre>
+<p>先卸载旧的，再安装新的。</p></li>
+<li><p>各种元素前后要加空行。</p></li>
 </ul>
-<h2 id="添加应用和主题设置"><a href="#添加应用和主题设置" class="headerlink" title="添加应用和主题设置"></a>添加应用和主题设置</h2><ul>
+<h2 id="添加应用和主题设置">添加应用和主题设置</h2>
+<ul>
 <li><p>多说、百度统计、google分析、Local Search、MathJax<a href="http://theme-next.iissnan.com/third-party-services.html#local-search" target="_blank" rel="noopener">见此</a></p>
 <p>对于mathjax，要改用pandoc渲染才能达到良好的效果。运行</p>
-<pre><code>npm install hexo-renderer-pandoc --save
-</code></pre></li>
-<li><p>使用LeanCloud统计文章阅读量<a href="http://oyjt.github.io/2016/04/09/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD/" target="_blank" rel="noopener">见此</a></p>
-</li>
-<li><p>设置rss、标签、分类、字体、代码主题、社交链接、打赏、友链、微信公众号<a href="http://theme-next.iissnan.com/theme-settings.html#fonts-customization" target="_blank" rel="noopener">见此</a></p>
-</li>
-<li><p>显示摘要并添加阅读全文按钮<a href="http://theme-next.iissnan.com/faqs.html" target="_blank" rel="noopener">见此</a></p>
-</li>
-<li><p>网页图标设置：将图片转为ico文件，重命名为favicon.ico，放到站点文件夹下的source文件夹下，清空浏览器缓存，重新加载网页</p>
-</li>
+<pre><code>npm install hexo-renderer-pandoc --save</code></pre></li>
+<li><p>使用LeanCloud统计文章阅读量<a href="http://oyjt.github.io/2016/04/09/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD/" target="_blank" rel="noopener">见此</a></p></li>
+<li><p>设置rss、标签、分类、字体、代码主题、社交链接、打赏、友链、微信公众号<a href="http://theme-next.iissnan.com/theme-settings.html#fonts-customization" target="_blank" rel="noopener">见此</a></p></li>
+<li><p>显示摘要并添加阅读全文按钮<a href="http://theme-next.iissnan.com/faqs.html" target="_blank" rel="noopener">见此</a></p></li>
+<li><p>网页图标设置：将图片转为ico文件，重命名为favicon.ico，放到站点文件夹下的source文件夹下，清空浏览器缓存，重新加载网页</p></li>
 </ul>
-<h2 id="添加网易云音乐的外链"><a href="#添加网易云音乐的外链" class="headerlink" title="添加网易云音乐的外链"></a>添加网易云音乐的外链</h2><p>可以使用网易云给的iframe插件，能在chrome和edge上运行。直接从网易云复制HTML代码，粘贴在需要的地方，然后将width和height的值加上引号即可。</p>
-<h2 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a>SEO</h2><p>seo.</p>
-<ul>
-<li>百度站长验证：由于hexo生成时会自动创建HTML文件，会在上传的HTML文件中添加内容，所以需要直接到GitHub处添加HTML文件。</li>
-</ul>
-<h2 id="关于编辑器"><a href="#关于编辑器" class="headerlink" title="关于编辑器"></a>关于编辑器</h2><p>为了能写公式找了各种编辑器，最后用的Atom。为了能够正确预览公式需要安装<strong>markdown-preview-plus</strong>和<strong>mathjax-wrapper</strong>两个插件，然后在设置中关掉Atom内置的 <strong>markdown-preview</strong>。</p>
+<h2 id="添加网易云音乐的外链">添加网易云音乐的外链</h2>
+<p>可以使用网易云给的iframe插件，能在chrome和edge上运行。直接从网易云复制HTML代码，粘贴在需要的地方，然后将width和height的值加上引号即可。</p>
+<h2 id="seo">SEO</h2>
+<p>seo. - 百度站长验证：由于hexo生成时会自动创建HTML文件，会在上传的HTML文件中添加内容，所以需要直接到GitHub处添加HTML文件。</p>
+<h2 id="关于编辑器">关于编辑器</h2>
+<p>为了能写公式找了各种编辑器，最后用的Atom。为了能够正确预览公式需要安装<strong>markdown-preview-plus</strong>和<strong>mathjax-wrapper</strong>两个插件，然后在设置中关掉Atom内置的 <strong>markdown-preview</strong>。</p>
 <p>还可以安装 <strong>markdown-writer</strong> ，写得方便一些，有各种快捷键，但好像需要先打开一下快捷键配置文件（这样听起来好扯但我确实是这么解决的……），否则会有冲突。</p>
 <p>还有一个插件 <strong>markdown-scroll-sync</strong>，可以让预览页面和写作页面同步滚动。（这么个功能也要单独装插件……）</p>
 <p>2017.2.8更新：终于找到了迄今最好的编辑器：Typora。google直达主页。</p>
@@ -686,7 +684,7 @@ npm install hexo-renderer-pandoc --save
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建GitHub仓库"><span class="nav-number">1.</span> <span class="nav-text">创建GitHub仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装必要的工具"><span class="nav-number">2.</span> <span class="nav-text">安装必要的工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Git"><span class="nav-number">2.1.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Node-js"><span class="nav-number">2.2.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo"><span class="nav-number">2.3.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建站"><span class="nav-number">3.</span> <span class="nav-text">建站</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#添加主题"><span class="nav-number">3.1.</span> <span class="nav-text">添加主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写作和更新"><span class="nav-number">3.2.</span> <span class="nav-text">写作和更新</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tips"><span class="nav-number">3.3.</span> <span class="nav-text">Tips</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加应用和主题设置"><span class="nav-number">4.</span> <span class="nav-text">添加应用和主题设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加网易云音乐的外链"><span class="nav-number">5.</span> <span class="nav-text">添加网易云音乐的外链</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SEO"><span class="nav-number">6.</span> <span class="nav-text">SEO</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于编辑器"><span class="nav-number">7.</span> <span class="nav-text">关于编辑器</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建github仓库"><span class="nav-number">1.</span> <span class="nav-text">创建GitHub仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装必要的工具"><span class="nav-number">2.</span> <span class="nav-text">安装必要的工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装git"><span class="nav-number">2.1.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装node.js"><span class="nav-number">2.2.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.3.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建站"><span class="nav-number">3.</span> <span class="nav-text">建站</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#添加主题"><span class="nav-number">3.1.</span> <span class="nav-text">添加主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写作和更新"><span class="nav-number">3.2.</span> <span class="nav-text">写作和更新</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tips"><span class="nav-number">3.3.</span> <span class="nav-text">Tips</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加应用和主题设置"><span class="nav-number">4.</span> <span class="nav-text">添加应用和主题设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加网易云音乐的外链"><span class="nav-number">5.</span> <span class="nav-text">添加网易云音乐的外链</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#seo"><span class="nav-number">6.</span> <span class="nav-text">SEO</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于编辑器"><span class="nav-number">7.</span> <span class="nav-text">关于编辑器</span></a></li></ol></div>
             
 
           </div>
