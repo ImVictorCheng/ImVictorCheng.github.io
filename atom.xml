@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://imvictorcheng.github.io/"/>
-  <updated>2018-01-13T10:48:11.000Z</updated>
+  <updated>2018-08-02T01:41:20.000Z</updated>
   <id>https://imvictorcheng.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://imvictorcheng.github.io/test/"/>
+    <id>https://imvictorcheng.github.io/test/</id>
+    <published>2018-08-02T01:40:37.000Z</published>
+    <updated>2018-08-02T01:41:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>This is a test page.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;This is a test page.&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>高等量子力学笔记</title>
@@ -34,9 +56,9 @@
     
       <category term="sci-tech" scheme="https://imvictorcheng.github.io/tags/sci-tech/"/>
     
-      <category term="notes" scheme="https://imvictorcheng.github.io/tags/notes/"/>
-    
       <category term="phy" scheme="https://imvictorcheng.github.io/tags/phy/"/>
+    
+      <category term="notes" scheme="https://imvictorcheng.github.io/tags/notes/"/>
     
   </entry>
   
@@ -100,9 +122,9 @@
     </summary>
     
     
-      <category term="LPT" scheme="https://imvictorcheng.github.io/tags/LPT/"/>
-    
       <category term="sci-tech" scheme="https://imvictorcheng.github.io/tags/sci-tech/"/>
+    
+      <category term="LPT" scheme="https://imvictorcheng.github.io/tags/LPT/"/>
     
   </entry>
   
@@ -144,9 +166,9 @@
     </summary>
     
     
-      <category term="LPT" scheme="https://imvictorcheng.github.io/tags/LPT/"/>
-    
       <category term="sci-tech" scheme="https://imvictorcheng.github.io/tags/sci-tech/"/>
+    
+      <category term="LPT" scheme="https://imvictorcheng.github.io/tags/LPT/"/>
     
   </entry>
   
@@ -169,9 +191,9 @@
     
       <category term="sci-tech" scheme="https://imvictorcheng.github.io/tags/sci-tech/"/>
     
-      <category term="coding" scheme="https://imvictorcheng.github.io/tags/coding/"/>
-    
       <category term="notes" scheme="https://imvictorcheng.github.io/tags/notes/"/>
+    
+      <category term="coding" scheme="https://imvictorcheng.github.io/tags/coding/"/>
     
       <category term="LaTeX" scheme="https://imvictorcheng.github.io/tags/LaTeX/"/>
     
