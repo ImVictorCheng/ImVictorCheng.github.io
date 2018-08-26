@@ -54,9 +54,9 @@
     </summary>
     
     
-      <category term="sci-tech" scheme="https://imvictorcheng.github.io/tags/sci-tech/"/>
-    
       <category term="notes" scheme="https://imvictorcheng.github.io/tags/notes/"/>
+    
+      <category term="sci-tech" scheme="https://imvictorcheng.github.io/tags/sci-tech/"/>
     
       <category term="phy" scheme="https://imvictorcheng.github.io/tags/phy/"/>
     
@@ -122,9 +122,9 @@
     </summary>
     
     
-      <category term="LPT" scheme="https://imvictorcheng.github.io/tags/LPT/"/>
-    
       <category term="sci-tech" scheme="https://imvictorcheng.github.io/tags/sci-tech/"/>
+    
+      <category term="LPT" scheme="https://imvictorcheng.github.io/tags/LPT/"/>
     
   </entry>
   
@@ -166,9 +166,9 @@
     </summary>
     
     
-      <category term="LPT" scheme="https://imvictorcheng.github.io/tags/LPT/"/>
-    
       <category term="sci-tech" scheme="https://imvictorcheng.github.io/tags/sci-tech/"/>
+    
+      <category term="LPT" scheme="https://imvictorcheng.github.io/tags/LPT/"/>
     
   </entry>
   
@@ -189,11 +189,11 @@
     </summary>
     
     
+      <category term="notes" scheme="https://imvictorcheng.github.io/tags/notes/"/>
+    
       <category term="sci-tech" scheme="https://imvictorcheng.github.io/tags/sci-tech/"/>
     
       <category term="coding" scheme="https://imvictorcheng.github.io/tags/coding/"/>
-    
-      <category term="notes" scheme="https://imvictorcheng.github.io/tags/notes/"/>
     
       <category term="LaTeX" scheme="https://imvictorcheng.github.io/tags/LaTeX/"/>
     
