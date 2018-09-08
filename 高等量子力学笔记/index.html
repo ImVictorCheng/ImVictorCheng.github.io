@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="notes,sci-tech,phy," />
+  <meta name="keywords" content="sci-tech,phy,notes," />
 
 
 
@@ -83,7 +83,7 @@
 
 
 
-<meta name="keywords" content="notes,sci-tech,phy">
+<meta name="keywords" content="sci-tech,phy,notes">
 <meta property="og:type" content="article">
 <meta property="og:title" content="高等量子力学笔记">
 <meta property="og:url" content="https://imvictorcheng.github.io/高等量子力学笔记/index.html">
@@ -368,92 +368,776 @@
       
         <hr>
 <a id="more"></a>
-<h2 id="1-补充知识"><a href="#1-补充知识" class="headerlink" title="1. 补充知识"></a>1. 补充知识</h2><h3 id="谐振子系统"><a href="#谐振子系统" class="headerlink" title="谐振子系统"></a>谐振子系统</h3><p>一维谐振子：$L=\frac{1}{2}m\dot{x}^2-\frac{1}{2}m\omega^2x^2$；$H=\frac{p^2}{2m}+\frac{1}{2}m\omega^2x^2$。</p>
-<p>对应的Heisenberg方程：<br>$$<br>\left{<br>\begin{array}.<br>\frac{\partial}{\partial t}x=i[H,x]\<br>\frac{\partial}{\partial t}p=i[H,p]<br>\end{array}<br>\right.<br>$$<br>定义<br>$$<br>\left{<br>\begin{array}.<br>a=\sqrt{\frac{m\omega}{2}}(x+i\frac{p}{m\omega})\<br>a^\dagger=\sqrt{\frac{m\omega}{2}}(x-i\frac{p}{m\omega})\<br>\end{array}<br>\right.\<br>\begin{align}<br>a^\dagger a=&amp;\frac{1}{2}m\omega(x^2+\frac{p^2}{m^2\omega^2}+i\frac{1}{m\omega}[x,p])\<br>=&amp;\frac{1}{2}m\omega(x^2+\frac{p^2}{m^2\omega^2})-\frac{1}{2}\<br>=&amp;\frac{\hat{H}}{\omega}-\frac{1}{2}<br>\end{align}<br>$$<br>得到<br>$$<br>\hat{H}=\omega(a^\dagger a+\frac{1}{2})<br>$$<br>由Heisenberg方程$\frac{\partial}{\partial t}a=i[H,a]=-i\omega a$可得<br>$$<br>a(t)=a(t=0)\mathrm{e}^{-i\omega t}<br>$$<br>仅对于谐振子，Hamiltonian可以写成上述形式，$a$才是这种振荡形式。</p>
-<p>但是，对于非谐振子的系统，仍然可以这样定义$a$和$a^\dagger$。反解出<br>$$<br>\left{<br>\begin{array}.<br>x=\frac{1}{\sqrt{2m\omega}}(a+a^\dagger)\<br>p=-\frac{im\omega}{\sqrt{2m\omega}}(a-a^\dagger)<br>\end{array}<br>\right.<br>$$<br>这称为振幅展开。</p>
-<p>在Heisenberg图象下<br>$$<br>\left{<br>\begin{array}.<br>\hat{x}_H(t)=\frac{1}{\sqrt{2m\omega}}(\hat{a}_H(t)+\hat{a}_H^\dagger(t))\<br>\hat{p}_H(t)=-\frac{im\omega}{\sqrt{2m\omega}}(\hat{a}_H(t)-\hat{a}_H^\dagger(t))<br>\end{array}<br>\right.<br>$$<br>对谐振子的系统$\hat{H}_0=\frac{\hat{P}^2}{2m}+\frac{1}{2}m\omega^2\hat{x}^2$，$\hat{a}(t)\sim\mathrm{e}^{-i\omega t}$。对于非谐振子系统，$\hat{H}=\hat{H}_0+\hat{V}$。有<br>$$<br>\frac{\partial}{\partial t}\hat{a}_H(t)=i[\hat{H}_0+\hat{V},\hat{a}_H(t)]<br>$$</p>
-<h3 id="相互作用图象"><a href="#相互作用图象" class="headerlink" title="相互作用图象"></a>相互作用图象</h3><p>在Schrödinger图象下将Hamiltonian分解为$\hat{H}=\hat{H}_0+\hat{V}_S$</p>
-<p>令<br>$$<br>\left{<br>\begin{array}.<br>\hat{O}_S\to\hat{O}_I=\mathrm{e}^{i\hat{H}_0t}\hat{O}_S\mathrm{e}^{-i\hat{H}_0t}\<br>|a\rangle_S\to|a\rangle_I=\mathrm{e}^{i\hat{H}_0t}|a\rangle_S<br>\end{array}<br>\right.<br>$$<br>在Schrödinger图象下<br>$$<br>\left{<br>\begin{array}.<br>i\frac{\partial}{\partial t}|t\rangle_S=\hat{H}|t\rangle_S\<br>i\frac{\partial}{\partial t}\hat{O}_S(t)=0<br>\end{array}<br>\right.<br>$$<br>在相互作用图象下<br>$$<br>\begin{align}<br>&amp;i\frac{\partial}{\partial t}(|t\rangle_I)\<br>=&amp;i\frac{\partial}{\partial t}(\mathrm{e}^{i\hat{H}_0t}|t\rangle_S)\<br>=&amp;-\hat{H}_0\mathrm{e}^{i\hat{H}_0t}|t\rangle_S+\mathrm{e}^{i\hat{H}_0t}\hat{H}|t\rangle_S\<br>=&amp;-\hat{H}_0|t\rangle_I+\mathrm{e}^{i\hat{H}_0t}\hat{H}\mathrm{e}^{-i\hat{H}_0t}|t\rangle_I\<br>=&amp;\mathrm{e}^{i\hat{H}_0t}(\hat{H}-\hat{H_0})\mathrm{e}^{-i\hat{H}_0t}|t\rangle_I\<br>=&amp;\hat{V}_I(t)|t\rangle_I\<br>&amp;\frac{\partial}{\partial t}\hat{O}_I(t)\<br>=&amp;\frac{\partial}{\partial t}[\mathrm{e}^{i\hat{H}_0t}\hat{O}_S(t)\mathrm{e}^{-i\hat{H}_0t}]\<br>=&amp;i\hat{H}_0\mathrm{e}^{i\hat{H}_0t}\hat{O}_S(t)\mathrm{e}^{-i\hat{H}_0t}+0+\mathrm{e}^{i\hat{H}_0t}\hat{O}_S(t)(-i\hat{H}_0)\mathrm{e}^{-i\hat{H}_0t}\<br>=&amp;i\hat{H}_0\mathrm{e}^{i\hat{H}_0t}\hat{O}_S(t)\mathrm{e}^{-i\hat{H}_0t}-i\mathrm{e}^{i\hat{H}_0t}\hat{O}_S(t)\mathrm{e}^{-i\hat{H}_0t}\hat{H}_0\<br>=&amp;i[\hat{H}_0,\hat{O}_I(t)]<br>\end{align}<br>$$<br>即在相互作用图象下<br>$$<br>\begin{equation}<br>\left{<br>\begin{array}.<br>i\frac{\partial}{\partial t}|t\rangle_I=\hat{V}_I(t)|t\rangle_I\<br>\frac{\partial}{\partial t}\hat{O}_I(t)=i[\hat{H}_0,\hat{O}_I(t)]<br>\end{array}<br>\right.<br>\end{equation}<br>$$<br>可以看到，不同系统，不同的Hamiltonian，按照相同的$\hat{H}_0$分解，得到的算符的演化方式相同。即在相互作用图象下，力学量演化方式同自由系统相同。</p>
-<h2 id="2-传播子与路径积分"><a href="#2-传播子与路径积分" class="headerlink" title="2. 传播子与路径积分"></a>2. 传播子与路径积分</h2><p>量子力学的核心之一是演化的问题，也就是$| i\rangle$如何演化成$| f\rangle$。</p>
-<p>采用某一表象，有一组基${| n\rangle}$。我们可以将$| i\rangle$在这组基上展开，也就是<br>$$<br>| i\rangle=\sum_nC_n| n\rangle<br>$$<br>这样就可以只研究$| n\rangle$的演化。在同一表象下，$| n\rangle$演化后的状态依然可以在这组基上展开，即<br>$$<br>| n\rangle\longrightarrow\sum_mC_m’| m\rangle<br>$$<br>求$C_m’$。</p>
-<h3 id="时间演化算符和传播子"><a href="#时间演化算符和传播子" class="headerlink" title="时间演化算符和传播子"></a>时间演化算符和传播子</h3><p>在Schrödinger图象下，有<br>$$<br>\left{<br>\begin{array}{}<br>i \frac{\partial}{\partial t}| t\rangle_S=\hat{H}_S| t\rangle_S\<br>\frac{\partial}{\partial t}\hat{O}_S(t)=O<br>\end{array}<br>\right.<br>$$<br>也就是<br>$$<br>\left{<br>\begin{array}{}<br>| t_f\rangle_S=\mathrm{e}^{-i\hat{H}t}| t=0\rangle_S=\mathrm{e}^{-i\hat{H}_S(t_f-t_i)}| t_i\rangle_S \<br>\hat{O}_S(t)=\hat{O}_S(0)<br>\end{array}<br>\right.<br>$$</p>
-<p>据此可以定义时间演化算符<br>$$<br>\hat{U}_S(t_f,t_i)=\mathrm{e}^{-i\hat{H}_S(t_f-t_i)}<br>$$<br>这样定义的算符具有时间反演对称性。</p>
-<p><strong>定义 时间演化算符</strong><br>$$<br>\hat{U}_S(t_f,t_i)=<br>\left{<br>\begin{array}{}<br>\mathrm{e}^{-i\hat{H}_S(t_f-t_i)} &amp;(t_f&gt;t_i)\<br>0&amp;(t_f&lt;t_i)<br>\end{array}<br>\right.<br>$$<br>无时间反演对称性，保留了时间平移对称性。</p>
-<p>在<strong>Heisenberg图象</strong>下，有<br>$$<br>|t_f\rangle_H=|t_i\rangle_H<br>$$<br>所以时间演化算符为<br>$$<br>\hat{U}_H(t_f,t_i)=\mathbf1<br>$$<br>在<strong>相互作用图象</strong>下<br>$$<br>|t_f\rangle=\mathrm{e}^{iH_0t_f}\mathrm{e}^{-iH(t_f-t_i)}\mathrm{e}^{-iH_0t_i}|t_i\rangle\<br>\hat{U}_I(t_f,t_i)=\mathrm{e}^{iH_0t_f}\mathrm{e}^{-iH(t_f-t_i)}\mathrm{e}^{-iH_0t_i}<br>$$<br><strong>定义 Feynman传播子</strong></p>
-<p>在坐标表象下<br>$$<br>D_F(x_f,t_f;x_i,t_i)=\langle x_f|_S\hat{U}_S(t_f,t_i)| x_i\rangle_S<br>$$<br>演化问题即求解传播子。</p>
-<p>以上的定义是在Schrödinger图象下定义的。在其它的图象下形式类似。特别地，在Heisenberg图象里，量子态不随时间演化，时间演化算符是恒等变换算符，所以有<br>$$<br>D_F(x_f,t_f;x_i,t_i)=\langle x_f,t_f| x_i,t_i\rangle_H<br>$$</p>
-<p>其中$| x,t\rangle$是$t$时刻位置算符$\hat{X}(t)$本征值为$x$的本征态。</p>
-<h3 id="路径积分"><a href="#路径积分" class="headerlink" title="路径积分"></a>路径积分</h3><p>求$\langle x_f,t_f| x_i,t_i\rangle$。可以将$t_i\sim t_f$分成$n+1$份，每一份为$\epsilon=\frac{t_f-t_i}{n+1}$。</p>
-<p>可以给各个时刻编号，$t_0=t_i,t_1, \dots,t_n,t_{n+1}=t_f$，其中$t_j=t_i+j\epsilon$。对每一个时刻，都有<br>$$<br>\int\mathrm{d}x_j| x_j,t_j\rangle\langle x_j,t_j|_H=1<br>$$</p>
-<p>待求$\langle x_f,t_f|x_i,t_i\rangle$，即<br>$$<br>\begin{align}<br>&amp;\langle x_f,t_f| x_i,t_i\rangle\<br>=&amp;\langle x_f,t_f|\int\mathrm{d}x_{n}| x_{n},t_{n}\rangle\langle x_{n},t_{n}|\int\mathrm{d}x_{n-1}| x_{n-1},t_{n-1}\rangle\langle x_{n-1},t_{n-1}|\cdots\<br>&amp;\int\mathrm{d}x_{1}| x_{1},t_{1}\rangle\langle x_{1},t_{1}|x_i,t_i\rangle\<br>=&amp;\int\mathrm{d}x_1\mathrm{d}x_2\dots\mathrm{d}x_{n}\prod_{j=1}^{n+1}\langle x_j,t_j| x_{j-1},t_{j-1}\rangle<br>\end{align}<br>$$<br> 下面研究$\langle x_j,t_j| x_{j-1},t_{j-1}\rangle_H$，它也是一个传播子。</p>
-<p> 回到Schrödinger图象，有<br>$$<br>\langle x_j,t_j| x_{j-1},t_{j-1}\rangle_H=\langle x_j|\mathrm{e}^{-i\hat{H}(t_j-t_{j-1})}| x_{j-1}\rangle_S=\langle x_j|\mathrm{e}^{-i\hat{H}\epsilon}| x_{j-1}\rangle_S\<br>\hat{H}=\hat{P}^2/2m+\hat{V}(x)<br>$$</p>
-<p>对$\mathrm{e}^{-i\hat{H}\epsilon}​$做Taylor展开，有<br>$$<br>\mathrm{e}^{-i\hat{H}\epsilon}=1-i\epsilon\hat{H}+O(\epsilon^2)<br>$$<br>代入得<br>$$<br>\begin{align}<br>&amp;\langle x_j|\mathrm{e}^{-i\hat{H}\epsilon}| x_{j-1}\rangle\<br>=&amp;\langle x_j|1-i\epsilon\hat{H}| x_{j-1}\rangle+O(\epsilon^2)\<br>=&amp;(1-i\epsilon\hat{V}(x_j)-i\epsilon\frac{\hat{P}^2(x_j)}{2m})\langle x_j| x_{j-1}\rangle+O(\epsilon^2)\<br>=&amp;(1-i\epsilon\hat{V}(x_j)-i\epsilon\frac{\hat{P}^2(x_j)}{2m})\delta(x_j-x_{j-1})+O(\epsilon^2)\<br>=&amp;\int\frac{\mathrm{d}p}{2\pi}[1-i\epsilon\hat{V}(x_j)-i\epsilon\frac{\hat{P}^2(x_j)}{2m}]\mathrm{e}^{ip(x_j-x_{j-1})}+O(\epsilon^2)\<br>=&amp;\int\frac{\mathrm{d}p}{2\pi}\mathrm{exp}{-i\epsilon[\hat{V}(x_j)+\frac{\hat{P}^2(x_j)}{2m}]+ip(x_j-x_{j-1})}+O(\epsilon^2)<br>\end{align}<br>$$</p>
-<p>注意，这里的积分并不收敛。为了使之收敛，可以给质量$m$配一个虚部。</p>
-<p>而数学上有：<br>$$<br>\int_{-\infty}^{+\infty}\mathrm{e}^{-ax^2+bx+c}\mathrm{d}x=\mathrm{e}^{\frac{b^2}{4a}+c}\cdot\sqrt{\frac{\pi}{a}}<br>$$<br>代入可得<br>$$<br>\langle x_j|\mathrm{e}^{-i\hat{H}\epsilon}| x_{j-1}\rangle=\mathrm{e}^{i\epsilon L_j}\cdot\sqrt{\frac{m}{2\pi i\epsilon}}+O(\epsilon^2)<br>$$</p>
-<p>其中$Lj$是系统的Lagrangian。</p>
-<p>所以有<br>$$<br>\begin{align}<br>\langle x_f,t_f| x_i,t_i\rangle=&amp;\int\mathrm{d}x_1\mathrm{d}x_2\dots\mathrm{d}x_{n}\prod_{j=1}^{n+1}({e}^{i\epsilon L_j}\cdot\sqrt{\frac{m}{2\pi i\epsilon}})+O(\epsilon^2)\<br>=&amp;\lim_{n\to\infty}(\frac{m}{2\pi i\epsilon})^{(n+1)/2}\int(\prod_{j=1}^{n}\mathrm{d}x_j)\exp(i\epsilon\sum_{j=1}^{n+1}L_j)<br>\end{align}<br>$$<br>对分割取极限后，$\epsilon\sum\limits_{j=1}^{n+1}L_j\to\int\mathrm{d}t\cdot L=S$即作用量；积分变量变成对所有可能轨道积分。</p>
-<p>常数省略之后，最终有<br>$$<br>\langle x_f,t_f| x_i,t_i\rangle=\int\mathcal{D}[x(t)]\mathrm{e}^{iS}<br>$$</p>
-<h3 id="含时微扰"><a href="#含时微扰" class="headerlink" title="含时微扰"></a>含时微扰</h3><p>在$U_I(t_f,t_i)$中，取$t_f=t,t_i=0$，得到$U_I(t)=\mathrm{e}^{iH_0t}\mathrm{e}^{-iHt}$。容易得到：<br>$$<br>\frac{\partial}{\partial t}U_I(t)=-iV_I(t)U_I(t)<br>$$<br>两边积分，得到<br>$$<br>U_I(t)=\mathbf1-i\int_0^t\mathrm{d}t_1V_I(t_1)U_I(t_1)<br>$$</p>
-<p>不断重复上述过程，得到<br>$$<br>\begin{align}<br>U_I(t)&amp;=\mathbf1-i\int_0^t\mathrm dt_1V_I(t_1)+(-i)^2\int_0^t\mathrm dt_2\int_0^{t_2}\mathrm dt_1V_I(t_2)V_I(t_1)+\cdots\<br>&amp;=\sum^\infty_{n=0}U_I^{(n)}(t)<br>\end{align}<br>$$<br>其中<br>$$<br>U_I^{(0)}(t)=\mathbf1\<br>U^{(n)}<em>I=\sum</em>{n=0}^{+\infty}(-i)^n\int_0^t\mathrm dt_n\int_0^{t_n}\mathrm dt_{n-1}\cdots\int_0^{t_n}\mathrm dt_1V_I(t_n)V_I(t_{n-1})\cdots V_I(t_1)<br>$$<br>引入编时算子$T$，这样有：<br>$$<br>U_I^{(n)}(t)=(-i)^n\frac{1}{n!}\int_0^t\mathbf d(t_1\cdots t_n)T[V_I(t_n)V_I(t_{n-1})\cdots V_I(t_1)]<br>$$<br>形式上，$U_I(t)$可以写作<br>$$<br>U_I(t)=T{\exp[-i\int_0^t\mathbf d\tau V_I(\tau)]}<br>$$<br>如果需要计算$U_I(t_f,t_i)$，将积分上下限换成$t_f$和$t_i$即可。</p>
-<p>传播子也可以做微扰展开。<br>$$<br>\begin{align}<br>D_F(x_f,t_f;x_i,t_i)&amp;=\langle x_f|U_S(t_f,t_i)|x_i\rangle\<br>\end{align}<br>$$<br>所以有<br>$$<br>\begin{align}<br>D_F^{(n)}(x_f,t_f;x_i,t_i)=&amp;\langle x_f|\mathrm e^{-iH_0t_f}U^{(n)}_I(t_f,t_i)\mathrm e^{iH_0t_i}|x’\rangle\<br>=&amp;(-i)^n\int_{t’}^t\mathrm dt_n\int^{t_n}<em>{t’}\mathrm dt</em>{n-1}\cdots\int_{t’}^{t_2}\mathrm dt_1\langle x_f|\mathrm e^{-iH_0t_f}V_I(t_n)\<br>&amp;\times V_I(t_{n-1})\cdots V_I(t_0)\mathrm e^{iH_0t_i}|x_i\rangle\<br>=&amp;(-i)^n\int_{t’}^t\mathrm dt_n\int^{t_n}<em>{t’}\mathrm dt</em>{n-1}\cdots\int_{t’}^{t_2}\mathrm dt_1\langle x_f|\mathrm e^{-iH_0t_f}(\mathrm e^{iH_0t_n}V_I\mathrm e^{-iH_0t_n})\<br>&amp;\times(\mathrm e^{iH_0t_{n-1}}V_I\mathrm e^{-iH_0t_{n-1}})\cdots (\mathrm e^{iH_0t_{0}}V_I\mathrm e^{-iH_0t_{0}})\mathrm e^{iH_0t_i}|x_i\rangle<br>\end{align}<br>$$<br>由于指数上的算符互相对易，可以合并，结果为Schrödinger图象下的时间演化算符：<br>$$<br>\mathrm e^{-iH_0t_{n}}\mathrm e^{iH_0t_{n-1}}=U_S^{(n)}(t_n,t_{n-1})<br>$$<br>得到的传播子<br>$$<br>\begin{align}<br>D_F^{(n)}(x_f,t_f;x_i,t_i)=&amp;\langle x_f|U_S^{(n)}(t_f,t_i)|x_i\rangle\<br>=&amp;\int_{t_i}^{t_f}\mathrm dt_n\int^{t_n}_{t_i}\mathrm dt_{n-1}\cdots\int_{t_i}^{t_2}\mathrm dt_1\<br>&amp;\langle x_f|U_S^{(0)}(t_f,t_n)(-iV)U_S^{(0)}(t_n,t_{n-1})(-iV)\cdots U_S^{(0)}(t_2,t_1)(-iV)U_S^{(0)}(t_1,t_i)|x_i\rangle<br>\end{align}<br>$$<br>这一表达式可以理解为：在Schrödinger图象下，$t_i$时刻的位置算符$X_i$本征态$|x_i\rangle$，首先自由演化到$t_1$时刻；发生一次相互作用；接着自由演化到$t_2$时刻；……以此类推，在$t_n$发生第$n$次相互作用，最后自由演化到$t_f$时刻。</p>
-<p>接下来，在$(-iV)U_S^{(0)}(t_k,t_{k-1})$的中间插入完备性条件$\int\mathrm dx_k|x_k\rangle\langle x_k|$，由于$\hat{V}|x\rangle=V(x)|x\rangle$，得到：<br>$$<br>\begin{align}<br>D_F^{(n)}(x_f,t_f;x_i,t_i)=&amp;\int_{t_i}^t\mathrm dt_n\int^{t_n}_{t_i}\mathrm dt_{n-1}\cdots\int_{t_i}^{t_2}\mathrm dt_1\int\mathrm d(x_1,\cdots,x_n)[-iV(x_1)][-iV(x_2)]\cdots[-iV(x_n)]\<br>&amp;\langle x_f|U_S^{(0)}(t_f,t_n)|x_n\rangle\langle x_n|U_S^{(0)}(t_n,t_{n-1})|x_{n-1}\rangle\cdots\langle x_1|U_S^{(0)}(t_1,t_i)|x_i\rangle\<br>=&amp;(-i)^n\int\mathrm d(x_1,\cdots,x_n)\int_{\mathbb D}\mathrm d(t_1,\cdots,t_n)V(x_1)\cdots V(x_n)\<br>&amp;D_F^{(0)}(x_f,t_f;x_n,t_n)\cdots D_F^{(0)}(x_1,t_1;x_i,t_i)<br>\end{align}<br>$$<br>其中时间的积分范围是$t_f&gt;t_n&gt;t_{n-1}&gt;\cdots&gt;t_1&gt;t_i$。</p>
-<p>式中的自由传播子可以写成路径积分的形式：<br>$$<br>D_F^{(0)}(x_k,t_k;x_{k-1},t_{k-1})=\int\mathcal D[x(t)]\mathrm e^{i\int^{t_k}_{t_{k-1}}\mathrm d\tau L_0}<br>$$<br>$L_0$是自有系统的Lagrangian。</p>
-<p>从而有<br>$$<br>\begin{align}<br>D_F^{(n)}(x_f,t_f;x_i,t_i)=&amp;(-i)^n\int_{\mathbb D}\mathrm d(t_1,\cdots,t_n)\int\mathrm d(x_1\cdots x_n)V(x_1)\cdots V(x_n)\<br>&amp;D_F^{(0)}(x_f,t_f;x_n,t_n)\cdots D_F^{(n)}(x_1,t_1;x_i,t_i)\<br>=&amp;(-i)^n\int_{\mathbb D}\mathrm d(t_1,\cdots,t_n)\int\mathcal D[x(t)]{V[x(t_1)]\cdots V[x(t_n)]\mathrm e^{i\int^{t_f}_{t_i}L_0\mathrm dt}}\<br>=&amp;(-i)^n\frac{1}{n!}\int^{t_f}_{t_i}\mathrm d(t_1,\cdots,t_n)\int\mathcal D[x(t)]{V[x(t_1)]\cdots V[x(t_n)]\mathrm e^{i\int^{t_f}_{t_i}L_0\mathrm dt}}\<br>=&amp;\frac{1}{n!}\int\mathcal D<a href="-i\int^{t_f}_{t_i}V[x(t">x(t)</a>]\mathrm dt)^n\times\mathrm e^{i\int^{t_f}_{t_i}L_0\mathrm dt}<br>\end{align}<br>$$</p>
-<h3 id="频率表象"><a href="#频率表象" class="headerlink" title="频率表象"></a>频率表象</h3><p>我们已经知道，位置算符和动量算符互为Fourier变换和反变换，即<br>$$<br>\langle\vec{r}|\vec{p}\rangle=\mathrm{e}^{i\vec{p}\cdot\vec{r}}<br>$$<br>而时间变量也可以做Fourier变换，得到频率。</p>
-<p>在相对论力学中，位置和时间共同构成四矢量$x=(t,\vec{r})$，其Fourier变换得到的参量是$p=(\omega,\vec{p})$。任意场量的Fourier变换：<br>$$<br>\psi(\vec{r},t)=\int\frac{\mathrm{d^3}\vec{p}}{(2\pi)^3}\frac{\mathrm{d}\omega}{2\pi}\mathrm{e}^{i\vec{p}\cdot\vec{r}}\mathrm{e}^{-i\omega t}\varphi(\vec{p},\omega)<br>$$<br>或<br>$$<br>\varphi(p)=\mathscr{F}[\psi(x)]=\int\mathrm{d^4}x\psi(x)\mathrm{e}^{ipx}\<br>\psi(x)=\mathscr{F}^{-1}[\varphi(p)]=\int\mathrm{d^4}p\varphi(p)\mathrm{e}^{-ipx}<br>$$<br>在非相对论的情况下，可以仅讨论时间的Fourier变换。<br>$$<br>f(t)\to f(\omega)=\int_{-\infty}^{+\infty}\mathrm{d}tf(t)\mathrm{e}^{i\omega t}\<br>f(t)=\int_{-\infty}^{+\infty}\frac{\mathrm{d}\omega}{2\pi}f(\omega)\mathrm{e}^{-i\omega t}<br>$$<br>计算时间演化算符的Fourier变换：<br>$$<br>\begin{align}<br>\hat{U}<em>S(\omega)&amp;=\int</em>{-\infty}^{+\infty}\mathrm{d}t\hat{U}<em>S(t)\mathrm{e}^{i\omega t}\<br>&amp;=\int</em>{0}^{+\infty}\mathrm{d}t\mathrm{e}^{-i\hat{H}_S(t)}\mathrm{e}^{i\omega t}<br>\end{align}<br>$$<br>可以发现，这样的积分并不收敛。</p>
-<p>为使之收敛，可以在后面加上一个衰减因子$\mathrm{e}^{-\epsilon t}$，这时可以认为，我们转而研究一个新的系统$\hat{U}_S^{(\epsilon)}(t)=\Theta(t)\cdot\mathrm{e}^{-i(\hat{H}-i\epsilon)t}$。这个系统的时间演化算符的Fourier变换（即频率表象下的时间演化算符）是收敛的，可以继续研究新系统的性质。在研究完毕后，将所有结果取极限$\epsilon\to0$，回到原系统。</p>
-<p>下面计算这个加了衰减因子的新系统的时间演化算符。为方便起见，省略上标中的$(\epsilon)$。<br>$$<br>\begin{align}<br>\hat{U}_S(\omega)=&amp;\int\mathrm{d}t\Theta(t)\mathrm{e}^{-i(\hat{H}-i\epsilon)t}\cdot\mathrm{e}^{i\omega t}\<br>=&amp;\int_0^{+\infty}\mathrm{d}t\mathrm{e}^{i(\omega-\hat{H}+i\epsilon)t}\<br>=&amp;\left.\frac{1}{i(\omega-\hat{H}+i\epsilon)}\mathrm{e}^{i(\omega-\hat{H}+i\epsilon)t}\right|^{t=+\infty}_{t=0}\<br>=&amp;\frac{i}{\omega-\hat{H}+i\epsilon}\<br>=&amp;i\hat{\mathcal{K}}(\omega)<br>\end{align}<br>$$<br>对$\hat{\mathcal K}(\omega)$也可以做微扰展开：<br>$$<br>\begin{align}<br>\hat{\mathcal K}(\omega)=&amp;\frac{1}{\omega-(\hat H_0+\hat{V})+i\epsilon}\<br>=&amp;\frac{1}{(\omega-\hat{H}_0+i\epsilon)-\hat V}\<br>=&amp;\frac{1}{(\omega-\hat H_0+i\epsilon)[1-\frac{\hat V}{\omega-\hat H_0+i\epsilon}]}\<br>=&amp;\frac{1}{1-\frac{\hat V}{\omega-\hat H_0+i\epsilon}}\frac{1}{\omega-\hat H_0+i\epsilon}\<br>=&amp;\sum_{n=0}^{+\infty}(\frac{1}{\omega-\hat H_0+i\epsilon}\hat V)^n\frac{1}{\omega-\hat H_0+i\epsilon}<br>\end{align}<br>$$<br>所以有<br>$$<br>\hat U(\omega)=\hat U^{(0)}(\omega)+\hat U^{(0)}(\omega)(-i\hat V)\hat U^{(0)}(\omega)+\cdots<br>$$</p>
-<h2 id="3-相对论量子力学"><a href="#3-相对论量子力学" class="headerlink" title="3. 相对论量子力学"></a>3. 相对论量子力学</h2><p>Schrödinger方程，即非相对论的波动方程，为：<br>$$<br>i\frac{\partial}{\partial t}\psi(\mathbf r,t)=\hat H\psi(\mathbf r,t)=[-\frac{\nabla^2}{2m}+V(\mathbf r)]\psi(\mathbf r,t)<br>$$<br>方程中对空间的导数为二阶，对时间的导数为一阶。时空地位不相同，不符合相对论的精神。</p>
+<h2 id="补充知识">1. 补充知识</h2>
+<h3 id="谐振子系统">谐振子系统</h3>
+<p>一维谐振子：<span class="math inline">\(L=\frac{1}{2}m\dot{x}^2-\frac{1}{2}m\omega^2x^2\)</span>；<span class="math inline">\(H=\frac{p^2}{2m}+\frac{1}{2}m\omega^2x^2\)</span>。</p>
+<p>对应的Heisenberg方程： <span class="math display">\[
+\left\{
+\begin{array}.
+\frac{\partial}{\partial t}x=i[H,x]\\
+\frac{\partial}{\partial t}p=i[H,p]
+\end{array}
+\right.
+\]</span> 定义 <span class="math display">\[
+\left\{
+\begin{array}.
+a=\sqrt{\frac{m\omega}{2}}(x+i\frac{p}{m\omega})\\
+a^\dagger=\sqrt{\frac{m\omega}{2}}(x-i\frac{p}{m\omega})\\
+\end{array}
+\right.\\
+\begin{align}
+a^\dagger a=&amp;\frac{1}{2}m\omega(x^2+\frac{p^2}{m^2\omega^2}+i\frac{1}{m\omega}[x,p])\\
+=&amp;\frac{1}{2}m\omega(x^2+\frac{p^2}{m^2\omega^2})-\frac{1}{2}\\
+=&amp;\frac{\hat{H}}{\omega}-\frac{1}{2}
+\end{align}
+\]</span> 得到 <span class="math display">\[
+\hat{H}=\omega(a^\dagger a+\frac{1}{2})
+\]</span> 由Heisenberg方程<span class="math inline">\(\frac{\partial}{\partial t}a=i[H,a]=-i\omega a\)</span>可得 <span class="math display">\[
+a(t)=a(t=0)\mathrm{e}^{-i\omega t}
+\]</span> 仅对于谐振子，Hamiltonian可以写成上述形式，<span class="math inline">\(a\)</span>才是这种振荡形式。</p>
+<p>但是，对于非谐振子的系统，仍然可以这样定义<span class="math inline">\(a\)</span>和<span class="math inline">\(a^\dagger\)</span>。反解出 <span class="math display">\[
+\left\{
+\begin{array}.
+x=\frac{1}{\sqrt{2m\omega}}(a+a^\dagger)\\
+p=-\frac{im\omega}{\sqrt{2m\omega}}(a-a^\dagger)
+\end{array}
+\right.
+\]</span> 这称为振幅展开。</p>
+<p>在Heisenberg图象下 <span class="math display">\[
+\left\{
+\begin{array}.
+\hat{x}_H(t)=\frac{1}{\sqrt{2m\omega}}(\hat{a}_H(t)+\hat{a}_H^\dagger(t))\\
+\hat{p}_H(t)=-\frac{im\omega}{\sqrt{2m\omega}}(\hat{a}_H(t)-\hat{a}_H^\dagger(t))
+\end{array}
+\right.
+\]</span> 对谐振子的系统<span class="math inline">\(\hat{H}_0=\frac{\hat{P}^2}{2m}+\frac{1}{2}m\omega^2\hat{x}^2\)</span>，<span class="math inline">\(\hat{a}(t)\sim\mathrm{e}^{-i\omega t}\)</span>。对于非谐振子系统，<span class="math inline">\(\hat{H}=\hat{H}_0+\hat{V}\)</span>。有 <span class="math display">\[
+\frac{\partial}{\partial t}\hat{a}_H(t)=i[\hat{H}_0+\hat{V},\hat{a}_H(t)]
+\]</span></p>
+<h3 id="相互作用图象">相互作用图象</h3>
+<p>在Schrödinger图象下将Hamiltonian分解为<span class="math inline">\(\hat{H}=\hat{H}_0+\hat{V}_S\)</span></p>
+<p>令 <span class="math display">\[
+\left\{
+\begin{array}.
+\hat{O}_S\to\hat{O}_I=\mathrm{e}^{i\hat{H}_0t}\hat{O}_S\mathrm{e}^{-i\hat{H}_0t}\\
+|a\rangle_S\to|a\rangle_I=\mathrm{e}^{i\hat{H}_0t}|a\rangle_S
+\end{array}
+\right.
+\]</span> 在Schrödinger图象下 <span class="math display">\[
+\left\{
+\begin{array}.
+i\frac{\partial}{\partial t}|t\rangle_S=\hat{H}|t\rangle_S\\
+i\frac{\partial}{\partial t}\hat{O}_S(t)=0
+\end{array}
+\right.
+\]</span> 在相互作用图象下 <span class="math display">\[
+\begin{align}
+&amp;i\frac{\partial}{\partial t}(|t\rangle_I)\\
+=&amp;i\frac{\partial}{\partial t}(\mathrm{e}^{i\hat{H}_0t}|t\rangle_S)\\
+=&amp;-\hat{H}_0\mathrm{e}^{i\hat{H}_0t}|t\rangle_S+\mathrm{e}^{i\hat{H}_0t}\hat{H}|t\rangle_S\\
+=&amp;-\hat{H}_0|t\rangle_I+\mathrm{e}^{i\hat{H}_0t}\hat{H}\mathrm{e}^{-i\hat{H}_0t}|t\rangle_I\\
+=&amp;\mathrm{e}^{i\hat{H}_0t}(\hat{H}-\hat{H_0})\mathrm{e}^{-i\hat{H}_0t}|t\rangle_I\\
+=&amp;\hat{V}_I(t)|t\rangle_I\\
+&amp;\frac{\partial}{\partial t}\hat{O}_I(t)\\
+=&amp;\frac{\partial}{\partial t}[\mathrm{e}^{i\hat{H}_0t}\hat{O}_S(t)\mathrm{e}^{-i\hat{H}_0t}]\\
+=&amp;i\hat{H}_0\mathrm{e}^{i\hat{H}_0t}\hat{O}_S(t)\mathrm{e}^{-i\hat{H}_0t}+0+\mathrm{e}^{i\hat{H}_0t}\hat{O}_S(t)(-i\hat{H}_0)\mathrm{e}^{-i\hat{H}_0t}\\
+=&amp;i\hat{H}_0\mathrm{e}^{i\hat{H}_0t}\hat{O}_S(t)\mathrm{e}^{-i\hat{H}_0t}-i\mathrm{e}^{i\hat{H}_0t}\hat{O}_S(t)\mathrm{e}^{-i\hat{H}_0t}\hat{H}_0\\
+=&amp;i[\hat{H}_0,\hat{O}_I(t)]
+\end{align}
+\]</span> 即在相互作用图象下 <span class="math display">\[
+\begin{equation}
+\left\{
+\begin{array}.
+i\frac{\partial}{\partial t}|t\rangle_I=\hat{V}_I(t)|t\rangle_I\\
+\frac{\partial}{\partial t}\hat{O}_I(t)=i[\hat{H}_0,\hat{O}_I(t)]
+\end{array}
+\right.
+\end{equation}
+\]</span> 可以看到，不同系统，不同的Hamiltonian，按照相同的<span class="math inline">\(\hat{H}_0\)</span>分解，得到的算符的演化方式相同。即在相互作用图象下，力学量演化方式同自由系统相同。</p>
+<h2 id="传播子与路径积分">2. 传播子与路径积分</h2>
+<p>量子力学的核心之一是演化的问题，也就是<span class="math inline">\(| i\rangle\)</span>如何演化成<span class="math inline">\(| f\rangle\)</span>。</p>
+<p>采用某一表象，有一组基<span class="math inline">\(\{| n\rangle\}\)</span>。我们可以将<span class="math inline">\(| i\rangle\)</span>在这组基上展开，也就是 <span class="math display">\[
+| i\rangle=\sum_nC_n| n\rangle
+\]</span> 这样就可以只研究<span class="math inline">\(| n\rangle\)</span>的演化。在同一表象下，<span class="math inline">\(| n\rangle\)</span>演化后的状态依然可以在这组基上展开，即 <span class="math display">\[
+| n\rangle\longrightarrow\sum_mC_m&#39;| m\rangle
+\]</span> 求<span class="math inline">\(C_m&#39;\)</span>。</p>
+<h3 id="时间演化算符和传播子">时间演化算符和传播子</h3>
+<p>在Schrödinger图象下，有 <span class="math display">\[
+\left\{
+\begin{array}{}
+i \frac{\partial}{\partial t}| t\rangle_S=\hat{H}_S| t\rangle_S\\
+\frac{\partial}{\partial t}\hat{O}_S(t)=O
+\end{array}
+\right.
+\]</span> 也就是 <span class="math display">\[
+\left\{
+\begin{array}{}
+| t_f\rangle_S=\mathrm{e}^{-i\hat{H}t}| t=0\rangle_S=\mathrm{e}^{-i\hat{H}_S(t_f-t_i)}| t_i\rangle_S \\
+\hat{O}_S(t)=\hat{O}_S(0)
+\end{array}
+\right.
+\]</span></p>
+<p>据此可以定义时间演化算符 <span class="math display">\[
+\hat{U}_S(t_f,t_i)=\mathrm{e}^{-i\hat{H}_S(t_f-t_i)}
+\]</span> 这样定义的算符具有时间反演对称性。</p>
+<p><strong>定义 时间演化算符</strong> <span class="math display">\[
+\hat{U}_S(t_f,t_i)=
+\left\{
+\begin{array}{}
+\mathrm{e}^{-i\hat{H}_S(t_f-t_i)} &amp;(t_f&gt;t_i)\\
+0&amp;(t_f&lt;t_i)
+\end{array}
+\right.
+\]</span> 无时间反演对称性，保留了时间平移对称性。</p>
+<p>在<strong>Heisenberg图象</strong>下，有 <span class="math display">\[
+|t_f\rangle_H=|t_i\rangle_H
+\]</span> 所以时间演化算符为 <span class="math display">\[
+\hat{U}_H(t_f,t_i)=\mathbf1
+\]</span> 在<strong>相互作用图象</strong>下 <span class="math display">\[
+|t_f\rangle=\mathrm{e}^{iH_0t_f}\mathrm{e}^{-iH(t_f-t_i)}\mathrm{e}^{-iH_0t_i}|t_i\rangle\\
+\hat{U}_I(t_f,t_i)=\mathrm{e}^{iH_0t_f}\mathrm{e}^{-iH(t_f-t_i)}\mathrm{e}^{-iH_0t_i}
+\]</span> <strong>定义 Feynman传播子</strong></p>
+<p>在坐标表象下 <span class="math display">\[
+D_F(x_f,t_f;x_i,t_i)=\langle x_f|_S\hat{U}_S(t_f,t_i)| x_i\rangle_S
+\]</span> 演化问题即求解传播子。</p>
+<p>以上的定义是在Schrödinger图象下定义的。在其它的图象下形式类似。特别地，在Heisenberg图象里，量子态不随时间演化，时间演化算符是恒等变换算符，所以有 <span class="math display">\[
+D_F(x_f,t_f;x_i,t_i)=\langle x_f,t_f| x_i,t_i\rangle_H
+\]</span></p>
+<p>其中<span class="math inline">\(| x,t\rangle\)</span>是<span class="math inline">\(t\)</span>时刻位置算符<span class="math inline">\(\hat{X}(t)\)</span>本征值为<span class="math inline">\(x\)</span>的本征态。</p>
+<h3 id="路径积分">路径积分</h3>
+<p>求<span class="math inline">\(\langle x_f,t_f| x_i,t_i\rangle\)</span>。可以将<span class="math inline">\(t_i\sim t_f\)</span>分成<span class="math inline">\(n+1\)</span>份，每一份为<span class="math inline">\(\epsilon=\frac{t_f-t_i}{n+1}\)</span>。</p>
+<p>可以给各个时刻编号，<span class="math inline">\(t_0=t_i,t_1, \dots,t_n,t_{n+1}=t_f\)</span>，其中<span class="math inline">\(t_j=t_i+j\epsilon\)</span>。对每一个时刻，都有 <span class="math display">\[
+\int\mathrm{d}x_j| x_j,t_j\rangle\langle x_j,t_j|_H=1
+\]</span></p>
+<p>待求<span class="math inline">\(\langle x_f,t_f|x_i,t_i\rangle\)</span>，即 <span class="math display">\[
+\begin{align}
+&amp;\langle x_f,t_f| x_i,t_i\rangle\\
+=&amp;\langle x_f,t_f|\int\mathrm{d}x_{n}| x_{n},t_{n}\rangle\langle x_{n},t_{n}|\int\mathrm{d}x_{n-1}| x_{n-1},t_{n-1}\rangle\langle x_{n-1},t_{n-1}|\cdots\\
+&amp;\int\mathrm{d}x_{1}| x_{1},t_{1}\rangle\langle x_{1},t_{1}|x_i,t_i\rangle\\
+=&amp;\int\mathrm{d}x_1\mathrm{d}x_2\dots\mathrm{d}x_{n}\prod_{j=1}^{n+1}\langle x_j,t_j| x_{j-1},t_{j-1}\rangle
+\end{align}
+\]</span> 下面研究<span class="math inline">\(\langle x_j,t_j| x_{j-1},t_{j-1}\rangle_H\)</span>，它也是一个传播子。</p>
+<p>回到Schrödinger图象，有 <span class="math display">\[
+\langle x_j,t_j| x_{j-1},t_{j-1}\rangle_H=\langle x_j|\mathrm{e}^{-i\hat{H}(t_j-t_{j-1})}| x_{j-1}\rangle_S=\langle x_j|\mathrm{e}^{-i\hat{H}\epsilon}| x_{j-1}\rangle_S\\
+\hat{H}=\hat{P}^2/2m+\hat{V}(x)
+\]</span></p>
+<p>对<span class="math inline">\(\mathrm{e}^{-i\hat{H}\epsilon}​\)</span>做Taylor展开，有 <span class="math display">\[
+\mathrm{e}^{-i\hat{H}\epsilon}=1-i\epsilon\hat{H}+O(\epsilon^2)
+\]</span> 代入得 <span class="math display">\[
+\begin{align}
+&amp;\langle x_j|\mathrm{e}^{-i\hat{H}\epsilon}| x_{j-1}\rangle\\
+=&amp;\langle x_j|1-i\epsilon\hat{H}| x_{j-1}\rangle+O(\epsilon^2)\\
+=&amp;(1-i\epsilon\hat{V}(x_j)-i\epsilon\frac{\hat{P}^2(x_j)}{2m})\langle x_j| x_{j-1}\rangle+O(\epsilon^2)\\
+=&amp;(1-i\epsilon\hat{V}(x_j)-i\epsilon\frac{\hat{P}^2(x_j)}{2m})\delta(x_j-x_{j-1})+O(\epsilon^2)\\
+=&amp;\int\frac{\mathrm{d}p}{2\pi}[1-i\epsilon\hat{V}(x_j)-i\epsilon\frac{\hat{P}^2(x_j)}{2m}]\mathrm{e}^{ip(x_j-x_{j-1})}+O(\epsilon^2)\\
+=&amp;\int\frac{\mathrm{d}p}{2\pi}\mathrm{exp}\{-i\epsilon[\hat{V}(x_j)+\frac{\hat{P}^2(x_j)}{2m}]+ip(x_j-x_{j-1})\}+O(\epsilon^2)
+\end{align}
+\]</span></p>
+<p>注意，这里的积分并不收敛。为了使之收敛，可以给质量<span class="math inline">\(m\)</span>配一个虚部。</p>
+<p>而数学上有： <span class="math display">\[
+\int_{-\infty}^{+\infty}\mathrm{e}^{-ax^2+bx+c}\mathrm{d}x=\mathrm{e}^{\frac{b^2}{4a}+c}\cdot\sqrt{\frac{\pi}{a}}
+\]</span> 代入可得 <span class="math display">\[
+\langle x_j|\mathrm{e}^{-i\hat{H}\epsilon}| x_{j-1}\rangle=\mathrm{e}^{i\epsilon L_j}\cdot\sqrt{\frac{m}{2\pi i\epsilon}}+O(\epsilon^2)
+\]</span></p>
+<p>其中<span class="math inline">\(Lj\)</span>是系统的Lagrangian。</p>
+<p>所以有 <span class="math display">\[
+\begin{align}
+\langle x_f,t_f| x_i,t_i\rangle=&amp;\int\mathrm{d}x_1\mathrm{d}x_2\dots\mathrm{d}x_{n}\prod_{j=1}^{n+1}({e}^{i\epsilon L_j}\cdot\sqrt{\frac{m}{2\pi i\epsilon}})+O(\epsilon^2)\\
+=&amp;\lim_{n\to\infty}(\frac{m}{2\pi i\epsilon})^{(n+1)/2}\int(\prod_{j=1}^{n}\mathrm{d}x_j)\exp(i\epsilon\sum_{j=1}^{n+1}L_j)
+\end{align}
+\]</span> 对分割取极限后，<span class="math inline">\(\epsilon\sum\limits_{j=1}^{n+1}L_j\to\int\mathrm{d}t\cdot L=S\)</span>即作用量；积分变量变成对所有可能轨道积分。</p>
+<p>常数省略之后，最终有 <span class="math display">\[
+\langle x_f,t_f| x_i,t_i\rangle=\int\mathcal{D}[x(t)]\mathrm{e}^{iS}
+\]</span></p>
+<h3 id="含时微扰">含时微扰</h3>
+<p>在<span class="math inline">\(U_I(t_f,t_i)\)</span>中，取<span class="math inline">\(t_f=t,t_i=0\)</span>，得到<span class="math inline">\(U_I(t)=\mathrm{e}^{iH_0t}\mathrm{e}^{-iHt}\)</span>。容易得到： <span class="math display">\[
+\frac{\partial}{\partial t}U_I(t)=-iV_I(t)U_I(t)
+\]</span> 两边积分，得到 <span class="math display">\[
+U_I(t)=\mathbf1-i\int_0^t\mathrm{d}t_1V_I(t_1)U_I(t_1)
+\]</span></p>
+<p>不断重复上述过程，得到 <span class="math display">\[
+\begin{align}
+U_I(t)&amp;=\mathbf1-i\int_0^t\mathrm dt_1V_I(t_1)+(-i)^2\int_0^t\mathrm dt_2\int_0^{t_2}\mathrm dt_1V_I(t_2)V_I(t_1)+\cdots\\
+&amp;=\sum^\infty_{n=0}U_I^{(n)}(t)
+\end{align}
+\]</span> 其中 <span class="math display">\[
+U_I^{(0)}(t)=\mathbf1\\
+U^{(n)}_I=\sum_{n=0}^{+\infty}(-i)^n\int_0^t\mathrm dt_n\int_0^{t_n}\mathrm dt_{n-1}\cdots\int_0^{t_n}\mathrm dt_1V_I(t_n)V_I(t_{n-1})\cdots V_I(t_1)
+\]</span> 引入编时算子<span class="math inline">\(T\)</span>，这样有： <span class="math display">\[
+U_I^{(n)}(t)=(-i)^n\frac{1}{n!}\int_0^t\mathbf d(t_1\cdots t_n)T[V_I(t_n)V_I(t_{n-1})\cdots V_I(t_1)]
+\]</span> 形式上，<span class="math inline">\(U_I(t)\)</span>可以写作 <span class="math display">\[
+U_I(t)=T\{\exp[-i\int_0^t\mathbf d\tau V_I(\tau)]\}
+\]</span> 如果需要计算<span class="math inline">\(U_I(t_f,t_i)\)</span>，将积分上下限换成<span class="math inline">\(t_f\)</span>和<span class="math inline">\(t_i\)</span>即可。</p>
+<p>传播子也可以做微扰展开。 <span class="math display">\[
+\begin{align}
+D_F(x_f,t_f;x_i,t_i)&amp;=\langle x_f|U_S(t_f,t_i)|x_i\rangle\\
+\end{align}
+\]</span> 所以有 <span class="math display">\[
+\begin{align}
+D_F^{(n)}(x_f,t_f;x_i,t_i)=&amp;\langle x_f|\mathrm e^{-iH_0t_f}U^{(n)}_I(t_f,t_i)\mathrm e^{iH_0t_i}|x&#39;\rangle\\
+=&amp;(-i)^n\int_{t&#39;}^t\mathrm dt_n\int^{t_n}_{t&#39;}\mathrm dt_{n-1}\cdots\int_{t&#39;}^{t_2}\mathrm dt_1\langle x_f|\mathrm e^{-iH_0t_f}V_I(t_n)\\
+&amp;\times V_I(t_{n-1})\cdots V_I(t_0)\mathrm e^{iH_0t_i}|x_i\rangle\\
+=&amp;(-i)^n\int_{t&#39;}^t\mathrm dt_n\int^{t_n}_{t&#39;}\mathrm dt_{n-1}\cdots\int_{t&#39;}^{t_2}\mathrm dt_1\langle x_f|\mathrm e^{-iH_0t_f}(\mathrm e^{iH_0t_n}V_I\mathrm e^{-iH_0t_n})\\
+&amp;\times(\mathrm e^{iH_0t_{n-1}}V_I\mathrm e^{-iH_0t_{n-1}})\cdots (\mathrm e^{iH_0t_{0}}V_I\mathrm e^{-iH_0t_{0}})\mathrm e^{iH_0t_i}|x_i\rangle
+\end{align}
+\]</span> 由于指数上的算符互相对易，可以合并，结果为Schrödinger图象下的时间演化算符： <span class="math display">\[
+\mathrm e^{-iH_0t_{n}}\mathrm e^{iH_0t_{n-1}}=U_S^{(n)}(t_n,t_{n-1})
+\]</span> 得到的传播子 <span class="math display">\[
+\begin{align}
+D_F^{(n)}(x_f,t_f;x_i,t_i)=&amp;\langle x_f|U_S^{(n)}(t_f,t_i)|x_i\rangle\\
+=&amp;\int_{t_i}^{t_f}\mathrm dt_n\int^{t_n}_{t_i}\mathrm dt_{n-1}\cdots\int_{t_i}^{t_2}\mathrm dt_1\\
+&amp;\langle x_f|U_S^{(0)}(t_f,t_n)(-iV)U_S^{(0)}(t_n,t_{n-1})(-iV)\cdots U_S^{(0)}(t_2,t_1)(-iV)U_S^{(0)}(t_1,t_i)|x_i\rangle
+\end{align}
+\]</span> 这一表达式可以理解为：在Schrödinger图象下，<span class="math inline">\(t_i\)</span>时刻的位置算符<span class="math inline">\(X_i\)</span>本征态<span class="math inline">\(|x_i\rangle\)</span>，首先自由演化到<span class="math inline">\(t_1\)</span>时刻；发生一次相互作用；接着自由演化到<span class="math inline">\(t_2\)</span>时刻；……以此类推，在<span class="math inline">\(t_n\)</span>发生第<span class="math inline">\(n\)</span>次相互作用，最后自由演化到<span class="math inline">\(t_f\)</span>时刻。</p>
+<p>接下来，在<span class="math inline">\((-iV)U_S^{(0)}(t_k,t_{k-1})\)</span>的中间插入完备性条件<span class="math inline">\(\int\mathrm dx_k|x_k\rangle\langle x_k|\)</span>，由于<span class="math inline">\(\hat{V}|x\rangle=V(x)|x\rangle\)</span>，得到： <span class="math display">\[
+\begin{align}
+D_F^{(n)}(x_f,t_f;x_i,t_i)=&amp;\int_{t_i}^t\mathrm dt_n\int^{t_n}_{t_i}\mathrm dt_{n-1}\cdots\int_{t_i}^{t_2}\mathrm dt_1\int\mathrm d(x_1,\cdots,x_n)[-iV(x_1)][-iV(x_2)]\cdots[-iV(x_n)]\\
+&amp;\langle x_f|U_S^{(0)}(t_f,t_n)|x_n\rangle\langle x_n|U_S^{(0)}(t_n,t_{n-1})|x_{n-1}\rangle\cdots\langle x_1|U_S^{(0)}(t_1,t_i)|x_i\rangle\\
+=&amp;(-i)^n\int\mathrm d(x_1,\cdots,x_n)\int_{\mathbb D}\mathrm d(t_1,\cdots,t_n)V(x_1)\cdots V(x_n)\\
+&amp;D_F^{(0)}(x_f,t_f;x_n,t_n)\cdots D_F^{(0)}(x_1,t_1;x_i,t_i)
+\end{align}
+\]</span> 其中时间的积分范围是<span class="math inline">\(t_f&gt;t_n&gt;t_{n-1}&gt;\cdots&gt;t_1&gt;t_i\)</span>。</p>
+<p>式中的自由传播子可以写成路径积分的形式： <span class="math display">\[
+D_F^{(0)}(x_k,t_k;x_{k-1},t_{k-1})=\int\mathcal D[x(t)]\mathrm e^{i\int^{t_k}_{t_{k-1}}\mathrm d\tau L_0}
+\]</span> <span class="math inline">\(L_0\)</span>是自有系统的Lagrangian。</p>
+<p>从而有 <span class="math display">\[
+\begin{align}
+D_F^{(n)}(x_f,t_f;x_i,t_i)=&amp;(-i)^n\int_{\mathbb D}\mathrm d(t_1,\cdots,t_n)\int\mathrm d(x_1\cdots x_n)V(x_1)\cdots V(x_n)\\
+&amp;D_F^{(0)}(x_f,t_f;x_n,t_n)\cdots D_F^{(n)}(x_1,t_1;x_i,t_i)\\
+=&amp;(-i)^n\int_{\mathbb D}\mathrm d(t_1,\cdots,t_n)\int\mathcal D[x(t)]\{V[x(t_1)]\cdots V[x(t_n)]\mathrm e^{i\int^{t_f}_{t_i}L_0\mathrm dt}\}\\
+=&amp;(-i)^n\frac{1}{n!}\int^{t_f}_{t_i}\mathrm d(t_1,\cdots,t_n)\int\mathcal D[x(t)]\{V[x(t_1)]\cdots V[x(t_n)]\mathrm e^{i\int^{t_f}_{t_i}L_0\mathrm dt}\}\\
+=&amp;\frac{1}{n!}\int\mathcal D[x(t)](-i\int^{t_f}_{t_i}V[x(t)]\mathrm dt)^n\times\mathrm e^{i\int^{t_f}_{t_i}L_0\mathrm dt}
+\end{align}
+\]</span></p>
+<h3 id="频率表象">频率表象</h3>
+<p>我们已经知道，位置算符和动量算符互为Fourier变换和反变换，即 <span class="math display">\[
+\langle\vec{r}|\vec{p}\rangle=\mathrm{e}^{i\vec{p}\cdot\vec{r}}
+\]</span> 而时间变量也可以做Fourier变换，得到频率。</p>
+<p>在相对论力学中，位置和时间共同构成四矢量<span class="math inline">\(x=(t,\vec{r})\)</span>，其Fourier变换得到的参量是<span class="math inline">\(p=(\omega,\vec{p})\)</span>。任意场量的Fourier变换： <span class="math display">\[
+\psi(\vec{r},t)=\int\frac{\mathrm{d^3}\vec{p}}{(2\pi)^3}\frac{\mathrm{d}\omega}{2\pi}\mathrm{e}^{i\vec{p}\cdot\vec{r}}\mathrm{e}^{-i\omega t}\varphi(\vec{p},\omega)
+\]</span> 或 <span class="math display">\[
+\varphi(p)=\mathscr{F}[\psi(x)]=\int\mathrm{d^4}x\psi(x)\mathrm{e}^{ipx}\\
+\psi(x)=\mathscr{F}^{-1}[\varphi(p)]=\int\mathrm{d^4}p\varphi(p)\mathrm{e}^{-ipx}
+\]</span> 在非相对论的情况下，可以仅讨论时间的Fourier变换。 <span class="math display">\[
+f(t)\to f(\omega)=\int_{-\infty}^{+\infty}\mathrm{d}tf(t)\mathrm{e}^{i\omega t}\\
+f(t)=\int_{-\infty}^{+\infty}\frac{\mathrm{d}\omega}{2\pi}f(\omega)\mathrm{e}^{-i\omega t}
+\]</span> 计算时间演化算符的Fourier变换： <span class="math display">\[
+\begin{align}
+\hat{U}_S(\omega)&amp;=\int_{-\infty}^{+\infty}\mathrm{d}t\hat{U}_S(t)\mathrm{e}^{i\omega t}\\
+&amp;=\int_{0}^{+\infty}\mathrm{d}t\mathrm{e}^{-i\hat{H}_S(t)}\mathrm{e}^{i\omega t}
+\end{align}
+\]</span> 可以发现，这样的积分并不收敛。</p>
+<p>为使之收敛，可以在后面加上一个衰减因子<span class="math inline">\(\mathrm{e}^{-\epsilon t}\)</span>，这时可以认为，我们转而研究一个新的系统<span class="math inline">\(\hat{U}_S^{(\epsilon)}(t)=\Theta(t)\cdot\mathrm{e}^{-i(\hat{H}-i\epsilon)t}\)</span>。这个系统的时间演化算符的Fourier变换（即频率表象下的时间演化算符）是收敛的，可以继续研究新系统的性质。在研究完毕后，将所有结果取极限<span class="math inline">\(\epsilon\to0\)</span>，回到原系统。</p>
+<p>下面计算这个加了衰减因子的新系统的时间演化算符。为方便起见，省略上标中的<span class="math inline">\((\epsilon)\)</span>。 <span class="math display">\[
+\begin{align}
+\hat{U}_S(\omega)=&amp;\int\mathrm{d}t\Theta(t)\mathrm{e}^{-i(\hat{H}-i\epsilon)t}\cdot\mathrm{e}^{i\omega t}\\
+=&amp;\int_0^{+\infty}\mathrm{d}t\mathrm{e}^{i(\omega-\hat{H}+i\epsilon)t}\\
+=&amp;\left.\frac{1}{i(\omega-\hat{H}+i\epsilon)}\mathrm{e}^{i(\omega-\hat{H}+i\epsilon)t}\right|^{t=+\infty}_{t=0}\\
+=&amp;\frac{i}{\omega-\hat{H}+i\epsilon}\\
+=&amp;i\hat{\mathcal{K}}(\omega)
+\end{align}
+\]</span> 对<span class="math inline">\(\hat{\mathcal K}(\omega)\)</span>也可以做微扰展开： <span class="math display">\[
+\begin{align}
+\hat{\mathcal K}(\omega)=&amp;\frac{1}{\omega-(\hat H_0+\hat{V})+i\epsilon}\\
+=&amp;\frac{1}{(\omega-\hat{H}_0+i\epsilon)-\hat V}\\
+=&amp;\frac{1}{(\omega-\hat H_0+i\epsilon)[1-\frac{\hat V}{\omega-\hat H_0+i\epsilon}]}\\
+=&amp;\frac{1}{1-\frac{\hat V}{\omega-\hat H_0+i\epsilon}}\frac{1}{\omega-\hat H_0+i\epsilon}\\
+=&amp;\sum_{n=0}^{+\infty}(\frac{1}{\omega-\hat H_0+i\epsilon}\hat V)^n\frac{1}{\omega-\hat H_0+i\epsilon}
+\end{align}
+\]</span> 所以有 <span class="math display">\[
+\hat U(\omega)=\hat U^{(0)}(\omega)+\hat U^{(0)}(\omega)(-i\hat V)\hat U^{(0)}(\omega)+\cdots
+\]</span></p>
+<h2 id="相对论量子力学">3. 相对论量子力学</h2>
+<p>Schrödinger方程，即非相对论的波动方程，为： <span class="math display">\[
+i\frac{\partial}{\partial t}\psi(\mathbf r,t)=\hat H\psi(\mathbf r,t)=[-\frac{\nabla^2}{2m}+V(\mathbf r)]\psi(\mathbf r,t)
+\]</span> 方程中对空间的导数为二阶，对时间的导数为一阶。时空地位不相同，不符合相对论的精神。</p>
 <p>改造Schrödinger方程，使时空地位想等。如果将时间导数改为二阶，即为Klein-Gordon方程；如果将空间导数改为一阶，即为Dirac方程。</p>
-<h3 id="四矢量、算符"><a href="#四矢量、算符" class="headerlink" title="四矢量、算符"></a>四矢量、算符</h3><p>在相对论中，粒子能动量满足关系：<br>$$<br>E^2=\mathbf p^2+m^2<br>$$<br>相应地，粒子的Hamiltonian满足：<br>$$<br>\hat{H}^2=\mathbf{\hat{p}}^2+m^2<br>$$<br>可以据此定义四矢量<br>$$<br>p^\mu=(p^0,p^1,p^2,p^3)=(E,\mathbf p)\<br>p_\mu=(p_0,p_1,p_2,p_3)=(E,-\mathbf p)<br>$$<br>这样有<br>$$<br>p^2=p^\mu p_\mu=E^2-\mathbf{p}^2<br>$$<br>在实空间，定义<br>$$<br>x^\mu=(t,\mathbf r)\<br>\frac{\partial}{\partial x^\mu}=\partial_\mu<br>$$</p>
+<h3 id="四矢量算符">四矢量、算符</h3>
+<p>在相对论中，粒子能动量满足关系： <span class="math display">\[
+E^2=\mathbf p^2+m^2
+\]</span> 相应地，粒子的Hamiltonian满足： <span class="math display">\[
+\hat{H}^2=\mathbf{\hat{p}}^2+m^2
+\]</span> 可以据此定义四矢量 <span class="math display">\[
+p^\mu=(p^0,p^1,p^2,p^3)=(E,\mathbf p)\\
+p_\mu=(p_0,p_1,p_2,p_3)=(E,-\mathbf p)
+\]</span> 这样有 <span class="math display">\[
+p^2=p^\mu p_\mu=E^2-\mathbf{p}^2
+\]</span> 在实空间，定义 <span class="math display">\[
+x^\mu=(t,\mathbf r)\\
+\frac{\partial}{\partial x^\mu}=\partial_\mu
+\]</span></p>
 <p>定义算符</p>
-<p>$$<br>\hat p^\mu=i\partial^\mu<br>$$<br>这样<br>$$<br>\hat p^0=\hat H\<br>\hat{\mathbf p}=-i\nabla<br>$$</p>
-<p>注：在上述定义中，希腊字母从$0$取到$3$，拉丁字母从$1$取到$3$，上下指标成对出现表示求和。</p>
-<h3 id="Klein-Gordon方程"><a href="#Klein-Gordon方程" class="headerlink" title="Klein-Gordon方程"></a>Klein-Gordon方程</h3><p>Hamiltonian的形式为$\hat H=\sqrt{\hat{\mathbf p}^2+m^2}$。为了能够处理算符的超越函数，将Schrödinger方程两边再做时间的导数：<br>$$<br>-\frac{\partial^2}{\partial t^2}\psi(\mathbf r,t)=\hat H^2\psi(\mathbf r,t)=(-\nabla^2+m^2)\psi(\mathbf r,t)<br>$$<br>即<br>$$<br>(\frac{\partial^2}{\partial t^2}-\nabla^2+m^2)\psi(\mathbf r,t)=0\<br>\text{or}\<br>(\partial_\mu\partial^\mu+m^2)\psi(\mathbf r,t)=0<br>$$<br>此即Klein-Gordon方程。</p>
-<p>当能量满足质能方程$E^2=\mathbf p^2+m^2$时，解的形式为：<br>$$<br>\psi(x,t)=N\mathrm e^{-i(Et-\mathbf p\cdot\mathbf r)}=N\mathrm e^{-ip^\mu x_\mu}<br>$$<br>时间项是$\mathrm e^{-iEt}$，空间项是平面波，这是我们对质量为$m$的自由粒子所期望的形式。</p>
-<h3 id="Dirac方程"><a href="#Dirac方程" class="headerlink" title="Dirac方程"></a>Dirac方程</h3><p>为了避免出现时间的二阶导数，同时保持方程的协变性，可以将方程写成如下形式（$\gamma$和$m$都应理解为待定的系数）：<br>$$<br>(i\gamma^\mu\partial_\mu-m)\psi(\mathbf r,t)=0<br>$$<br>我们仍然需要让自由粒子的能量满足质能方程。</p>
-<p>在上述方程两边作用上$-i\gamma^\nu\partial_\nu-m$，得到：<br>$$<br>(\gamma^\nu\partial_\nu\gamma^\mu\partial_\mu+m^2)\psi(\mathbf r,t)=0<br>$$<br>假设$\gamma^\mu$和$\partial_\nu$对易，进一步假设$\gamma^\nu\gamma^\mu\partial_\nu\partial_\mu=\partial^\mu\partial_\mu=g^{\mu\nu}\partial_\nu\partial_\mu$，其中$g^{\mu\nu}$是度规，$g=diag{1,-1,-1,-1}$。</p>
-<p>最终得到：<br>$$<br>{\gamma^\mu,\gamma^\nu}=2g^{\mu\nu}<br>$$<br>容易看出，$\gamma$不是复数，而是满足如下Clifford代数的实体：<br>$$<br>\begin{align}<br>(\gamma^0)^2=&amp;1\<br>(\gamma^i)^2=&amp;-1\<br>\gamma^\mu\gamma^\nu=&amp;-\gamma^\nu\gamma^\mu\ \ \ \ \text{if}\ \mu\ne\nu<br>\end{align}<br>$$<br>可以用四维矩阵来实现这个代数，得到<br>$$<br>\boldsymbol\gamma=<br>\left(<br>\begin{array}{c}<br>0&amp;\boldsymbol\tau\<br>-\boldsymbol\tau&amp;0<br>\end{array}<br>\right)<br>\ \ \text{and}\ \ \beta=<br>\left(<br>\begin{array}{c}<br>0&amp;I_2\<br>I_2&amp;0<br>\end{array}<br>\right)<br>$$<br>将自由粒子的波函数代入Dirac方程，得到<br>$$<br>\gamma^\mu p_\mu-m=0<br>$$<br>两边乘$\gamma^0$，得<br>$$<br>E=\gamma^0\boldsymbol{\gamma}\cdot\mathbf{p}+\gamma^0m<br>$$<br>定义<br>$$<br>\alpha_i=\gamma^0\gamma^i,\ \beta=\gamma^0<br>$$<br>得到<br>$$<br>\hat H=\boldsymbol\alpha\cdot\mathbf p+\beta m<br>$$</p>
-<h3 id="四维矩阵的展开"><a href="#四维矩阵的展开" class="headerlink" title="四维矩阵的展开"></a>四维矩阵的展开</h3><p>我们已经知道，二维矩阵可以用Pauli矩阵展开。而$\gamma$矩阵进行组合后可以用来展开四维矩阵。</p>
-<p>用来展开的16个基矩阵是：<br>$$<br>I_4;\\gamma^0,\gamma^1,\gamma^2,\gamma^3;\<br>\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3;\<br>\gamma^0\gamma^5,\gamma^1\gamma^5,\gamma^2\gamma^5,\gamma^3\gamma^5;\<br>\Sigma^{\mu\nu}=\frac{i}{4}[\gamma^\mu,\gamma^\nu]\ \ \ \ (\mu\ne\nu)<br>$$<br>考察$\Sigma^{\mu\nu}$：<br>$$<br>(\Sigma^{23},\Sigma^{31},\Sigma^{12})=\frac{1}{2}<br>\left(<br>\begin{array}{c}<br>\boldsymbol{\tau}&amp;\<br>&amp;\boldsymbol{\tau}<br>\end{array}<br>\right)<br>=\boldsymbol\sigma/2;\<br>\Sigma^{0i}=\gamma^0\gamma^i=\alpha^i<br>$$<br>其中$\boldsymbol\sigma$称为自旋矩阵，是空间旋转变换的生成元；$\boldsymbol\alpha$称为速度矩阵，是时空平移变换的生成元。</p>
-<h3 id="求解Dirac方程"><a href="#求解Dirac方程" class="headerlink" title="求解Dirac方程"></a>求解Dirac方程</h3><p>比起上面的Weyl表象来，在Dirac表象下解Dirac方程更加方便。取<br>$$<br>\left{<br>\begin{array}{rl}<br>&amp;\gamma_D^0=-\gamma_W^5\<br>&amp;\boldsymbol\gamma_D=\boldsymbol\gamma_W\<br>&amp;\gamma_D^5=\gamma_W^0</p>
-<p>\end{array}<br>\right.<br>$$<br>Dirac方程<br>$$<br>i\frac{\partial}{\partial t}\psi(\mathbf r,t)=\hat H\psi(\mathbf r,t)<br>$$<br>其中$\hat H(\hat{\mathbf p})=\boldsymbol\alpha\cdot\mathbf{\hat p}+\beta m$。</p>
-<p>Hamiltonian不含时，定态方程<br>$$<br>\hat H\psi_n(\mathbf r)=E_n\psi_n(\mathbf r)<br>$$<br>解空间存在简并。</p>
-<p>可考虑用与Hamiltonian对易的动量算符标记子空间，于是增加动量的$3$个本征方程，变为：<br>$$<br>\left{<br>\begin{array}{c}<br>\hat{\mathbf p}\psi_{\mathbf p,E}(\mathbf r)=\mathbf p\psi_{\mathbf p,E}(\mathbf r)\<br>\hat H(\hat{\mathbf p})\psi_n(\mathbf r)=E_n\psi_n(\mathbf r)<br>\end{array}<br>\right.<br>$$<br>或者直接写成<br>$$<br>\hat p^\mu\psi_{p^\mu}(\mathbf r)=p^\mu\psi_{p^\mu}(\mathbf r)<br>$$<br>对波函数做Fourier展开，即<br>$$<br>\psi(\mathbf r)=\sum_{\mathbf p}\psi(\mathbf p)\mathrm e^{i\mathbf p\cdot\mathbf r}/\sqrt\Omega<br>$$<br>先解本征值$E$。</p>
-<p>将Hamiltonian和$\psi(\mathbf r)$代入Dirac方程，得到：<br>$$<br>(\boldsymbol{\alpha}\cdot\hat{\mathbf p}+\beta m)\psi_{E,\mathbf p}(\mathbf p)=E\psi_{E,\mathbf p}(\mathbf p)<br>$$</p>
-<p>两边同乘$(\boldsymbol\alpha\cdot\hat{\mathbf p}+\beta m)$：<br>$$<br>(\hat{\mathbf p}^2+m^2)\psi_{E,\mathbf p}(\mathbf p)=E^2\psi_{E,\mathbf p}(\mathbf p)<br>$$<br>得到<br>$$<br>E^2=\mathbf p^2+m^2\<br>E=\pm\sqrt{\mathbf p^2+m^2}<br>$$<br>所以<br>$$<br>\left{<br>\begin{array}{c}<br>(\boldsymbol\alpha\cdot\hat{\mathbf p}+\beta m)\psi_{+E,\mathbf p}(\mathbf p)=+E\psi_{+E,\mathbf p}(\mathbf p)\<br>(\boldsymbol\alpha\cdot\hat{\mathbf p}+\beta m)\psi_{-E,\mathbf p}(\mathbf p)=-E\psi_{-E,\mathbf p}(\mathbf p)<br>\end{array}<br>\right.<br>$$<br>记<br>$$<br>\left{<br>\begin{array}{c}<br>\psi_{+E,\mathbf p}(\mathbf p)=\psi_{+,\mathbf p}(\mathbf p)=U(\mathbf p)\<br>\psi_{-E,\mathbf p}(\mathbf p)=\psi_{-,\mathbf p}(\mathbf p)=V(-\mathbf p)<br>\end{array}<br>\right.<br>$$<br>这里$V$中的符号，标记的是能量为$-E$，动量仍为$\mathbf p$。</p>
-<p>将波函数分别用$U$、$V$表示后，得到的两个Dirac方程被称为正能、负能方程。</p>
-<p>特别地，我们考察动量为$\mathbf p=0$的粒子，即静止粒子的正能方程。<br>$$<br>\beta mU(0)=EU(0)=mU(0)<br>$$<br>解出<br>$$<br>U(0)=(1,0,0,0)^T\ \ \text{or}\ \ (0,1,0,0)^T<br>$$</p>
-<p>这表明，对同一组$E,\mathbf p$，系统仍有简并。</p>
-<p>定义螺度算子（Helicity)：<br>$$<br>\hat{h}=\boldsymbol{\sigma}\cdot\frac{\hat{\mathbf p}}{|\mathbf p|}<br>$$<br>它同Hamiltonian对易，可以用来解除简并。这样，正能方程变为：<br>$$<br>\left{<br>\begin{array}{c}<br>(\boldsymbol\alpha\cdot\hat{\mathbf p}+\beta m)U_r(\mathbf p)=EU_r(\mathbf p)\<br>\boldsymbol{\sigma}\cdot\frac{\mathbf p}{|\mathbf p|}U_r(\mathbf p)=rU_r(\mathbf p)<br>\end{array}<br>\right.<br>$$<br>其中$r=\pm1$。</p>
-<p>螺度是Dirac系统的守恒量，这可以通过$[\hat h,\hat H]=0$验证。</p>
-<h3 id="电荷共轭"><a href="#电荷共轭" class="headerlink" title="电荷共轭"></a>电荷共轭</h3><p>先定义电荷共轭操作：<br>$$<br>\psi\mapsto\psi^c=c\bar\psi^T<br>$$<br>其中Dirac共轭为：<br>$$<br>\bar\psi=\psi^\dagger\gamma^0<br>$$<br>待定矩阵$c$需要满足下面的性质：<br>$$<br>c{\gamma^\mu}^Tc^{-1}=-\gamma^\mu<br>$$<br>$c$可以取为：<br>$$<br>c=i\gamma^0\gamma^2<br>$$<br>这个解并不唯一。</p>
-<p>可以验证，正能方程的解做电荷共轭后得到的$U^c_r(\mathbf p)$是Dirac方程能量为$-E$，动量为$-\mathbf p$，螺度为$r$的本征态，所以可以令<br>$$<br>U^c_r(\mathbf p)=V_r(\mathbf p)<br>$$<br>即电荷共轭变换将粒子变为能动量相反、螺度相同的反粒子。</p>
-<h3 id="投影算子"><a href="#投影算子" class="headerlink" title="投影算子"></a>投影算子</h3><p>用能量和动量的正负标记解空间，如图：</p>
-<p><img src="http://ww1.sinaimg.cn/large/dc8f7e3dly1fncwvn9wl8j20zb0oo74i.jpg" alt="空间分解"></p>
-<p>空间中的基函数满足正交归一性：<br>$$<br>U_r^\dagger(\mathbf p)U_s^\dagger(\mathbf p)=\delta_{rs}\<br>V_r^\dagger(\mathbf p)V_s^\dagger(\mathbf p)=\delta_{rs}\<br>U_r^\dagger(\mathbf p)V_s^\dagger(-\mathbf p)=0<br>$$</p>
-<p>将解空间分割为正能空间和负能空间，即<br>$$<br>\psi=\hat{P}<em>+\psi+\hat{P}</em>-\psi<br>$$<br>其中两个投影算符分别为<br>$$<br>\left{<br>\begin{array}{c}<br>\hat{P}<em>+=\frac{\hat{H}(\hat{\mathbf p})+E}{2E}=\sum</em>\limits{r=\pm}U_r(\mathbf p)U_r^\dagger(\mathbf p)\<br>\hat{P}<em>-=\frac{-\hat{H}(\hat{\mathbf p})+E}{2E}=\sum</em>\limits{r=\pm}V_r(-\mathbf p)V_r^\dagger(-\mathbf p)\<br>\end{array}<br>\right.<br>$$<br>表示将本征态投影到同侧、上下两个子空间。</p>
-<p>满足性质<br>$$<br>\left{<br>\begin{array}{l}<br>\hat P_+^2=P_+\<br>\hat P_-^2=P_-\<br>\hat P_+\hat P_-=\hat P_-\hat P_+=0\<br>\hat P_++\hat P_-=1<br>\end{array}<br>\right.<br>$$<br>同时也可以将本征态投影到对角线上的两个子空间。对应的投影算符为：<br>$$<br>\left{<br>\begin{array}{l}<br>\hat{\Pi}<em>+=\frac{/\kern-0.4em p+m}{2E}=\sum</em>\limits{r=\pm}U_r(\mathbf p)\bar{U}<em>r(\mathbf p)\<br>\hat{\Pi}</em>-=\frac{-/\kern-0.4em p+m}{2E}=\sum_\limits{r=\pm}V_r(\mathbf p)\bar{V}<em>r(\mathbf p)\<br>\end{array}<br>\right.<br>$$<br>其中Feynman斜线标记的定义为：<br>$$<br>/\kern-0.65em A=\gamma^\mu A</em>\mu<br>$$<br>这组投影算符满足性质<br>$$<br>\left{<br>\begin{array}{l}<br>\hat \Pi_+^2= \Pi_+\cdot\frac{m}{E}\<br>\hat \Pi_-^2= \Pi_-\cdot\frac{m}{E}\<br>\hat \Pi_+\hat \Pi_-=\hat \Pi_-\hat \Pi_+=0\<br>\hat \Pi_++\hat \Pi_-=\frac{m}{E}<br>\end{array}<br>\right.<br>$$</p>
-<h3 id="二次量子化"><a href="#二次量子化" class="headerlink" title="二次量子化"></a>二次量子化</h3><p>将投影算子的完备性条件乘在动量空间的波函数上，得到：<br>$$<br>\begin{align}<br>\psi(\mathbf p,t)&amp;=\sum_{r=\pm}[U_r(\mathbf p)\bar{U}_r(\mathbf p)+V_r(-\mathbf p)\bar{V}<em>r(-\mathbf p)]\psi(\mathbf p,t)\<br>&amp;=\sum</em>{r=\pm}[a_r(\mathbf p,t)U_r(\mathbf p)+b_r^\dagger(-\mathbf p,t)V_r(-\mathbf p)]<br>\end{align}<br>$$<br>其中产生、湮灭算符定义为：<br>$$<br>\left{<br>\begin{array}{l}<br>a_r(\mathbf p,t)=U_r^\dagger(\mathbf p)\psi(\mathbf p,t)\<br>b_r^\dagger(-\mathbf p,t)=V_r(\mathbf p)\psi(\mathbf p,t)<br>\end{array}<br>\right.<br>$$<br>满足对易关系<br>$$<br>[a(\mathbf p,t),a^\dagger(\mathbf p’,t)]=\delta_{\mathbf p,\mathbf p’}<br>$$<br>代入波函数的Fourier变换公式，得到<br>$$<br>\left{<br>\begin{array}{l}<br>a_r(\mathbf p,t)=\int\mathrm d^3\mathbf rU_r^\dagger(\mathbf r)\psi(\mathbf r,t)\mathrm e^{-i\mathbf p\cdot \mathbf r}/(2\pi)^{3/2}\<br>b_r(\mathbf p,t)=\int\mathrm d^3\mathbf r\psi^\dagger(\mathbf r,t)V_r(\mathbf r)\mathrm e^{-i\mathbf p\cdot \mathbf r}/(2\pi)^{3/2}\<br>\end{array}<br>\right.<br>$$<br>位置空间的波函数写成<br>$$<br>\psi(\mathbf r,t)=\sum_{r=\pm}\int\mathrm d^3\mathbf p[a_r(\mathbf p,t)U_r(\mathbf p)+b_r^\dagger(-\mathbf p,t)V_r(-\mathbf p)]\frac{\mathrm e^{i\mathbf p\cdot\mathbf r}}{(2\pi)^{3/2}}<br>$$<br>波函数满足的对易关系<br>$$<br>[\psi(\mathbf r,t),\psi(\mathbf r’,t)]=\delta^{(3)}(\mathbf r-\mathbf r’)<br>$$</p>
-<h3 id="Maxwell理论"><a href="#Maxwell理论" class="headerlink" title="Maxwell理论"></a>Maxwell理论</h3><p>电磁场的势为<br>$$<br>A=(\phi,\mathbf A)<br>$$<br>带电粒子在电磁场中运动的Lagrangian：<br>$$<br>L=-m+\frac{1}{2}m\dot{\mathbf r}^2-e\phi+e\dot{\mathbf r}\cdot\mathbf A<br>$$<br>正则动量：<br>$$<br>\frac{\partial L}{\partial\dot{\mathbf r}}=m\dot{\mathbf r}+e\mathbf A<br>$$<br>根据Euler-Lagrange方程，得到<br>$$<br>\frac{\mathrm d}{\mathrm dt}(\frac{\partial L}{\partial\dot{\mathbf r}})=\frac{\partial L}{\partial\mathbf r}<br>$$<br>解出<br>$$<br>\mathbf F=m\frac{\mathrm d\dot{\mathbf r}}{\mathrm dt}=e(-\nabla\phi-\frac{\partial\mathbf A}{\partial t})+e\dot{\mathbf r}\times\nabla\times\mathbf A=e\mathbf E+e\dot{\mathbf r}\times\mathbf B<br>$$<br>即Lorentz力。</p>
-<p>做Legendre变换得到系统的Hamiltonian：<br>$$<br>H=\dot{\mathbf r}\cdot\frac{\partial L}{\partial\dot{\mathbf r}}-L=m+\frac{(\mathbf p-e\mathbf A)^2}{2m}+e\phi<br>$$<br>对电磁场，定义电磁张量<br>$$<br>F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu<br>$$<br>以$A$作为广义坐标，系统的Lagrangian：<br>$$<br>L=-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}<br>$$<br>对广义坐标和广义速度求导数，得到：<br>$$<br>\begin{align}<br>\frac{\partial F_{\mu\nu}}{\partial(\partial_\lambda A_\kappa)}&amp;=\delta^\lambda_\mu\delta^\kappa_\nu-\delta^\lambda_\nu\delta^\kappa_\mu\<br>\frac{\partial  F_{\mu\nu}}{\partial A_\lambda}&amp;=0<br>\end{align}<br>$$<br>所以<br>$$<br>\frac{\partial}{\partial(\partial_\lambda A_\kappa)}F_{\mu\nu}F^{\mu\nu}=4F^{\lambda\kappa}<br>$$<br>代入Euler-Lagrange方程，得到<br>$$<br>\partial_\mu\frac{\partial L}{\partial(\partial_\mu A_\nu)}-\frac{\partial L}{\partial A_\mu}=0<br>$$<br>即<br>$$<br>-\partial_\mu F^{\mu\nu}=0<br>$$<br>同时根据$F^{\mu\nu}$的定义及轮换性质，容易推出<br>$$<br>\partial_\mu F_{\nu\lambda}+\partial_\nu F_{\lambda\mu}+\partial_\lambda F_{\mu\nu}=0<br>$$<br>代入<br>$$<br>\left{<br>\begin{array}{l}<br>E^i=-F^{0i}\<br>\epsilon^{ijk}B_k=-F^{ij}<br>\end{array}<br>\right.<br>$$<br>即可得到Maxwell方程组。</p>
-<h2 id="4-对称性"><a href="#4-对称性" class="headerlink" title="4. 对称性"></a>4. 对称性</h2><h3 id="空间反演（Dirac系统）"><a href="#空间反演（Dirac系统）" class="headerlink" title="空间反演（Dirac系统）"></a>空间反演（Dirac系统）</h3><p>定义宇称操作$\hat P$：<br>$$<br>\hat\psi(x)\mapsto\hat\psi’(x)=\hat P\hat\psi(x)\hat{P}^{-1}=\eta_p\gamma^0\hat\psi(x_p)<br>$$<br>其中<br>$$<br>x=(t,\mathbf r),\ \ x_p=(t,-\mathbf r)<br>$$<br>$\eta_p$标记相位因子。</p>
-<p>写出场算符的二次量子化表示：<br>$$<br>\hat\psi(x)=\sum_{\mathbf p}\frac{\mathrm e^{i\mathbf p\cdot\mathbf r}}{\sqrt\Omega}\frac{1}{2E}\sum_{\lambda=\pm}[\hat a_{\lambda}(\mathbf p)\mathrm e^{-iEt}U_\lambda(\mathbf p)+\hat b^\dagger_\lambda(-\mathbf p)\mathrm e^{iEt}V_\lambda(-\mathbf p)]<br>$$<br>如果动量连续，则将求和变成积分即可。</p>
-<p>反解出产生湮灭算符<br>$$<br>\left{<br>\begin{array}{l}<br>\hat{a}<em>\lambda(\mathbf p)=\int\mathrm d^3\mathbf r\frac{\mathrm e^{ipx}}{\sqrt{2E}}U</em>\lambda^\dagger(\mathbf p)\hat\psi(x)\<br>\hat b_\lambda^\dagger(\mathbf p)=\int\mathrm d^3\mathbf r\frac{\mathrm e^{-ipx}}{\sqrt{2E}}V_\lambda^\dagger(\mathbf p)\hat\psi(x)<br>\end{array}<br>\right.<br>$$</p>
-<p>则<br>$$<br>\begin{align}<br>\hat P\hat a_\lambda(\mathbf p)\hat P^{-1}&amp;=\int\mathrm d^3\mathbf r\frac{\mathrm e^{ipx}}{\sqrt{2E}}U^\dagger_\lambda(\mathbf p)\hat P\hat\psi(x)\hat P^{-1}\<br>&amp;=\int\mathrm d^3\mathbf r\frac{\mathrm e^{ipx}}{\sqrt{2E}}\eta_p[\gamma^0U_\lambda(\mathbf p)]^\dagger\hat\psi(x_p)<br>\end{align}<br>$$<br>其中<br>$$<br>\gamma^0U_\lambda(\mathbf p)=<br>\left{<br>\begin{array}{l}<br>U_\lambda(-\mathbf p)\ \ \ \ \text{if }\lambda\ \text{denotes spin}\<br>U_{-\lambda}(-\mathbf p)\ \ \ \ \text{if }\lambda\ \text{denotes helicity}\<br>\end{array}<br>\right.<br>$$<br>这里讨论自旋体系，得到<br>$$<br>\begin{align}<br>\hat P\hat a_\lambda(\mathbf p)\hat P^{-1}&amp;=\eta_p\int\mathrm d^3\mathbf r\frac{\mathrm e^{ipx}}{\sqrt{2E}}U_\lambda^\dagger(-\mathbf p)\hat\psi(x_p)\<br>&amp;=\eta_p\int\mathrm d^3\mathbf r\frac{\mathrm e^{ip_px_p}}{\sqrt{2E}}U_\lambda^\dagger(-\mathbf p)\hat\psi(x_p)\<br>&amp;=\eta_p\int\mathrm d^3\mathbf r\frac{\mathrm e^{ip_px}}{\sqrt{2E}}U_\lambda^\dagger(-\mathbf p)\hat\psi(x)\<br>&amp;=\eta_p\hat a_\lambda(-\mathbf p)<br>\end{align}<br>$$<br>同理得到对$b$的宇称变换公式。综上，<br>$$<br>\left{<br>\begin{array}{l}<br>\hat P\hat a_\lambda(\mathbf p)\hat P^{-1}=\eta_p\hat a_\lambda(-\mathbf p)\<br>\hat P\hat b^\dagger_\lambda(\mathbf p)\hat P^{-1}=\eta_p\hat a_\lambda(-\mathbf p)<br>\end{array}<br>\right.<br>$$<br>同时，宇称算符还应该满足<br>$$<br>\hat P\mathcal{L}\hat P^{-1}=\mathcal{L}\ \<br>\text{and}\ \<br>\hat P|0\rangle=|0\rangle<br>$$<br>其中Lagrangian为$\mathcal{L}=\bar\psi(i\gamma^\mu\partial_\mu-m)\psi$，$|0\rangle$是真空态。</p>
-<p>用产生算符定义原子态：<br>$$<br>\left{<br>\begin{array}{l}<br>\hat a_\lambda^\dagger(\mathbf p)|0\rangle=|\mathbf p,\lambda\rangle\<br>\hat b_\lambda^\dagger(\mathbf p)|0\rangle=|\tilde{\mathbf p},\lambda\rangle\<br>\end{array}<br>\right.<br>$$<br>其中用tilde表示反粒子。</p>
-<p>这样，有<br>$$<br>\left{<br>\begin{array}{l}<br>\hat P|\mathbf p,\lambda\rangle=\eta^*_p|-\mathbf p,\lambda\rangle\<br>\hat P|\tilde{\mathbf p},\lambda\rangle=-\eta_p|-\tilde{\mathbf p},\lambda\rangle\<br>\end{array}<br>\right.<br>$$</p>
-<h3 id="电荷共轭-1"><a href="#电荷共轭-1" class="headerlink" title="电荷共轭"></a>电荷共轭</h3><p>定义电荷共轭操作$\hat C$：<br>$$<br>\hat\psi(x)\mapsto\hat\psi’(x)=\hat C\hat\psi(x)\hat C^{-1}=\eta_c\hat\psi^c(x)<br>$$<br>容易证明：<br>$$<br>\hat C\hat\psi^c(x)\hat C^{-1}=\eta_c^<em>\hat\psi(x)<br>$$<br>同上，将场算符写成二次量子化的形式，可以推出产生湮灭算符的电荷共轭：<br>$$<br>\left{<br>\begin{array}{l}<br>\hat C\hat a_\lambda(\mathbf p)\hat C^{-1}=\eta_c\hat b_\lambda(\mathbf p)\<br>\hat C\hat b^\dagger_\lambda(\mathbf p)\hat C^{-1}=\eta_c^</em>\hat a^\dagger_\lambda(\mathbf p)<br>\end{array}<br>\right.<br>$$<br>假定$\hat C|0\rangle=|0\rangle$，有<br>$$<br>\left{<br>\begin{array}{l}<br>\hat C|\mathbf p,\lambda\rangle=\eta_c^*|\tilde{\mathbf p},\lambda\rangle\<br>\hat C|\tilde{\mathbf p},\lambda\rangle=\eta_c|\mathbf p,\lambda\rangle\<br>\end{array}<br>\right.<br>$$</p>
-<h2 id="5-散射"><a href="#5-散射" class="headerlink" title="5. 散射"></a>5. 散射</h2><h3 id="两体散射"><a href="#两体散射" class="headerlink" title="两体散射"></a>两体散射</h3><p>研究两个粒子在相互作用下的演化问题。设系统的初态为<br>$$<br>|\mathbf p^i_1,\mathbf p^i_2\rangle<br>$$<br>末态<br>$$<br>|\mathbf p^f_1,\mathbf p^f_2\rangle<br>$$<br>相互作用为$\hat V$，定义为<br>$$<br>\langle\mathbf r_1’,\mathbf r_2’|\hat V|\mathbf r_1,\mathbf r_2\rangle=\delta^{(3)}(\mathbf r_1’-\mathbf r_1)\delta^{(3)}(\mathbf r_2’-\mathbf r_2)V(\mathbf r_1-\mathbf r_2)<br>$$<br>采取质心系，做变换<br>$$<br>\left{<br>\begin{array}{l}<br>\mathbf r=\mathbf r_1-\mathbf r_2\<br>\mathbf R=\frac{m_1\mathbf  r_1+m_2\mathbf r_2}{m_1+m_2}<br>\end{array}<br>\right.<br>$$<br>反变换：<br>$$<br>\left{<br>\begin{array}{l}<br>\mathbf r_1=\mathbf R+\frac{m_2}{m_1+m_2}\mathbf r\<br>\mathbf r_2=\mathbf R-\frac{m_1}{m_1+m_2}\mathbf r<br>\end{array}<br>\right.<br>$$<br>其中$\mathbf r$是相对坐标，$\mathbf R$是质心坐标。相应地，可以定义相对动量$\mathbf p=-i\frac{\partial}{\partial\mathbf r}$，和质心动量$\mathbf P=-i\frac{\partial}{\partial\mathbf R}$，可以得到<br>$$<br>\left{<br>\begin{array}{l}<br>\mathbf p=\frac{m_2}{m_1+m_2}\mathbf p_1-\frac{m_1}{m_1+m_2}\mathbf p_2\<br>\mathbf P=\mathbf p_1+\mathbf p_2<br>\end{array}<br>\right.<br>$$<br>下面计算相互作用的矩阵元。<br>$$<br>\begin{align}<br>&amp;\langle\mathbf p_1^f,\mathbf p_2^f|\hat V|\mathbf p_1^i,\mathbf p_2^i\rangle\<br>=&amp;\int\mathrm d^3\mathbf r_1\mathrm d^3\mathbf r_2\langle\mathbf p_1^f,\mathbf p_2^f|\hat V|\mathbf r_1,\mathbf r_2\rangle\langle\mathbf r_1,\mathbf r_2|\mathbf p_1^i,\mathbf p_2^i\rangle\<br>=&amp;\int\mathrm d^3\mathbf r_1\mathrm d^3\mathbf r_2V(\mathbf r_1-\mathbf r_2)\langle\mathbf p_1^f,\mathbf p_2^f|\mathbf r_1,\mathbf r_2\rangle\langle\mathbf r_1,\mathbf r_2|\mathbf p_1^i,\mathbf p_2^i\rangle\<br>=&amp;\int\mathrm d^3\mathbf r\mathrm d^3\mathbf RV(\mathbf r)\mathrm e^{-i(\mathbf p^f\cdot \mathbf r+\mathbf P^f\cdot\mathbf R)}\mathrm e^{i(\mathbf p^i\cdot \mathbf r+\mathbf P^i\cdot\mathbf R)}\<br>=&amp;\int\mathrm d^3\mathbf R\ \mathrm e^{i(\mathbf P^i-\mathbf P^f)\cdot\mathbf R}\times\int\mathrm d^3\mathbf rV(\mathbf r)\mathrm e^{i(\mathbf p^i-\mathbf p^f)\cdot\mathbf r}\<br>=&amp;(2\pi)^3\delta^{(3)}(\mathbf P^i-\mathbf P^f)\int\mathrm d^3\mathbf rV(\mathbf r)\mathrm e^{i(\mathbf p^i-\mathbf p^f)\cdot\mathbf r}\<br>=&amp;(2\pi)^3\delta^{(3)}(\mathbf P^i-\mathbf P^f)\langle\mathbf p^f|\hat V|\mathbf p^i\rangle<br>\end{align}<br>$$<br>可以看出，采取质心系之后二体散射变成单体散射，同时需满足动量守恒。这个结论成为因子化定理。下面只讨论单体散射即可。</p>
-<h3 id="单体散射"><a href="#单体散射" class="headerlink" title="单体散射"></a>单体散射</h3><p>在相互作用图象下，系统Hamiltonian写为<br>$$<br>\hat H=\hat H_0+\hat V<br>$$<br>自由系统的Hamiltonian的能谱可以求解，其本征态$|\phi\rangle$的能量为$E$。</p>
-<p>假设系统在$t=-\infty$时，处在自由系统的本征态上；在$t=+\infty$时，又回到自由系统的另一个本征态。即<br>$$<br>\left{<br>\begin{array}{l}<br>|i\rangle=\mathrm e^{-iE_it}|\phi_i\rangle\ \ \ \ t\to-\infty\<br>|f\rangle=\mathrm e^{-iE_ft}|\phi_f\rangle\ \ \ \ t\to+\infty\<br>\end{array}<br>\right.<br>$$<br>研究跃迁振幅：<br>$$<br>\begin{align}<br>&amp;\langle f|\hat U(t,t’)|i\rangle\<br>=&amp;\langle f|\int\mathrm d\omega\ \frac{1}{2\pi}\mathrm e^{-i\omega(t’-t)}i\hat{\mathcal{K}}(\omega)|i\rangle<br>\end{align}<br>$$<br>在第二章中，我们将$\hat{\mathcal K}(\omega)$做了微扰展开。代入上式，得到<br>$$<br>\begin{align}<br>&amp;\langle f|\hat U(t,t’)|i\rangle\<br>=&amp;i\int\frac{\mathrm d\omega}{2\pi}\mathrm e^{i(E_f-\omega)t’-i(E_i-\omega)t}\<br>&amp;\langle\phi_f|\frac{1}{\omega-\hat H_0+i\epsilon}+\frac{1}{\omega-\hat H_0+i\epsilon}\hat V\frac{1}{\omega-\hat H_0+i\epsilon}+\cdots|\phi_i\rangle\<br>=&amp;\frac{1}{\omega-E_i+i\epsilon}\langle\phi_f|\phi_i\rangle+\frac{1}{\omega-E_i+i\epsilon}\frac{1}{\omega-E_f+i\epsilon}\langle\phi_f|\hat V+\hat V\frac{1}{\omega-\hat H_0+i\epsilon}\hat V+\cdots|\phi_i\rangle<br>\end{align}<br>$$<br>记<br>$$<br>\mathcal{F}(\omega)=\langle\phi_f|\hat V+\hat V\frac{1}{\omega-\hat H_0+i\epsilon}\hat V+\cdots|\phi_i\rangle<br>$$<br>则<br>$$<br>\begin{align}<br>&amp;\langle f|\hat U(t,t’)|i\rangle\<br>=&amp;i\int\frac{\mathrm d\omega}{2\pi}\mathrm e^{i(E_f-\omega)t’-i(E_i-\omega)t}\frac{1}{\omega-E_i+i\epsilon}[\langle\phi_f|\phi_i\rangle+\frac{1}{\omega-E_f+i\epsilon}\mathcal{F}(\omega)]<br>\end{align}<br>$$<br>利用公式<br>$$<br>\lim_{t\to-\infty}\frac{\mathrm e^{i\omega t}}{\omega+i\epsilon}=-2\pi i\delta(\omega)<br>$$<br>代入得到<br>$$<br>\lim_{t\to-\infty}\lim_{t’\to\infty}\langle f|\hat U(t,t’)|i\rangle=\delta_{fi}-2\pi i\delta(E_i-E_f)\mathcal{F}(E_i)<br>$$<br>第二项意味着能量守恒。</p>
-<p>定义$S$矩阵和$T$矩阵：<br>$$<br>\lim_{t\to-\infty}\lim_{t’\to\infty}\langle f|\hat U(t,t’)|i\rangle=\langle\phi_f|\hat S|\phi_i\rangle\<br>\hat S=\mathbf 1-i\hat T<br>$$<br>将自由系统的本征态简记为<br>$$<br>|\phi_i\rangle=|i\rangle\<br>|\phi_f\rangle=|f\rangle<br>$$<br>则有<br>$$<br>\langle f|\hat T|i\rangle=2\pi\delta(E_i-E_f)\mathcal F(E_i)<br>$$<br>表明$\mathcal F(E_i)$是$T$矩阵的矩阵元。</p>
-<p>定义<br>$$<br>|i^+\rangle=\sum_{n=0}^{\infty}(\frac{1}{E_i-\hat H_0+i\epsilon}\hat V)^n|i\rangle=|i\rangle+\frac{1}{E_i-\hat H_0+i\epsilon}\hat V|i^+\rangle<br>$$<br>则<br>$$<br>\begin{align}<br>\langle \mathbf r|i^+\rangle=\langle \mathbf r|i\rangle+\int\mathrm d^3\mathbf r’\langle\mathbf r|\frac{1}{E_i-\hat H_0+i\epsilon}|\mathbf r’\rangle V(\mathbf r’)\langle\mathbf r’|i^+\rangle<br>\end{align}<br>$$<br>其中的矩阵元可以用留数定理算出<br>$$<br>\langle\mathbf r|\frac{1}{E_i-\hat H_0+i\epsilon}|\mathbf r’\rangle=-\frac{m}{2\pi R}\mathrm e^{ip_iR},\ \ R=|\mathbf r-\mathbf r’|\approx r-\mathbf r’\cdot\frac{\mathbf r}{r}<br>$$<br>所以有<br>$$<br>\langle\mathbf r|i^+\rangle=\langle\mathbf r|i\rangle+\frac{\mathrm e^{iP_ir}}{r}(-\frac{m}{2\pi}\langle p_i\hat{\mathbf r}|\hat V|i^+\rangle)<br>$$<br>即一个朝前的平面波叠加上一个带调幅因子的球面波，调幅因子是$T$矩阵的矩阵元。</p>
-<h3 id="散射截面"><a href="#散射截面" class="headerlink" title="散射截面"></a>散射截面</h3><p>定义微分散射截面<br>$$<br>\frac{\mathrm d\sigma}{\mathrm d\Omega}=(\frac{m}{2\pi})|T_{ni}|^2=|f_p(\theta)|^2<br>$$<br>其中$T_{ni}$是跃迁矩阵元。</p>
-<h3 id="全同粒子"><a href="#全同粒子" class="headerlink" title="全同粒子"></a>全同粒子</h3><p>波函数满足交换对称性（反对称性），同时$m_1=m_2=m$的两体散射过程。</p>
-<p>对自旋为零的Boson体系：<br>$$<br>\Psi(\mathbf r_1,\mathbf r_2)=\psi(\mathbf r_1,\mathbf r_2)+\psi(\mathbf r_2,\mathbf r_1)<br>$$<br>其中$\psi$是散射波函数，满足：<br>$$<br>\psi(\mathbf r_1,\mathbf r_2)=\mathrm e^{i\mathbf P\cdot \mathbf R}[\mathrm e^{i\mathbf p\cdot\mathbf r}+\frac{\mathrm e^{ipr}}{r}f_p(\theta)]\<br>\psi(\mathbf r_2,\mathbf r_1)=\mathrm e^{i\mathbf P\cdot \mathbf R}[\mathrm e^{-i\mathbf p\cdot\mathbf r}+\frac{\mathrm e^{ipr}}{r}f_p(\pi-\theta)]<br>$$<br>所以<br>$$<br>\Psi(\mathbf r_1,\mathbf r_2)\sim\mathrm e^{i\mathbf p\cdot\mathbf r}+\mathrm e^{-i\mathbf p\cdot\mathbf r}+\frac{\mathrm e^{ipr}}{r}[f_p(\theta)+f_p(\pi-\theta)]<br>$$<br>所以应有<br>$$<br>\frac{\mathrm d\sigma}{\mathrm d\Omega}=|f_p(\theta)+f_p(\pi-\theta)|^2<br>$$<br>如果是非全同粒子，应当是平方和的形式。</p>
-<p>对自旋为$\frac{1}{2}$的费米子体系：<br>$$<br>\Psi(\mathbf r_1,\mathbf r_2)\sim\psi(\mathbf r_1,\mathbf r_2)|\lambda\rangle|\rho\rangle-\psi(\mathbf r_2,\mathbf r_1)|\rho\rangle|\lambda\rangle<br>$$<br>只当粒子对自旋相同时，才产生干涉作用。</p>
-<p>所以<br>$$<br>\frac{\mathrm d\sigma}{\mathrm d\Omega}=<br>\left{<br>\begin{array}{l}<br>|f_p(\theta)-f_p(\pi-\theta)|^2\ \ \ \ &amp;\text{for}\ \lambda=\rho\<br>|f_p(\theta)|^2+|f_p(\pi-\theta)|^2\ \ \ \ &amp;\text{for}\ \lambda\not=\rho\<br>\end{array}<br>\right.<br>$$</p>
+<p><span class="math display">\[
+\hat p^\mu=i\partial^\mu
+\]</span> 这样 <span class="math display">\[
+\hat p^0=\hat H\\
+\hat{\mathbf p}=-i\nabla
+\]</span></p>
+<p>注：在上述定义中，希腊字母从<span class="math inline">\(0\)</span>取到<span class="math inline">\(3\)</span>，拉丁字母从<span class="math inline">\(1\)</span>取到<span class="math inline">\(3\)</span>，上下指标成对出现表示求和。</p>
+<h3 id="klein-gordon方程">Klein-Gordon方程</h3>
+<p>Hamiltonian的形式为<span class="math inline">\(\hat H=\sqrt{\hat{\mathbf p}^2+m^2}\)</span>。为了能够处理算符的超越函数，将Schrödinger方程两边再做时间的导数： <span class="math display">\[
+-\frac{\partial^2}{\partial t^2}\psi(\mathbf r,t)=\hat H^2\psi(\mathbf r,t)=(-\nabla^2+m^2)\psi(\mathbf r,t)
+\]</span> 即 <span class="math display">\[
+(\frac{\partial^2}{\partial t^2}-\nabla^2+m^2)\psi(\mathbf r,t)=0\\
+\text{or}\\
+(\partial_\mu\partial^\mu+m^2)\psi(\mathbf r,t)=0
+\]</span> 此即Klein-Gordon方程。</p>
+<p>当能量满足质能方程<span class="math inline">\(E^2=\mathbf p^2+m^2\)</span>时，解的形式为： <span class="math display">\[
+\psi(x,t)=N\mathrm e^{-i(Et-\mathbf p\cdot\mathbf r)}=N\mathrm e^{-ip^\mu x_\mu}
+\]</span> 时间项是<span class="math inline">\(\mathrm e^{-iEt}\)</span>，空间项是平面波，这是我们对质量为<span class="math inline">\(m\)</span>的自由粒子所期望的形式。</p>
+<h3 id="dirac方程">Dirac方程</h3>
+<p>为了避免出现时间的二阶导数，同时保持方程的协变性，可以将方程写成如下形式（<span class="math inline">\(\gamma\)</span>和<span class="math inline">\(m\)</span>都应理解为待定的系数）： <span class="math display">\[
+(i\gamma^\mu\partial_\mu-m)\psi(\mathbf r,t)=0
+\]</span> 我们仍然需要让自由粒子的能量满足质能方程。</p>
+<p>在上述方程两边作用上<span class="math inline">\(-i\gamma^\nu\partial_\nu-m\)</span>，得到： <span class="math display">\[
+(\gamma^\nu\partial_\nu\gamma^\mu\partial_\mu+m^2)\psi(\mathbf r,t)=0
+\]</span> 假设<span class="math inline">\(\gamma^\mu\)</span>和<span class="math inline">\(\partial_\nu\)</span>对易，进一步假设<span class="math inline">\(\gamma^\nu\gamma^\mu\partial_\nu\partial_\mu=\partial^\mu\partial_\mu=g^{\mu\nu}\partial_\nu\partial_\mu\)</span>，其中<span class="math inline">\(g^{\mu\nu}\)</span>是度规，<span class="math inline">\(g=diag\{1,-1,-1,-1\}\)</span>。</p>
+<p>最终得到： <span class="math display">\[
+\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}
+\]</span> 容易看出，<span class="math inline">\(\gamma\)</span>不是复数，而是满足如下Clifford代数的实体： <span class="math display">\[
+\begin{align}
+(\gamma^0)^2=&amp;1\\
+(\gamma^i)^2=&amp;-1\\
+\gamma^\mu\gamma^\nu=&amp;-\gamma^\nu\gamma^\mu\ \ \ \ \text{if}\ \mu\ne\nu
+\end{align}
+\]</span> 可以用四维矩阵来实现这个代数，得到 <span class="math display">\[
+\boldsymbol\gamma=
+\left(
+\begin{array}{c}
+0&amp;\boldsymbol\tau\\
+-\boldsymbol\tau&amp;0
+\end{array}
+\right)
+\ \ \text{and}\ \ \beta=
+\left(
+\begin{array}{c}
+0&amp;I_2\\
+I_2&amp;0
+\end{array}
+\right)
+\]</span> 将自由粒子的波函数代入Dirac方程，得到 <span class="math display">\[
+\gamma^\mu p_\mu-m=0
+\]</span> 两边乘<span class="math inline">\(\gamma^0\)</span>，得 <span class="math display">\[
+E=\gamma^0\boldsymbol{\gamma}\cdot\mathbf{p}+\gamma^0m
+\]</span> 定义 <span class="math display">\[
+\alpha_i=\gamma^0\gamma^i,\ \beta=\gamma^0
+\]</span> 得到 <span class="math display">\[
+\hat H=\boldsymbol\alpha\cdot\mathbf p+\beta m
+\]</span></p>
+<h3 id="四维矩阵的展开">四维矩阵的展开</h3>
+<p>我们已经知道，二维矩阵可以用Pauli矩阵展开。而<span class="math inline">\(\gamma\)</span>矩阵进行组合后可以用来展开四维矩阵。</p>
+<p>用来展开的16个基矩阵是： <span class="math display">\[
+I_4;\\\gamma^0,\gamma^1,\gamma^2,\gamma^3;\\
+\gamma^5=i\gamma^0\gamma^1\gamma^2\gamma^3;\\
+\gamma^0\gamma^5,\gamma^1\gamma^5,\gamma^2\gamma^5,\gamma^3\gamma^5;\\
+\Sigma^{\mu\nu}=\frac{i}{4}[\gamma^\mu,\gamma^\nu]\ \ \ \ (\mu\ne\nu)
+\]</span> 考察<span class="math inline">\(\Sigma^{\mu\nu}\)</span>： <span class="math display">\[
+(\Sigma^{23},\Sigma^{31},\Sigma^{12})=\frac{1}{2}
+\left(
+\begin{array}{c}
+\boldsymbol{\tau}&amp;\\
+&amp;\boldsymbol{\tau}
+\end{array}
+\right)
+=\boldsymbol\sigma/2;\\
+\Sigma^{0i}=\gamma^0\gamma^i=\alpha^i
+\]</span> 其中<span class="math inline">\(\boldsymbol\sigma\)</span>称为自旋矩阵，是空间旋转变换的生成元；<span class="math inline">\(\boldsymbol\alpha\)</span>称为速度矩阵，是时空平移变换的生成元。</p>
+<h3 id="求解dirac方程">求解Dirac方程</h3>
+<p>比起上面的Weyl表象来，在Dirac表象下解Dirac方程更加方便。取 $$ { \begin{array}{rl} &amp;_D^0=-_W^5\ &amp;_D=_W\ &amp;_D^5=_W^0</p>
+<p>\end{array} . <span class="math display">\[
+Dirac方程
+\]</span> i(r,t)=H(r,t) $$ 其中<span class="math inline">\(\hat H(\hat{\mathbf p})=\boldsymbol\alpha\cdot\mathbf{\hat p}+\beta m\)</span>。</p>
+<p>Hamiltonian不含时，定态方程 <span class="math display">\[
+\hat H\psi_n(\mathbf r)=E_n\psi_n(\mathbf r)
+\]</span> 解空间存在简并。</p>
+<p>可考虑用与Hamiltonian对易的动量算符标记子空间，于是增加动量的<span class="math inline">\(3\)</span>个本征方程，变为： <span class="math display">\[
+\left\{
+\begin{array}{c}
+\hat{\mathbf p}\psi_{\mathbf p,E}(\mathbf r)=\mathbf p\psi_{\mathbf p,E}(\mathbf r)\\
+\hat H(\hat{\mathbf p})\psi_n(\mathbf r)=E_n\psi_n(\mathbf r)
+\end{array}
+\right.
+\]</span> 或者直接写成 <span class="math display">\[
+\hat p^\mu\psi_{p^\mu}(\mathbf r)=p^\mu\psi_{p^\mu}(\mathbf r)
+\]</span> 对波函数做Fourier展开，即 <span class="math display">\[
+\psi(\mathbf r)=\sum_{\mathbf p}\psi(\mathbf p)\mathrm e^{i\mathbf p\cdot\mathbf r}/\sqrt\Omega
+\]</span> 先解本征值<span class="math inline">\(E\)</span>。</p>
+<p>将Hamiltonian和<span class="math inline">\(\psi(\mathbf r)\)</span>代入Dirac方程，得到： <span class="math display">\[
+(\boldsymbol{\alpha}\cdot\hat{\mathbf p}+\beta m)\psi_{E,\mathbf p}(\mathbf p)=E\psi_{E,\mathbf p}(\mathbf p)
+\]</span></p>
+<p>两边同乘<span class="math inline">\((\boldsymbol\alpha\cdot\hat{\mathbf p}+\beta m)\)</span>： <span class="math display">\[
+(\hat{\mathbf p}^2+m^2)\psi_{E,\mathbf p}(\mathbf p)=E^2\psi_{E,\mathbf p}(\mathbf p)
+\]</span> 得到 <span class="math display">\[
+E^2=\mathbf p^2+m^2\\
+E=\pm\sqrt{\mathbf p^2+m^2}
+\]</span> 所以 <span class="math display">\[
+\left\{
+\begin{array}{c}
+(\boldsymbol\alpha\cdot\hat{\mathbf p}+\beta m)\psi_{+E,\mathbf p}(\mathbf p)=+E\psi_{+E,\mathbf p}(\mathbf p)\\
+(\boldsymbol\alpha\cdot\hat{\mathbf p}+\beta m)\psi_{-E,\mathbf p}(\mathbf p)=-E\psi_{-E,\mathbf p}(\mathbf p)
+\end{array}
+\right.
+\]</span> 记 <span class="math display">\[
+\left\{
+\begin{array}{c}
+\psi_{+E,\mathbf p}(\mathbf p)=\psi_{+,\mathbf p}(\mathbf p)=U(\mathbf p)\\
+\psi_{-E,\mathbf p}(\mathbf p)=\psi_{-,\mathbf p}(\mathbf p)=V(-\mathbf p)
+\end{array}
+\right.
+\]</span> 这里<span class="math inline">\(V\)</span>中的符号，标记的是能量为<span class="math inline">\(-E\)</span>，动量仍为<span class="math inline">\(\mathbf p\)</span>。</p>
+<p>将波函数分别用<span class="math inline">\(U\)</span>、<span class="math inline">\(V\)</span>表示后，得到的两个Dirac方程被称为正能、负能方程。</p>
+<p>特别地，我们考察动量为<span class="math inline">\(\mathbf p=0\)</span>的粒子，即静止粒子的正能方程。 <span class="math display">\[
+\beta mU(0)=EU(0)=mU(0)
+\]</span> 解出 <span class="math display">\[
+U(0)=(1,0,0,0)^T\ \ \text{or}\ \ (0,1,0,0)^T
+\]</span></p>
+<p>这表明，对同一组<span class="math inline">\(E,\mathbf p\)</span>，系统仍有简并。</p>
+<p>定义螺度算子（Helicity)： <span class="math display">\[
+\hat{h}=\boldsymbol{\sigma}\cdot\frac{\hat{\mathbf p}}{|\mathbf p|}
+\]</span> 它同Hamiltonian对易，可以用来解除简并。这样，正能方程变为： <span class="math display">\[
+\left\{
+\begin{array}{c}
+(\boldsymbol\alpha\cdot\hat{\mathbf p}+\beta m)U_r(\mathbf p)=EU_r(\mathbf p)\\
+\boldsymbol{\sigma}\cdot\frac{\mathbf p}{|\mathbf p|}U_r(\mathbf p)=rU_r(\mathbf p)
+\end{array}
+\right.
+\]</span> 其中<span class="math inline">\(r=\pm1\)</span>。</p>
+<p>螺度是Dirac系统的守恒量，这可以通过<span class="math inline">\([\hat h,\hat H]=0\)</span>验证。</p>
+<h3 id="电荷共轭">电荷共轭</h3>
+<p>先定义电荷共轭操作： <span class="math display">\[
+\psi\mapsto\psi^c=c\bar\psi^T
+\]</span> 其中Dirac共轭为： <span class="math display">\[
+\bar\psi=\psi^\dagger\gamma^0
+\]</span> 待定矩阵<span class="math inline">\(c\)</span>需要满足下面的性质： <span class="math display">\[
+c{\gamma^\mu}^Tc^{-1}=-\gamma^\mu
+\]</span> <span class="math inline">\(c\)</span>可以取为： <span class="math display">\[
+c=i\gamma^0\gamma^2
+\]</span> 这个解并不唯一。</p>
+<p>可以验证，正能方程的解做电荷共轭后得到的<span class="math inline">\(U^c_r(\mathbf p)\)</span>是Dirac方程能量为<span class="math inline">\(-E\)</span>，动量为<span class="math inline">\(-\mathbf p\)</span>，螺度为<span class="math inline">\(r\)</span>的本征态，所以可以令 <span class="math display">\[
+U^c_r(\mathbf p)=V_r(\mathbf p)
+\]</span> 即电荷共轭变换将粒子变为能动量相反、螺度相同的反粒子。</p>
+<h3 id="投影算子">投影算子</h3>
+<p>用能量和动量的正负标记解空间，如图：</p>
+<figure>
+<img src="http://ww1.sinaimg.cn/large/dc8f7e3dly1fncwvn9wl8j20zb0oo74i.jpg" alt="空间分解"><figcaption>空间分解</figcaption>
+</figure>
+<p>空间中的基函数满足正交归一性： <span class="math display">\[
+U_r^\dagger(\mathbf p)U_s^\dagger(\mathbf p)=\delta_{rs}\\
+V_r^\dagger(\mathbf p)V_s^\dagger(\mathbf p)=\delta_{rs}\\
+U_r^\dagger(\mathbf p)V_s^\dagger(-\mathbf p)=0
+\]</span></p>
+<p>将解空间分割为正能空间和负能空间，即 <span class="math display">\[
+\psi=\hat{P}_+\psi+\hat{P}_-\psi
+\]</span> 其中两个投影算符分别为 <span class="math display">\[
+\left\{
+\begin{array}{c}
+\hat{P}_+=\frac{\hat{H}(\hat{\mathbf p})+E}{2E}=\sum_\limits{r=\pm}U_r(\mathbf p)U_r^\dagger(\mathbf p)\\
+\hat{P}_-=\frac{-\hat{H}(\hat{\mathbf p})+E}{2E}=\sum_\limits{r=\pm}V_r(-\mathbf p)V_r^\dagger(-\mathbf p)\\
+\end{array}
+\right.
+\]</span> 表示将本征态投影到同侧、上下两个子空间。</p>
+<p>满足性质 <span class="math display">\[
+\left\{
+\begin{array}{l}
+\hat P_+^2=P_+\\
+\hat P_-^2=P_-\\
+\hat P_+\hat P_-=\hat P_-\hat P_+=0\\
+\hat P_++\hat P_-=1
+\end{array}
+\right.
+\]</span> 同时也可以将本征态投影到对角线上的两个子空间。对应的投影算符为： <span class="math display">\[
+\left\{
+\begin{array}{l}
+\hat{\Pi}_+=\frac{/\kern-0.4em p+m}{2E}=\sum_\limits{r=\pm}U_r(\mathbf p)\bar{U}_r(\mathbf p)\\
+\hat{\Pi}_-=\frac{-/\kern-0.4em p+m}{2E}=\sum_\limits{r=\pm}V_r(\mathbf p)\bar{V}_r(\mathbf p)\\
+\end{array}
+\right.
+\]</span> 其中Feynman斜线标记的定义为： <span class="math display">\[
+/\kern-0.65em A=\gamma^\mu A_\mu
+\]</span> 这组投影算符满足性质 <span class="math display">\[
+\left\{
+\begin{array}{l}
+\hat \Pi_+^2= \Pi_+\cdot\frac{m}{E}\\
+\hat \Pi_-^2= \Pi_-\cdot\frac{m}{E}\\
+\hat \Pi_+\hat \Pi_-=\hat \Pi_-\hat \Pi_+=0\\
+\hat \Pi_++\hat \Pi_-=\frac{m}{E}
+\end{array}
+\right.
+\]</span></p>
+<h3 id="二次量子化">二次量子化</h3>
+<p>将投影算子的完备性条件乘在动量空间的波函数上，得到： <span class="math display">\[
+\begin{align}
+\psi(\mathbf p,t)&amp;=\sum_{r=\pm}[U_r(\mathbf p)\bar{U}_r(\mathbf p)+V_r(-\mathbf p)\bar{V}_r(-\mathbf p)]\psi(\mathbf p,t)\\
+&amp;=\sum_{r=\pm}[a_r(\mathbf p,t)U_r(\mathbf p)+b_r^\dagger(-\mathbf p,t)V_r(-\mathbf p)]
+\end{align}
+\]</span> 其中产生、湮灭算符定义为： <span class="math display">\[
+\left\{
+\begin{array}{l}
+a_r(\mathbf p,t)=U_r^\dagger(\mathbf p)\psi(\mathbf p,t)\\
+b_r^\dagger(-\mathbf p,t)=V_r(\mathbf p)\psi(\mathbf p,t)
+\end{array}
+\right.
+\]</span> 满足对易关系 <span class="math display">\[
+[a(\mathbf p,t),a^\dagger(\mathbf p&#39;,t)]=\delta_{\mathbf p,\mathbf p&#39;}
+\]</span> 代入波函数的Fourier变换公式，得到 <span class="math display">\[
+\left\{
+\begin{array}{l}
+a_r(\mathbf p,t)=\int\mathrm d^3\mathbf rU_r^\dagger(\mathbf r)\psi(\mathbf r,t)\mathrm e^{-i\mathbf p\cdot \mathbf r}/(2\pi)^{3/2}\\
+b_r(\mathbf p,t)=\int\mathrm d^3\mathbf r\psi^\dagger(\mathbf r,t)V_r(\mathbf r)\mathrm e^{-i\mathbf p\cdot \mathbf r}/(2\pi)^{3/2}\\
+\end{array}
+\right.
+\]</span> 位置空间的波函数写成 <span class="math display">\[
+\psi(\mathbf r,t)=\sum_{r=\pm}\int\mathrm d^3\mathbf p[a_r(\mathbf p,t)U_r(\mathbf p)+b_r^\dagger(-\mathbf p,t)V_r(-\mathbf p)]\frac{\mathrm e^{i\mathbf p\cdot\mathbf r}}{(2\pi)^{3/2}}
+\]</span> 波函数满足的对易关系 <span class="math display">\[
+[\psi(\mathbf r,t),\psi(\mathbf r&#39;,t)]=\delta^{(3)}(\mathbf r-\mathbf r&#39;)
+\]</span></p>
+<h3 id="maxwell理论">Maxwell理论</h3>
+<p>电磁场的势为 <span class="math display">\[
+A=(\phi,\mathbf A)
+\]</span> 带电粒子在电磁场中运动的Lagrangian： <span class="math display">\[
+L=-m+\frac{1}{2}m\dot{\mathbf r}^2-e\phi+e\dot{\mathbf r}\cdot\mathbf A
+\]</span> 正则动量： <span class="math display">\[
+\frac{\partial L}{\partial\dot{\mathbf r}}=m\dot{\mathbf r}+e\mathbf A
+\]</span> 根据Euler-Lagrange方程，得到 <span class="math display">\[
+\frac{\mathrm d}{\mathrm dt}(\frac{\partial L}{\partial\dot{\mathbf r}})=\frac{\partial L}{\partial\mathbf r}
+\]</span> 解出 <span class="math display">\[
+\mathbf F=m\frac{\mathrm d\dot{\mathbf r}}{\mathrm dt}=e(-\nabla\phi-\frac{\partial\mathbf A}{\partial t})+e\dot{\mathbf r}\times\nabla\times\mathbf A=e\mathbf E+e\dot{\mathbf r}\times\mathbf B
+\]</span> 即Lorentz力。</p>
+<p>做Legendre变换得到系统的Hamiltonian： <span class="math display">\[
+H=\dot{\mathbf r}\cdot\frac{\partial L}{\partial\dot{\mathbf r}}-L=m+\frac{(\mathbf p-e\mathbf A)^2}{2m}+e\phi
+\]</span> 对电磁场，定义电磁张量 <span class="math display">\[
+F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu
+\]</span> 以<span class="math inline">\(A\)</span>作为广义坐标，系统的Lagrangian： <span class="math display">\[
+L=-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}
+\]</span> 对广义坐标和广义速度求导数，得到： <span class="math display">\[
+\begin{align}
+\frac{\partial F_{\mu\nu}}{\partial(\partial_\lambda A_\kappa)}&amp;=\delta^\lambda_\mu\delta^\kappa_\nu-\delta^\lambda_\nu\delta^\kappa_\mu\\
+\frac{\partial  F_{\mu\nu}}{\partial A_\lambda}&amp;=0
+\end{align}
+\]</span> 所以 <span class="math display">\[
+\frac{\partial}{\partial(\partial_\lambda A_\kappa)}F_{\mu\nu}F^{\mu\nu}=4F^{\lambda\kappa}
+\]</span> 代入Euler-Lagrange方程，得到 <span class="math display">\[
+\partial_\mu\frac{\partial L}{\partial(\partial_\mu A_\nu)}-\frac{\partial L}{\partial A_\mu}=0
+\]</span> 即 <span class="math display">\[
+-\partial_\mu F^{\mu\nu}=0
+\]</span> 同时根据<span class="math inline">\(F^{\mu\nu}\)</span>的定义及轮换性质，容易推出 <span class="math display">\[
+\partial_\mu F_{\nu\lambda}+\partial_\nu F_{\lambda\mu}+\partial_\lambda F_{\mu\nu}=0
+\]</span> 代入 <span class="math display">\[
+\left\{
+\begin{array}{l}
+E^i=-F^{0i}\\
+\epsilon^{ijk}B_k=-F^{ij}
+\end{array}
+\right.
+\]</span> 即可得到Maxwell方程组。</p>
+<h2 id="对称性">4. 对称性</h2>
+<h3 id="空间反演dirac系统">空间反演（Dirac系统）</h3>
+<p>定义宇称操作<span class="math inline">\(\hat P\)</span>： <span class="math display">\[
+\hat\psi(x)\mapsto\hat\psi&#39;(x)=\hat P\hat\psi(x)\hat{P}^{-1}=\eta_p\gamma^0\hat\psi(x_p)
+\]</span> 其中 <span class="math display">\[
+x=(t,\mathbf r),\ \ x_p=(t,-\mathbf r)
+\]</span> <span class="math inline">\(\eta_p\)</span>标记相位因子。</p>
+<p>写出场算符的二次量子化表示： <span class="math display">\[
+\hat\psi(x)=\sum_{\mathbf p}\frac{\mathrm e^{i\mathbf p\cdot\mathbf r}}{\sqrt\Omega}\frac{1}{2E}\sum_{\lambda=\pm}[\hat a_{\lambda}(\mathbf p)\mathrm e^{-iEt}U_\lambda(\mathbf p)+\hat b^\dagger_\lambda(-\mathbf p)\mathrm e^{iEt}V_\lambda(-\mathbf p)]
+\]</span> 如果动量连续，则将求和变成积分即可。</p>
+<p>反解出产生湮灭算符 <span class="math display">\[
+\left\{
+\begin{array}{l}
+\hat{a}_\lambda(\mathbf p)=\int\mathrm d^3\mathbf r\frac{\mathrm e^{ipx}}{\sqrt{2E}}U_\lambda^\dagger(\mathbf p)\hat\psi(x)\\
+\hat b_\lambda^\dagger(\mathbf p)=\int\mathrm d^3\mathbf r\frac{\mathrm e^{-ipx}}{\sqrt{2E}}V_\lambda^\dagger(\mathbf p)\hat\psi(x)
+\end{array}
+\right.
+\]</span></p>
+<p>则 <span class="math display">\[
+\begin{align}
+\hat P\hat a_\lambda(\mathbf p)\hat P^{-1}&amp;=\int\mathrm d^3\mathbf r\frac{\mathrm e^{ipx}}{\sqrt{2E}}U^\dagger_\lambda(\mathbf p)\hat P\hat\psi(x)\hat P^{-1}\\
+&amp;=\int\mathrm d^3\mathbf r\frac{\mathrm e^{ipx}}{\sqrt{2E}}\eta_p[\gamma^0U_\lambda(\mathbf p)]^\dagger\hat\psi(x_p)
+\end{align}
+\]</span> 其中 <span class="math display">\[
+\gamma^0U_\lambda(\mathbf p)=
+\left\{
+\begin{array}{l}
+U_\lambda(-\mathbf p)\ \ \ \ \text{if }\lambda\ \text{denotes spin}\\
+U_{-\lambda}(-\mathbf p)\ \ \ \ \text{if }\lambda\ \text{denotes helicity}\\
+\end{array}
+\right.
+\]</span> 这里讨论自旋体系，得到 <span class="math display">\[
+\begin{align}
+\hat P\hat a_\lambda(\mathbf p)\hat P^{-1}&amp;=\eta_p\int\mathrm d^3\mathbf r\frac{\mathrm e^{ipx}}{\sqrt{2E}}U_\lambda^\dagger(-\mathbf p)\hat\psi(x_p)\\
+&amp;=\eta_p\int\mathrm d^3\mathbf r\frac{\mathrm e^{ip_px_p}}{\sqrt{2E}}U_\lambda^\dagger(-\mathbf p)\hat\psi(x_p)\\
+&amp;=\eta_p\int\mathrm d^3\mathbf r\frac{\mathrm e^{ip_px}}{\sqrt{2E}}U_\lambda^\dagger(-\mathbf p)\hat\psi(x)\\
+&amp;=\eta_p\hat a_\lambda(-\mathbf p)
+\end{align}
+\]</span> 同理得到对<span class="math inline">\(b\)</span>的宇称变换公式。综上， <span class="math display">\[
+\left\{
+\begin{array}{l}
+\hat P\hat a_\lambda(\mathbf p)\hat P^{-1}=\eta_p\hat a_\lambda(-\mathbf p)\\
+\hat P\hat b^\dagger_\lambda(\mathbf p)\hat P^{-1}=\eta_p\hat a_\lambda(-\mathbf p)
+\end{array}
+\right.
+\]</span> 同时，宇称算符还应该满足 <span class="math display">\[
+\hat P\mathcal{L}\hat P^{-1}=\mathcal{L}\ \ 
+\text{and}\ \ 
+\hat P|0\rangle=|0\rangle
+\]</span> 其中Lagrangian为<span class="math inline">\(\mathcal{L}=\bar\psi(i\gamma^\mu\partial_\mu-m)\psi\)</span>，<span class="math inline">\(|0\rangle\)</span>是真空态。</p>
+<p>用产生算符定义原子态： <span class="math display">\[
+\left\{
+\begin{array}{l}
+\hat a_\lambda^\dagger(\mathbf p)|0\rangle=|\mathbf p,\lambda\rangle\\
+\hat b_\lambda^\dagger(\mathbf p)|0\rangle=|\tilde{\mathbf p},\lambda\rangle\\
+\end{array}
+\right.
+\]</span> 其中用tilde表示反粒子。</p>
+<p>这样，有 <span class="math display">\[
+\left\{
+\begin{array}{l}
+\hat P|\mathbf p,\lambda\rangle=\eta^*_p|-\mathbf p,\lambda\rangle\\
+\hat P|\tilde{\mathbf p},\lambda\rangle=-\eta_p|-\tilde{\mathbf p},\lambda\rangle\\
+\end{array}
+\right.
+\]</span></p>
+<h3 id="电荷共轭-1">电荷共轭</h3>
+<p>定义电荷共轭操作<span class="math inline">\(\hat C\)</span>： <span class="math display">\[
+\hat\psi(x)\mapsto\hat\psi&#39;(x)=\hat C\hat\psi(x)\hat C^{-1}=\eta_c\hat\psi^c(x)
+\]</span> 容易证明： <span class="math display">\[
+\hat C\hat\psi^c(x)\hat C^{-1}=\eta_c^*\hat\psi(x)
+\]</span> 同上，将场算符写成二次量子化的形式，可以推出产生湮灭算符的电荷共轭： <span class="math display">\[
+\left\{
+\begin{array}{l}
+\hat C\hat a_\lambda(\mathbf p)\hat C^{-1}=\eta_c\hat b_\lambda(\mathbf p)\\
+\hat C\hat b^\dagger_\lambda(\mathbf p)\hat C^{-1}=\eta_c^*\hat a^\dagger_\lambda(\mathbf p)
+\end{array}
+\right.
+\]</span> 假定<span class="math inline">\(\hat C|0\rangle=|0\rangle\)</span>，有 <span class="math display">\[
+\left\{
+\begin{array}{l}
+\hat C|\mathbf p,\lambda\rangle=\eta_c^*|\tilde{\mathbf p},\lambda\rangle\\
+\hat C|\tilde{\mathbf p},\lambda\rangle=\eta_c|\mathbf p,\lambda\rangle\\
+\end{array}
+\right.
+\]</span></p>
+<h2 id="散射">5. 散射</h2>
+<h3 id="两体散射">两体散射</h3>
+<p>研究两个粒子在相互作用下的演化问题。设系统的初态为 <span class="math display">\[
+|\mathbf p^i_1,\mathbf p^i_2\rangle
+\]</span> 末态 <span class="math display">\[
+|\mathbf p^f_1,\mathbf p^f_2\rangle
+\]</span> 相互作用为<span class="math inline">\(\hat V\)</span>，定义为 <span class="math display">\[
+\langle\mathbf r_1&#39;,\mathbf r_2&#39;|\hat V|\mathbf r_1,\mathbf r_2\rangle=\delta^{(3)}(\mathbf r_1&#39;-\mathbf r_1)\delta^{(3)}(\mathbf r_2&#39;-\mathbf r_2)V(\mathbf r_1-\mathbf r_2)
+\]</span> 采取质心系，做变换 <span class="math display">\[
+\left\{
+\begin{array}{l}
+\mathbf r=\mathbf r_1-\mathbf r_2\\
+\mathbf R=\frac{m_1\mathbf  r_1+m_2\mathbf r_2}{m_1+m_2}
+\end{array}
+\right.
+\]</span> 反变换： <span class="math display">\[
+\left\{
+\begin{array}{l}
+\mathbf r_1=\mathbf R+\frac{m_2}{m_1+m_2}\mathbf r\\
+\mathbf r_2=\mathbf R-\frac{m_1}{m_1+m_2}\mathbf r
+\end{array}
+\right.
+\]</span> 其中<span class="math inline">\(\mathbf r\)</span>是相对坐标，<span class="math inline">\(\mathbf R\)</span>是质心坐标。相应地，可以定义相对动量<span class="math inline">\(\mathbf p=-i\frac{\partial}{\partial\mathbf r}\)</span>，和质心动量<span class="math inline">\(\mathbf P=-i\frac{\partial}{\partial\mathbf R}\)</span>，可以得到 <span class="math display">\[
+\left\{
+\begin{array}{l}
+\mathbf p=\frac{m_2}{m_1+m_2}\mathbf p_1-\frac{m_1}{m_1+m_2}\mathbf p_2\\
+\mathbf P=\mathbf p_1+\mathbf p_2
+\end{array}
+\right.
+\]</span> 下面计算相互作用的矩阵元。 <span class="math display">\[
+\begin{align}
+&amp;\langle\mathbf p_1^f,\mathbf p_2^f|\hat V|\mathbf p_1^i,\mathbf p_2^i\rangle\\
+=&amp;\int\mathrm d^3\mathbf r_1\mathrm d^3\mathbf r_2\langle\mathbf p_1^f,\mathbf p_2^f|\hat V|\mathbf r_1,\mathbf r_2\rangle\langle\mathbf r_1,\mathbf r_2|\mathbf p_1^i,\mathbf p_2^i\rangle\\
+=&amp;\int\mathrm d^3\mathbf r_1\mathrm d^3\mathbf r_2V(\mathbf r_1-\mathbf r_2)\langle\mathbf p_1^f,\mathbf p_2^f|\mathbf r_1,\mathbf r_2\rangle\langle\mathbf r_1,\mathbf r_2|\mathbf p_1^i,\mathbf p_2^i\rangle\\
+=&amp;\int\mathrm d^3\mathbf r\mathrm d^3\mathbf RV(\mathbf r)\mathrm e^{-i(\mathbf p^f\cdot \mathbf r+\mathbf P^f\cdot\mathbf R)}\mathrm e^{i(\mathbf p^i\cdot \mathbf r+\mathbf P^i\cdot\mathbf R)}\\
+=&amp;\int\mathrm d^3\mathbf R\ \mathrm e^{i(\mathbf P^i-\mathbf P^f)\cdot\mathbf R}\times\int\mathrm d^3\mathbf rV(\mathbf r)\mathrm e^{i(\mathbf p^i-\mathbf p^f)\cdot\mathbf r}\\
+=&amp;(2\pi)^3\delta^{(3)}(\mathbf P^i-\mathbf P^f)\int\mathrm d^3\mathbf rV(\mathbf r)\mathrm e^{i(\mathbf p^i-\mathbf p^f)\cdot\mathbf r}\\
+=&amp;(2\pi)^3\delta^{(3)}(\mathbf P^i-\mathbf P^f)\langle\mathbf p^f|\hat V|\mathbf p^i\rangle
+\end{align}
+\]</span> 可以看出，采取质心系之后二体散射变成单体散射，同时需满足动量守恒。这个结论成为因子化定理。下面只讨论单体散射即可。</p>
+<h3 id="单体散射">单体散射</h3>
+<p>在相互作用图象下，系统Hamiltonian写为 <span class="math display">\[
+\hat H=\hat H_0+\hat V
+\]</span> 自由系统的Hamiltonian的能谱可以求解，其本征态<span class="math inline">\(|\phi\rangle\)</span>的能量为<span class="math inline">\(E\)</span>。</p>
+<p>假设系统在<span class="math inline">\(t=-\infty\)</span>时，处在自由系统的本征态上；在<span class="math inline">\(t=+\infty\)</span>时，又回到自由系统的另一个本征态。即 <span class="math display">\[
+\left\{
+\begin{array}{l}
+|i\rangle=\mathrm e^{-iE_it}|\phi_i\rangle\ \ \ \ t\to-\infty\\
+|f\rangle=\mathrm e^{-iE_ft}|\phi_f\rangle\ \ \ \ t\to+\infty\\
+\end{array}
+\right.
+\]</span> 研究跃迁振幅： <span class="math display">\[
+\begin{align}
+&amp;\langle f|\hat U(t,t&#39;)|i\rangle\\
+=&amp;\langle f|\int\mathrm d\omega\ \frac{1}{2\pi}\mathrm e^{-i\omega(t&#39;-t)}i\hat{\mathcal{K}}(\omega)|i\rangle
+\end{align}
+\]</span> 在第二章中，我们将<span class="math inline">\(\hat{\mathcal K}(\omega)\)</span>做了微扰展开。代入上式，得到 <span class="math display">\[
+\begin{align}
+&amp;\langle f|\hat U(t,t&#39;)|i\rangle\\
+=&amp;i\int\frac{\mathrm d\omega}{2\pi}\mathrm e^{i(E_f-\omega)t&#39;-i(E_i-\omega)t}\\
+&amp;\langle\phi_f|\frac{1}{\omega-\hat H_0+i\epsilon}+\frac{1}{\omega-\hat H_0+i\epsilon}\hat V\frac{1}{\omega-\hat H_0+i\epsilon}+\cdots|\phi_i\rangle\\
+=&amp;\frac{1}{\omega-E_i+i\epsilon}\langle\phi_f|\phi_i\rangle+\frac{1}{\omega-E_i+i\epsilon}\frac{1}{\omega-E_f+i\epsilon}\langle\phi_f|\hat V+\hat V\frac{1}{\omega-\hat H_0+i\epsilon}\hat V+\cdots|\phi_i\rangle
+\end{align}
+\]</span> 记 <span class="math display">\[
+\mathcal{F}(\omega)=\langle\phi_f|\hat V+\hat V\frac{1}{\omega-\hat H_0+i\epsilon}\hat V+\cdots|\phi_i\rangle
+\]</span> 则 <span class="math display">\[
+\begin{align}
+&amp;\langle f|\hat U(t,t&#39;)|i\rangle\\
+=&amp;i\int\frac{\mathrm d\omega}{2\pi}\mathrm e^{i(E_f-\omega)t&#39;-i(E_i-\omega)t}\frac{1}{\omega-E_i+i\epsilon}[\langle\phi_f|\phi_i\rangle+\frac{1}{\omega-E_f+i\epsilon}\mathcal{F}(\omega)]
+\end{align}
+\]</span> 利用公式 <span class="math display">\[
+\lim_{t\to-\infty}\frac{\mathrm e^{i\omega t}}{\omega+i\epsilon}=-2\pi i\delta(\omega)
+\]</span> 代入得到 <span class="math display">\[
+\lim_{t\to-\infty}\lim_{t&#39;\to\infty}\langle f|\hat U(t,t&#39;)|i\rangle=\delta_{fi}-2\pi i\delta(E_i-E_f)\mathcal{F}(E_i)
+\]</span> 第二项意味着能量守恒。</p>
+<p>定义<span class="math inline">\(S\)</span>矩阵和<span class="math inline">\(T\)</span>矩阵： <span class="math display">\[
+\lim_{t\to-\infty}\lim_{t&#39;\to\infty}\langle f|\hat U(t,t&#39;)|i\rangle=\langle\phi_f|\hat S|\phi_i\rangle\\
+\hat S=\mathbf 1-i\hat T
+\]</span> 将自由系统的本征态简记为 <span class="math display">\[
+|\phi_i\rangle=|i\rangle\\
+|\phi_f\rangle=|f\rangle
+\]</span> 则有 <span class="math display">\[
+\langle f|\hat T|i\rangle=2\pi\delta(E_i-E_f)\mathcal F(E_i)
+\]</span> 表明<span class="math inline">\(\mathcal F(E_i)\)</span>是<span class="math inline">\(T\)</span>矩阵的矩阵元。</p>
+<p>定义 <span class="math display">\[
+|i^+\rangle=\sum_{n=0}^{\infty}(\frac{1}{E_i-\hat H_0+i\epsilon}\hat V)^n|i\rangle=|i\rangle+\frac{1}{E_i-\hat H_0+i\epsilon}\hat V|i^+\rangle
+\]</span> 则 <span class="math display">\[
+\begin{align}
+\langle \mathbf r|i^+\rangle=\langle \mathbf r|i\rangle+\int\mathrm d^3\mathbf r&#39;\langle\mathbf r|\frac{1}{E_i-\hat H_0+i\epsilon}|\mathbf r&#39;\rangle V(\mathbf r&#39;)\langle\mathbf r&#39;|i^+\rangle
+\end{align}
+\]</span> 其中的矩阵元可以用留数定理算出 <span class="math display">\[
+\langle\mathbf r|\frac{1}{E_i-\hat H_0+i\epsilon}|\mathbf r&#39;\rangle=-\frac{m}{2\pi R}\mathrm e^{ip_iR},\ \ R=|\mathbf r-\mathbf r&#39;|\approx r-\mathbf r&#39;\cdot\frac{\mathbf r}{r}
+\]</span> 所以有 <span class="math display">\[
+\langle\mathbf r|i^+\rangle=\langle\mathbf r|i\rangle+\frac{\mathrm e^{iP_ir}}{r}(-\frac{m}{2\pi}\langle p_i\hat{\mathbf r}|\hat V|i^+\rangle)
+\]</span> 即一个朝前的平面波叠加上一个带调幅因子的球面波，调幅因子是<span class="math inline">\(T\)</span>矩阵的矩阵元。</p>
+<h3 id="散射截面">散射截面</h3>
+<p>定义微分散射截面 <span class="math display">\[
+\frac{\mathrm d\sigma}{\mathrm d\Omega}=(\frac{m}{2\pi})|T_{ni}|^2=|f_p(\theta)|^2
+\]</span> 其中<span class="math inline">\(T_{ni}\)</span>是跃迁矩阵元。</p>
+<h3 id="全同粒子">全同粒子</h3>
+<p>波函数满足交换对称性（反对称性），同时<span class="math inline">\(m_1=m_2=m\)</span>的两体散射过程。</p>
+<p>对自旋为零的Boson体系： <span class="math display">\[
+\Psi(\mathbf r_1,\mathbf r_2)=\psi(\mathbf r_1,\mathbf r_2)+\psi(\mathbf r_2,\mathbf r_1)
+\]</span> 其中<span class="math inline">\(\psi\)</span>是散射波函数，满足： <span class="math display">\[
+\psi(\mathbf r_1,\mathbf r_2)=\mathrm e^{i\mathbf P\cdot \mathbf R}[\mathrm e^{i\mathbf p\cdot\mathbf r}+\frac{\mathrm e^{ipr}}{r}f_p(\theta)]\\
+\psi(\mathbf r_2,\mathbf r_1)=\mathrm e^{i\mathbf P\cdot \mathbf R}[\mathrm e^{-i\mathbf p\cdot\mathbf r}+\frac{\mathrm e^{ipr}}{r}f_p(\pi-\theta)]
+\]</span> 所以 <span class="math display">\[
+\Psi(\mathbf r_1,\mathbf r_2)\sim\mathrm e^{i\mathbf p\cdot\mathbf r}+\mathrm e^{-i\mathbf p\cdot\mathbf r}+\frac{\mathrm e^{ipr}}{r}[f_p(\theta)+f_p(\pi-\theta)]
+\]</span> 所以应有 <span class="math display">\[
+\frac{\mathrm d\sigma}{\mathrm d\Omega}=|f_p(\theta)+f_p(\pi-\theta)|^2
+\]</span> 如果是非全同粒子，应当是平方和的形式。</p>
+<p>对自旋为<span class="math inline">\(\frac{1}{2}\)</span>的费米子体系： <span class="math display">\[
+\Psi(\mathbf r_1,\mathbf r_2)\sim\psi(\mathbf r_1,\mathbf r_2)|\lambda\rangle|\rho\rangle-\psi(\mathbf r_2,\mathbf r_1)|\rho\rangle|\lambda\rangle
+\]</span> 只当粒子对自旋相同时，才产生干涉作用。</p>
+<p>所以 <span class="math display">\[
+\frac{\mathrm d\sigma}{\mathrm d\Omega}=
+\left\{
+\begin{array}{l}
+|f_p(\theta)-f_p(\pi-\theta)|^2\ \ \ \ &amp;\text{for}\ \lambda=\rho\\
+|f_p(\theta)|^2+|f_p(\pi-\theta)|^2\ \ \ \ &amp;\text{for}\ \lambda\not=\rho\\
+\end{array}
+\right.
+\]</span></p>
 
       
     </div>
@@ -471,11 +1155,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/notes/" rel="tag"># notes</a>
-          
             <a href="/tags/sci-tech/" rel="tag"># sci-tech</a>
           
             <a href="/tags/phy/" rel="tag"># phy</a>
+          
+            <a href="/tags/notes/" rel="tag"># notes</a>
           
         </div>
       
@@ -671,7 +1355,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-补充知识"><span class="nav-number">1.</span> <span class="nav-text">1. 补充知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#谐振子系统"><span class="nav-number">1.1.</span> <span class="nav-text">谐振子系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相互作用图象"><span class="nav-number">1.2.</span> <span class="nav-text">相互作用图象</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-传播子与路径积分"><span class="nav-number">2.</span> <span class="nav-text">2. 传播子与路径积分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#时间演化算符和传播子"><span class="nav-number">2.1.</span> <span class="nav-text">时间演化算符和传播子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#路径积分"><span class="nav-number">2.2.</span> <span class="nav-text">路径积分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#含时微扰"><span class="nav-number">2.3.</span> <span class="nav-text">含时微扰</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#频率表象"><span class="nav-number">2.4.</span> <span class="nav-text">频率表象</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-相对论量子力学"><span class="nav-number">3.</span> <span class="nav-text">3. 相对论量子力学</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#四矢量、算符"><span class="nav-number">3.1.</span> <span class="nav-text">四矢量、算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Klein-Gordon方程"><span class="nav-number">3.2.</span> <span class="nav-text">Klein-Gordon方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dirac方程"><span class="nav-number">3.3.</span> <span class="nav-text">Dirac方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四维矩阵的展开"><span class="nav-number">3.4.</span> <span class="nav-text">四维矩阵的展开</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#求解Dirac方程"><span class="nav-number">3.5.</span> <span class="nav-text">求解Dirac方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电荷共轭"><span class="nav-number">3.6.</span> <span class="nav-text">电荷共轭</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#投影算子"><span class="nav-number">3.7.</span> <span class="nav-text">投影算子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二次量子化"><span class="nav-number">3.8.</span> <span class="nav-text">二次量子化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Maxwell理论"><span class="nav-number">3.9.</span> <span class="nav-text">Maxwell理论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-对称性"><span class="nav-number">4.</span> <span class="nav-text">4. 对称性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#空间反演（Dirac系统）"><span class="nav-number">4.1.</span> <span class="nav-text">空间反演（Dirac系统）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电荷共轭-1"><span class="nav-number">4.2.</span> <span class="nav-text">电荷共轭</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-散射"><span class="nav-number">5.</span> <span class="nav-text">5. 散射</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#两体散射"><span class="nav-number">5.1.</span> <span class="nav-text">两体散射</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单体散射"><span class="nav-number">5.2.</span> <span class="nav-text">单体散射</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#散射截面"><span class="nav-number">5.3.</span> <span class="nav-text">散射截面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全同粒子"><span class="nav-number">5.4.</span> <span class="nav-text">全同粒子</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#补充知识"><span class="nav-number">1.</span> <span class="nav-text">1. 补充知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#谐振子系统"><span class="nav-number">1.1.</span> <span class="nav-text">谐振子系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相互作用图象"><span class="nav-number">1.2.</span> <span class="nav-text">相互作用图象</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#传播子与路径积分"><span class="nav-number">2.</span> <span class="nav-text">2. 传播子与路径积分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#时间演化算符和传播子"><span class="nav-number">2.1.</span> <span class="nav-text">时间演化算符和传播子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#路径积分"><span class="nav-number">2.2.</span> <span class="nav-text">路径积分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#含时微扰"><span class="nav-number">2.3.</span> <span class="nav-text">含时微扰</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#频率表象"><span class="nav-number">2.4.</span> <span class="nav-text">频率表象</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相对论量子力学"><span class="nav-number">3.</span> <span class="nav-text">3. 相对论量子力学</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#四矢量算符"><span class="nav-number">3.1.</span> <span class="nav-text">四矢量、算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#klein-gordon方程"><span class="nav-number">3.2.</span> <span class="nav-text">Klein-Gordon方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dirac方程"><span class="nav-number">3.3.</span> <span class="nav-text">Dirac方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四维矩阵的展开"><span class="nav-number">3.4.</span> <span class="nav-text">四维矩阵的展开</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#求解dirac方程"><span class="nav-number">3.5.</span> <span class="nav-text">求解Dirac方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电荷共轭"><span class="nav-number">3.6.</span> <span class="nav-text">电荷共轭</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#投影算子"><span class="nav-number">3.7.</span> <span class="nav-text">投影算子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二次量子化"><span class="nav-number">3.8.</span> <span class="nav-text">二次量子化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#maxwell理论"><span class="nav-number">3.9.</span> <span class="nav-text">Maxwell理论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对称性"><span class="nav-number">4.</span> <span class="nav-text">4. 对称性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#空间反演dirac系统"><span class="nav-number">4.1.</span> <span class="nav-text">空间反演（Dirac系统）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电荷共轭-1"><span class="nav-number">4.2.</span> <span class="nav-text">电荷共轭</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#散射"><span class="nav-number">5.</span> <span class="nav-text">5. 散射</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#两体散射"><span class="nav-number">5.1.</span> <span class="nav-text">两体散射</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单体散射"><span class="nav-number">5.2.</span> <span class="nav-text">单体散射</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#散射截面"><span class="nav-number">5.3.</span> <span class="nav-text">散射截面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全同粒子"><span class="nav-number">5.4.</span> <span class="nav-text">全同粒子</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -881,7 +1565,7 @@
         avatar:'mm',
         meta:guest,
         pageSize:'10' || 10,
-        visitor: true
+        visitor: 
     });
   </script>
 
