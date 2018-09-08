@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="sci-tech,phy,notes," />
+  <meta name="keywords" content="notes,sci-tech,phy," />
 
 
 
@@ -83,7 +83,7 @@
 
 
 
-<meta name="keywords" content="sci-tech,phy,notes">
+<meta name="keywords" content="notes,sci-tech,phy">
 <meta property="og:type" content="article">
 <meta property="og:title" content="高等量子力学笔记">
 <meta property="og:url" content="https://imvictorcheng.github.io/高等量子力学笔记/index.html">
@@ -1155,11 +1155,11 @@ U_{-\lambda}(-\mathbf p)\ \ \ \ \text{if }\lambda\ \text{denotes helicity}\\
       
         <div class="post-tags">
           
+            <a href="/tags/notes/" rel="tag"># notes</a>
+          
             <a href="/tags/sci-tech/" rel="tag"># sci-tech</a>
           
             <a href="/tags/phy/" rel="tag"># phy</a>
-          
-            <a href="/tags/notes/" rel="tag"># notes</a>
           
         </div>
       
@@ -1539,12 +1539,14 @@ U_{-\lambda}(-\mathbf p)\ \ \ \ \text{if }\lambda\ \text{denotes helicity}\\
 
 
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
   <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
     var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
+    guest = guest.split(',').filter(function (item) {
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
@@ -1555,8 +1557,9 @@ U_{-\lambda}(-\mathbf p)\ \ \ \ \text{if }\lambda\ \text{denotes helicity}\\
         appKey: 'gOaIJPnVaCJn5Xar10Vp9dWI',
         placeholder: '',
         avatar:'mm',
-        guest_info:guest,
+        meta:guest,
         pageSize:'10' || 10,
+        visitor: true
     });
   </script>
 

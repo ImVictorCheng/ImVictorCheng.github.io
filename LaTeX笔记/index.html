@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="sci-tech,notes,coding,LaTeX," />
+  <meta name="keywords" content="notes,sci-tech,coding,LaTeX," />
 
 
 
@@ -84,7 +84,7 @@
 
 
 <meta name="description" content="内容来自《一份不太简短的\(\LaTeX2\varepsilon\)介绍》，据说是99分钟学会。 倒计时开始。">
-<meta name="keywords" content="sci-tech,notes,coding,LaTeX">
+<meta name="keywords" content="notes,sci-tech,coding,LaTeX">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LaTeX笔记">
 <meta property="og:url" content="https://imvictorcheng.github.io/LaTeX笔记/index.html">
@@ -547,9 +547,9 @@ described in theorem \ref{thm:light}.
       
         <div class="post-tags">
           
-            <a href="/tags/sci-tech/" rel="tag"># sci-tech</a>
-          
             <a href="/tags/notes/" rel="tag"># notes</a>
+          
+            <a href="/tags/sci-tech/" rel="tag"># sci-tech</a>
           
             <a href="/tags/coding/" rel="tag"># coding</a>
           
@@ -933,12 +933,14 @@ described in theorem \ref{thm:light}.
 
 
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
   <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
     var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
+    guest = guest.split(',').filter(function (item) {
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
@@ -949,8 +951,9 @@ described in theorem \ref{thm:light}.
         appKey: 'gOaIJPnVaCJn5Xar10Vp9dWI',
         placeholder: '',
         avatar:'mm',
-        guest_info:guest,
+        meta:guest,
         pageSize:'10' || 10,
+        visitor: true
     });
   </script>
 
