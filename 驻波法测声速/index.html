@@ -386,16 +386,23 @@
         <p>下午的时候高中同学问我的。这个问题看上去很Trivial，但实际上……好吧其实也不算复杂，不过花了我一下午的时间才搞清楚，所以还是记一下。</p>
 <a id="more"></a>
 <p>实验装置如图所示：</p>
-<p><img src="https://imvictorcheng.github.io/2016/12/17/%E9%A9%BB%E6%B3%A2%E6%B3%95%E6%B5%8B%E5%A3%B0%E9%80%9F/%E5%8E%9F%E7%90%86%E5%9B%BE.png" alt="原理图"></p>
+<figure>
+<img src="https://imvictorcheng.github.io/2016/12/17/%E9%A9%BB%E6%B3%A2%E6%B3%95%E6%B5%8B%E5%A3%B0%E9%80%9F/%E5%8E%9F%E7%90%86%E5%9B%BE.png" alt="原理图"><figcaption>原理图</figcaption>
+</figure>
 <p>一般的大物实验报告上给出的实验原理：</p>
-<p>S1发出确定频率的信号，S2处发生反射，入射波与反射波干涉形成驻波，相邻波腹之间的距离为$\frac{\lambda}{2}$，所以将S2处的信号接入示波器，并移动S2，当接收到的信号幅度每发生一次周期变化，表明S2移动了$\frac{\lambda}{2}$。</p>
+<p>S1发出确定频率的信号，S2处发生反射，入射波与反射波干涉形成驻波，相邻波腹之间的距离为<span class="math inline">\(\frac{\lambda}{2}\)</span>，所以将S2处的信号接入示波器，并移动S2，当接收到的信号幅度每发生一次周期变化，表明S2移动了<span class="math inline">\(\frac{\lambda}{2}\)</span>。</p>
 <p>但是这其实是想当然的分析结果，真实计算出来并非如此：</p>
-<p>设S1和S2之间的距离为$l$，则入射波为：<br>$$y=A\cos(\omega t-kx)$$<br>反射波为：<br>$$y=A\cos(\omega t-kl-k(l-x))=A\cos(\omega t+kx-2kl)$$<br>合成后的驻波的波函数：<br>$$y=2A\cos(kx-kl)\cos(\omega t-kl)$$<br>在$x=l$处的振幅为$2A$，即S2处始终为波腹。其实这个结果很好理解，S2移动时$l$的值变化，驻波本身也发生了变化。</p>
-<p>那么是哪地方错了呢？实际上，S2处的反射波传播到S1处又会发生反射，再传播到S2处再反射……S2处应该是无穷多“级”的反射波的合成，经过简单的归纳，每一级反射波的波函数应为：（$-$号上标表示右行波，$+$号上标表示左行波）<br>\begin{split}<br>y_n^-&amp;=A\cos(\omega t-kx-nkl)\<br>y_n^+&amp;=A\cos(\omega t+kx-(n+1)kl)<br>\end{split}<br>代入$x=l$，得到S2处的合振动应为一个无穷级数：<br>$$y=\sum_{n=0}^\infty2A\cos(\omega t-(2n+1)kl)$$<br>很遗憾这个级数不收敛。</p>
+<p>设S1和S2之间的距离为<span class="math inline">\(l\)</span>，则入射波为： <span class="math display">\[y=A\cos(\omega t-kx)\]</span> 反射波为： <span class="math display">\[y=A\cos(\omega t-kl-k(l-x))=A\cos(\omega t+kx-2kl)\]</span> 合成后的驻波的波函数： <span class="math display">\[y=2A\cos(kx-kl)\cos(\omega t-kl)\]</span> 在<span class="math inline">\(x=l\)</span>处的振幅为<span class="math inline">\(2A\)</span>，即S2处始终为波腹。其实这个结果很好理解，S2移动时<span class="math inline">\(l\)</span>的值变化，驻波本身也发生了变化。</p>
+<p>那么是哪地方错了呢？实际上，S2处的反射波传播到S1处又会发生反射，再传播到S2处再反射……S2处应该是无穷多“级”的反射波的合成，经过简单的归纳，每一级反射波的波函数应为：（<span class="math inline">\(-\)</span>号上标表示右行波，<span class="math inline">\(+\)</span>号上标表示左行波） \begin{split} y_n<sup>-&amp;=A(t-kx-nkl)\ y_n</sup>+&amp;=A(t+kx-(n+1)kl) \end{split} 代入<span class="math inline">\(x=l\)</span>，得到S2处的合振动应为一个无穷级数： <span class="math display">\[y=\sum_{n=0}^\infty2A\cos(\omega t-(2n+1)kl)\]</span> 很遗憾这个级数不收敛。</p>
 <p>这个结果依然很好理解：毕竟被求和的数列都不趋近于0……</p>
-<p>我们马上想到了解决方案：考虑反射时的衰减，自然地假设每反射一次振幅衰减为原来的$p$。（这种说法好奇怪，意会即可..）</p>
-<p>修正后的合振动应为：<br>$$y=(1+p)A\sum_{n=0}^\infty p^{2n}\cos(\omega t-(2n+1)kl)$$<br>用复变函数的方法求这个级数：<br>\begin{split}<br>&amp;\sum_{n=0}^{\infty}p^{2n}\cos(\omega t-(2n+1)kl)\<br>=&amp;\sum_{n=0}^{\infty}\mathrm{Re}(p^{2n}e^{i(\omega t-(2n+1)kl)})\<br>=&amp;\sum_{n=0}^{\infty}\mathrm{Re}(p^{2n}e^{i(\omega t-kl)}e^{i(-2nkl)})\<br>=&amp;\mathrm{Re}(e^{i(\omega t-kl)}\sum_{n=0}^{\infty}(p^2e^{-i2kl})^n)\<br>=&amp;\mathrm{Re}(e^{i(\omega t-kl)}\frac{1}{1-p^2e^{-i2kl}}) \<br>=&amp;\frac{\cos(\omega t-kl)-p^2\cos(\omega t+kl)}{1-2p^2\cos(2kl)+p^4}<br>\end{split}<br>即得<br>\begin{split}<br>y&amp;=(1+p)A\frac{\cos(\omega t-kl)-p^2\cos(\omega t+kl)}{1-2p^2\cos(2kl)+p^4}\<br>&amp;=(1+p)A\frac{\sqrt{1+p^4-2p^2\cos(2kl)}}{1-2p^2\cos(2kl)+p^4}\cos(\omega t-\varphi)<br>\end{split}<br>振幅为<br>$$(1+p)A\frac{\sqrt{1+p^4-2p^2\cos(2kl)}}{1-2p^2\cos(2kl)+p^4}$$<br>振幅的周期为$\frac{\lambda}{2}$。殊途同归。</p>
-<p>（本实验还有一个“李萨如图形”法，则是完全不考虑反射，或认为$p\approx0$。）</p>
+<p>我们马上想到了解决方案：考虑反射时的衰减，自然地假设每反射一次振幅衰减为原来的<span class="math inline">\(p\)</span>。（这种说法好奇怪，意会即可..）</p>
+修正后的合振动应为： <span class="math display">\[y=(1+p)A\sum_{n=0}^\infty p^{2n}\cos(\omega t-(2n+1)kl)\]</span> 用复变函数的方法求这个级数： \begin{split} &amp;<em>{n=0}<sup>{}p</sup>{2n}(t-(2n+1)kl)\ =&amp;</em>{n=0}<sup>{}(p</sup>{2n}e<sup>{i(t-(2n+1)kl)})\ =&amp;<em>{n=0}<sup>{}(p</sup>{2n}e<sup>{i(t-kl)}e</sup>{i(-2nkl)})\ =&amp;(e^{i(t-kl)}</em>{n=0}</sup>{}(p<sup>2e</sup>{-i2kl})<sup>n)\ =&amp;(e</sup>{i(t-kl)}) \ =&amp; \end{split} 即得
+<span class="math display">\[\begin{split}
+y&amp;=(1+p)A\frac{\cos(\omega t-kl)-p^2\cos(\omega t+kl)}{1-2p^2\cos(2kl)+p^4}\\
+&amp;=(1+p)A\frac{\sqrt{1+p^4-2p^2\cos(2kl)}}{1-2p^2\cos(2kl)+p^4}\cos(\omega t-\varphi)
+\end{split}\]</span>
+<p>振幅为 <span class="math display">\[(1+p)A\frac{\sqrt{1+p^4-2p^2\cos(2kl)}}{1-2p^2\cos(2kl)+p^4}\]</span> 振幅的周期为<span class="math inline">\(\frac{\lambda}{2}\)</span>。殊途同归。</p>
+<p>（本实验还有一个“李萨如图形”法，则是完全不考虑反射，或认为<span class="math inline">\(p\approx0\)</span>。）</p>
 
       
     </div>
