@@ -4,21 +4,6 @@
 
     
   <url>
-    <loc>https://imvictorcheng.github.io/test/</loc>
-    <lastmod>2018-08-02T01:41:20.000Z</lastmod>
-    <data>
-        <display>
-        <title>test</title>
-        <pubTime>2018-08-02T01:40:37.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://imvictorcheng.github.io/%E3%80%90%E7%BF%BB%E8%AF%91%E8%87%AAReddit%E3%80%91%E7%90%BC%E6%81%A9%E5%9C%A8%E3%80%8A%E7%A7%81%E7%94%9F%E5%AD%90%E4%B9%8B%E6%88%98%E3%80%8B%E4%B8%AD%E7%9A%84%E6%95%85%E4%BA%8B%EF%BC%8C%E5%B9%B6%E4%B8%8D%E6%98%AF%E4%BA%BA%E4%BB%AC%E6%83%B3%E7%9A%84%E9%82%A3%E6%A0%B7/</loc>
     <lastmod>2018-07-22T08:37:52.989Z</lastmod>
     <data>
@@ -65,11 +50,11 @@
         <title>高等量子力学笔记</title>
         <pubTime>2017-10-15T16:21:16.000Z</pubTime>
         
+        <tag>notes</tag>
+         
         <tag>sci-tech</tag>
          
         <tag>phy</tag>
-         
-        <tag>notes</tag>
          
          
            
@@ -177,9 +162,9 @@
         <title>LaTeX笔记</title>
         <pubTime>2016-11-10T04:00:31.000Z</pubTime>
         
-        <tag>sci-tech</tag>
-         
         <tag>notes</tag>
+         
+        <tag>sci-tech</tag>
          
         <tag>coding</tag>
          
