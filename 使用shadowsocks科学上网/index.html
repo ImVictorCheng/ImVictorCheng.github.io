@@ -83,19 +83,19 @@
 
 
 
-<meta name="description" content="考虑到好多同学问我关于科学上网的问题，所以干脆写到这里好了。 （不知道什么是科学上网的朋友就不用科学上网了……）">
+<meta name="description" content="考虑到好多同学问我关于科学上网的问题，所以干脆写到这里好了。（不知道什么是科学上网的朋友就不用科学上网了……）">
 <meta name="keywords" content="sci-tech,LPT">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用shadowsocks科学上网">
 <meta property="og:url" content="https://imvictorcheng.github.io/使用shadowsocks科学上网/index.html">
 <meta property="og:site_name" content="RootSays">
-<meta property="og:description" content="考虑到好多同学问我关于科学上网的问题，所以干脆写到这里好了。 （不知道什么是科学上网的朋友就不用科学上网了……）">
+<meta property="og:description" content="考虑到好多同学问我关于科学上网的问题，所以干脆写到这里好了。（不知道什么是科学上网的朋友就不用科学上网了……）">
 <meta property="og:locale" content="Chinese/English/Physics/Math/Python">
 <meta property="og:image" content="https://imvictorcheng.github.io/2016/12/08/%E4%BD%BF%E7%94%A8shadowsocks%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/%E7%BC%96%E8%BE%91%E6%9C%8D%E5%8A%A1%E5%99%A8.jpg">
 <meta property="og:updated_time" content="2016-12-11T11:43:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用shadowsocks科学上网">
-<meta name="twitter:description" content="考虑到好多同学问我关于科学上网的问题，所以干脆写到这里好了。 （不知道什么是科学上网的朋友就不用科学上网了……）">
+<meta name="twitter:description" content="考虑到好多同学问我关于科学上网的问题，所以干脆写到这里好了。（不知道什么是科学上网的朋友就不用科学上网了……）">
 <meta name="twitter:image" content="https://imvictorcheng.github.io/2016/12/08/%E4%BD%BF%E7%94%A8shadowsocks%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/%E7%BC%96%E8%BE%91%E6%9C%8D%E5%8A%A1%E5%99%A8.jpg">
 
 
@@ -297,7 +297,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Victor Cheng">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/me3_circle.png">
+      <meta itemprop="image" content="/uploads/me3.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -383,27 +383,22 @@
       
 
       
-        <p>考虑到好多同学问我关于科学上网的问题，所以干脆写到这里好了。 （不知道什么是科学上网的朋友就不用科学上网了……）</p>
+        <p>考虑到好多同学问我关于科学上网的问题，所以干脆写到这里好了。<br>（不知道什么是科学上网的朋友就不用科学上网了……）</p>
 <a id="more"></a>
 <p>之前试过很多科学上网的工具，但是大多不稳定，而且速度慢。目前来看最好用的还是shadowsocks（中文名：影梭，有时简写为ss）。在最后会放一些其他的工具，作为备用。</p>
-<h2 id="软件">软件</h2>
-<p><a href="https://shadowsocks.org/en/index.html" target="_blank" rel="noopener">官网</a>、<a href="https://github.com/shadowsocks" target="_blank" rel="noopener">GitHub主页</a>、<a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank" rel="noopener">windows版本</a>，或者从这里下载<a href="https://imvictorcheng.github.io/2016/12/08/%E4%BD%BF%E7%94%A8shadowsocks%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/Shadowsocks-3.3.6.zip">3.3.6</a>版（windows）。 也可以pip安装，如果你特别想这样干的话：</p>
-<pre><code>pip install shadowsocks</code></pre>
-<p>打开就能用。</p>
-<p>打开后是这个样子： <img src="https://imvictorcheng.github.io/2016/12/08/%E4%BD%BF%E7%94%A8shadowsocks%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/%E7%BC%96%E8%BE%91%E6%9C%8D%E5%8A%A1%E5%99%A8.jpg" alt="编辑服务器"> 左侧是你的所有节点，右侧是节点服务器的信息。</p>
-<p><a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks" target="_blank" rel="noopener">安卓版</a>。 上不了play的到<a href="https://github.com/shadowsocks/shadowsocks-android/releases" target="_blank" rel="noopener">GitHub主页</a>或<a href="https://imvictorcheng.github.io/2016/12/08/%E4%BD%BF%E7%94%A8shadowsocks%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/shadowsocks-nightly-3.3.1android.rar">这里</a>下载apk。（个人觉得科学上网软件只提供play链接不提供apk都很蠢……） 用法很简单，可以扫描二维码或者粘贴配置信息代码来添加节点。</p>
-<h2 id="节点">节点</h2>
-<p>节点是使用shadowsocks科学上网的关键。可以自己租（或者和别人合租）海外的服务器搭建节点（没试过……），也可以买提供商的节点（据说会快一点，流量多一点，稳定性好一点？），也可以用许多网站提供的免费节点。</p>
+<h2 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h2><p><a href="https://shadowsocks.org/en/index.html" target="_blank" rel="noopener">官网</a>、<a href="https://github.com/shadowsocks" target="_blank" rel="noopener">GitHub主页</a>、<a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank" rel="noopener">windows版本</a>，或者从这里下载<a href="https://imvictorcheng.github.io/2016/12/08/%E4%BD%BF%E7%94%A8shadowsocks%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/Shadowsocks-3.3.6.zip">3.3.6</a>版（windows）。<br>也可以pip安装，如果你特别想这样干的话：</p>
+<pre><code>pip install shadowsocks
+</code></pre><p>打开就能用。</p>
+<p>打开后是这个样子：<br><img src="https://imvictorcheng.github.io/2016/12/08/%E4%BD%BF%E7%94%A8shadowsocks%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/%E7%BC%96%E8%BE%91%E6%9C%8D%E5%8A%A1%E5%99%A8.jpg" alt="编辑服务器"><br>左侧是你的所有节点，右侧是节点服务器的信息。</p>
+<p><a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks" target="_blank" rel="noopener">安卓版</a>。<br>上不了play的到<a href="https://github.com/shadowsocks/shadowsocks-android/releases" target="_blank" rel="noopener">GitHub主页</a>或<a href="https://imvictorcheng.github.io/2016/12/08/%E4%BD%BF%E7%94%A8shadowsocks%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/shadowsocks-nightly-3.3.1android.rar">这里</a>下载apk。（个人觉得科学上网软件只提供play链接不提供apk都很蠢……）<br>用法很简单，可以扫描二维码或者粘贴配置信息代码来添加节点。</p>
+<h2 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h2><p>节点是使用shadowsocks科学上网的关键。可以自己租（或者和别人合租）海外的服务器搭建节点（没试过……），也可以买提供商的节点（据说会快一点，流量多一点，稳定性好一点？），也可以用许多网站提供的免费节点。</p>
 <p>在搜索引擎上直接搜“shadowsocks免费节点”一般就可以找得到。也可以到g+找shadowsocks的社区，有很多人经常在那里分享提供免费节点的网站。比方说这个：<a href="https://plus.google.com/communities/104092405342699579599" target="_blank" rel="noopener">shadowsocks免费帐号</a>。大部分这些免费节点网站都可以每天签到送流量，节点速度有快有慢，一半访问网页是够的，看YouTube的话有的能到720，有的只能看360。</p>
 <p>有个fb上的<a href="https://www.facebook.com/groups/fanqianglab/" target="_blank" rel="noopener">小组</a>，里面这方面的大神不少，如果想自己租服务器可以去问；也有很多人发一些合租的广告（没试过，不知道靠不靠谱）；还有一些其他相关的东西。</p>
-<h2 id="pac11"><a href="https://zh.wikipedia.org/wiki/%E4%BB%A3%E7%90%86%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE" target="_blank" rel="noopener">PAC</a></h2>
-<p>Proxy auto-config，代理自动配置，可以帮你选择哪些网站使用代理，哪些不用。（像什么知乎微博之类的当然希望它不要用代理啦，又慢又浪费流量。）</p>
+<h2 id="PAC"><a href="#PAC" class="headerlink" title="PAC"></a><a href="https://zh.wikipedia.org/wiki/%E4%BB%A3%E7%90%86%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE" target="_blank" rel="noopener">PAC</a></h2><p>Proxy auto-config，代理自动配置，可以帮你选择哪些网站使用代理，哪些不用。（像什么知乎微博之类的当然希望它不要用代理啦，又慢又浪费流量。）</p>
 <p>右键点击ss的任务栏图标，有一项叫<em>系统代理模式</em>，里面可以选择<em>PAC模式</em>或者<em>全局模式</em>。PAC模式就是仅PAC文件里面列出的网站走代理；全局模式就是所有网站都走代理。</p>
 <p>还有一个选项叫<em>PAC</em>，里面有一个选项叫<em>编辑本地PAC文件…</em>，打开后是一个txt文件，里面列出了走代理的网站。可以在这里按照格式（我也没研究过这个格式是什么意思……）补充别的网站，可以注释掉其实能访问的网站（比方说在校园网下可以注释掉google）。平时上网的时候遇到一些访问特别慢的国外网站，可以添加到这个文件里，经常能显著提高访问速度。</p>
-<h2 id="让uwp应用走ss代理">让UWP应用走ss代理</h2>
-<p>用<a href="https://imvictorcheng.github.io/2016/12/08/%E4%BD%BF%E7%94%A8shadowsocks%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/WindowsModernAppsTools.rar">WindowsModernAppsTools</a>，下载后打开，选择<em>小应用网络设置</em>选项，选择需要走代理的app，点击右下角的<em>允许选中项目使用本地代理</em>。</p>
-<h2 id="其它科学上网工具">其它科学上网工具</h2>
-<p>ss很稳定，很够用，但以防万一还是要收集一些备用的。 常见的有<a href="http://www.psiphon3.net" target="_blank" rel="noopener">赛风</a>、<a href="https://getlantern.org" target="_blank" rel="noopener">蓝灯</a>（<a href="https://github.com/getlantern/lantern" target="_blank" rel="noopener">蓝灯</a>的GitHub，现在好像要收费）、<a href="http://www.vpngate.net/cn/" target="_blank" rel="noopener">VPN Gate</a>（VPN Gate已经被墙，但可以找一个不常用的邮箱地址订阅它的镜像，它每天会给你发三次，帝国主义真是亡我之心不死）。</p>
+<h2 id="让UWP应用走ss代理"><a href="#让UWP应用走ss代理" class="headerlink" title="让UWP应用走ss代理"></a>让UWP应用走ss代理</h2><p>用<a href="https://imvictorcheng.github.io/2016/12/08/%E4%BD%BF%E7%94%A8shadowsocks%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/WindowsModernAppsTools.rar">WindowsModernAppsTools</a>，下载后打开，选择<em>小应用网络设置</em>选项，选择需要走代理的app，点击右下角的<em>允许选中项目使用本地代理</em>。</p>
+<h2 id="其它科学上网工具"><a href="#其它科学上网工具" class="headerlink" title="其它科学上网工具"></a>其它科学上网工具</h2><p>ss很稳定，很够用，但以防万一还是要收集一些备用的。<br>常见的有<a href="http://www.psiphon3.net" target="_blank" rel="noopener">赛风</a>、<a href="https://getlantern.org" target="_blank" rel="noopener">蓝灯</a>（<a href="https://github.com/getlantern/lantern" target="_blank" rel="noopener">蓝灯</a>的GitHub，现在好像要收费）、<a href="http://www.vpngate.net/cn/" target="_blank" rel="noopener">VPN Gate</a>（VPN Gate已经被墙，但可以找一个不常用的邮箱地址订阅它的镜像，它每天会给你发三次，帝国主义真是亡我之心不死）。</p>
 
       
     </div>
@@ -524,7 +519,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/uploads/me3_circle.png"
+                src="/uploads/me3.jpg"
                 alt="Victor Cheng" />
             
               <p class="site-author-name" itemprop="name">Victor Cheng</p>
@@ -619,7 +614,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#软件"><span class="nav-number">1.</span> <span class="nav-text">软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#节点"><span class="nav-number">2.</span> <span class="nav-text">节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pac11"><span class="nav-number">3.</span> <span class="nav-text">PAC</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#让uwp应用走ss代理"><span class="nav-number">4.</span> <span class="nav-text">让UWP应用走ss代理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其它科学上网工具"><span class="nav-number">5.</span> <span class="nav-text">其它科学上网工具</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#软件"><span class="nav-number">1.</span> <span class="nav-text">软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#节点"><span class="nav-number">2.</span> <span class="nav-text">节点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PAC"><span class="nav-number">3.</span> <span class="nav-text">PAC</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#让UWP应用走ss代理"><span class="nav-number">4.</span> <span class="nav-text">让UWP应用走ss代理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其它科学上网工具"><span class="nav-number">5.</span> <span class="nav-text">其它科学上网工具</span></a></li></ol></div>
             
 
           </div>
