@@ -335,6 +335,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/驻波法测声速/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/驻波法测声速/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -768,6 +778,28 @@ y&amp;=(1+p)A\frac{\cos(\omega t-kl)-p^2\cos(\omega t+kl)}{1-2p^2\cos(2kl)+p^4}\
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '6TrtJI6cM91KE0nCDhhf4Lvm-gzGzoHsz',
+        appKey: 'mzODqNXNsAPxQAuoI5AfF51s',
+        placeholder: 'DON'T PANIC',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
